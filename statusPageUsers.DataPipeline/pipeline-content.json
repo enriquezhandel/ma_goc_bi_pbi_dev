@@ -1,0 +1,143 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "SqlServerSource",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "SqlServerTable",
+              "typeProperties": {
+                "schema": "ProductStrategy",
+                "table": "v_UsersProducts",
+                "database": "FinStats"
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "979cca2c-005e-4c4e-951a-1358d897ef5a"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "ext_ProductStrategy_v_UsersProducts"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "eMail",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "64"
+                },
+                "sink": {
+                  "name": "eMail",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "FirstName",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "32"
+                },
+                "sink": {
+                  "name": "FirstName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "LastName",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "64"
+                },
+                "sink": {
+                  "name": "LastName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "fDashBoard",
+                  "type": "Int32",
+                  "physicalType": "int"
+                },
+                "sink": {
+                  "name": "fDashBoard",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "Products",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "MAX"
+                },
+                "sink": {
+                  "name": "Products",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "ProductCount",
+                  "type": "Int32",
+                  "physicalType": "int"
+                },
+                "sink": {
+                  "name": "ProductCount",
+                  "physicalType": "integer"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "statusPageUsers",
+        "dependsOn": []
+      }
+    ]
+  }
+}

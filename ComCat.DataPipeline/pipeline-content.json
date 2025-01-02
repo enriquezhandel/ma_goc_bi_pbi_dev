@@ -1,0 +1,1209 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "SqlServerSource",
+            "sqlReaderQuery": "SELECT DISTINCT\r\n\t\t [PrimaryAccountId]\r\n\t\t,CAST([AccountHierarchyId] AS VARCHAR(MAX)) AS AccountHierarchyId\r\n\t\t,[Active]\r\n\t\t,[AccountName]\r\n\t\t,[CompanyName]\r\nFROM [FinUsers].[dbo].[Accounts] with (nolock)\r\nWHERE \r\n\tActive = 1\r\nAND CompanyName IS NOT NULL\r\n",
+            "partitionOption": "None",
+            "queryTimeout": "02:00:00",
+            "datasetSettings": {
+              "type": "SqlServerTable",
+              "typeProperties": {
+                "schema": "dbo",
+                "table": "Accounts",
+                "database": "FinUsers"
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "47c696ea-4d3a-4c52-b9a4-f0c90d8350e1"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "ext_FinUserAccount"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "FinUsersAccounts",
+        "description": "This contains the Account Names ",
+        "dependsOn": []
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "SqlServerSource",
+            "sqlReaderQuery": "SELECT\r\n\t SharingId\r\n\t, AlertCriteria\r\n\t, count(*) as Count\r\n\t, AlertDate\r\n\t, CONVERT(date, GETDATE()) as snapshotdate\r\nFROM CatalystMVC.dbo.Alerts with (nolock)\r\nWHERE\r\n\tProductId = 171\r\nAND Status in (1,2,9)\r\nAND AlertDate >= CAST(DATEADD(DAY, DATEDIFF(DAY, 0, GETUTCDATE())-1, 0) AS DATETIME)\r\nAND AlertDate < CAST(DATEADD(DAY, DATEDIFF(DAY, 0, GETUTCDATE()), 0) AS DATETIME)\r\nGROUP BY\r\n  SharingId\r\n, AlertCriteria\r\n, AlertDate",
+            "partitionOption": "None",
+            "queryTimeout": "02:00:00",
+            "datasetSettings": {
+              "type": "SqlServerTable",
+              "typeProperties": {
+                "database": "CatalystMVC"
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "8ac22d1d-f17f-402b-8299-b8c5f4ee5a17"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "Append",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "ext_CatalystMVCAlerts"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "CatalystMVCAlerts",
+        "dependsOn": [
+          {
+            "activity": "FinUsersAccounts",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "c41c43db-5c9b-409e-ae9e-eca765e57694",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "comCatDIM",
+        "dependsOn": [
+          {
+            "activity": "CatalystMVCAlerts",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          },
+          {
+            "activity": "CatalystMVCRiskAssessments",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "SqlServerSource",
+            "sqlReaderQuery": "SELECT DISTINCT\r\n\t SharingId\r\n\t,CAST(startedOn AS DATE) as snapshot_date\r\n\t,ProductId\r\n\t,count(*) as 'nr_tasks'\r\n\t,avg(CAST(DATEDIFF(second, startedOn, finishedon) as bigint)) as 'avg_execution_seconds'\r\n\t,sum(CAST(DATEDIFF(second, startedOn, finishedon) as bigint)) as 'max_execution_seconds'\r\n\t,avg(CAST(DATEDIFF(second, RequestedOn, startedOn) as bigint)) as 'average_wait_seconds'\r\n\t,sum(CAST(DATEDIFF(second, RequestedOn, startedOn) as bigint)) as 'max_wait_seconds'\r\nFROM [CatalystMVC].[dbo].[RiskAssessments] with (nolock)\r\n\tWHERE \r\n\t\tproductid=171\r\n\tand tasktype = 0\r\n\tAND SharingId IS NOT NULL\r\n\tAND startedOn IS NOT NULL\r\nGROUP BY CAST(startedOn AS DATE),ProductID, SharingId\r\nORDER BY 1, 2, 3",
+            "partitionOption": "None",
+            "queryTimeout": "02:00:00",
+            "datasetSettings": {
+              "type": "SqlServerTable",
+              "typeProperties": {
+                "database": "ComplianceCatalyst"
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "47bbc55a-58b7-466b-800e-37fe08d0bd2b"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "ext_CatalystMVCRisksAssessment"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "CatalystMVCRiskAssessments",
+        "dependsOn": [
+          {
+            "activity": "FinUsersAccounts",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "SqlServerSource",
+            "sqlReaderQuery": "SELECT \r\n\t[MonitoringType]\r\n      ,[MonitoringNature]\r\n      ,[PreviousCheckDate]\r\n\t\t,CASE\r\n\t\t\tWHEN LEN([LatestKnwonChanges]) = 8 THEN CAST(CAST([LatestKnwonChanges] AS VARCHAR(MAX)) AS datetime)\r\n\t\t\tWHEN LEN([LatestKnwonChanges]) = 14 THEN CAST(STUFF(STUFF(STUFF([LatestKnwonChanges], 13, 0, ':'), 11, 0, ':'),9,0,' ') AS datetime)\r\n\t\t\tELSE NULL \r\n\t\tEND AS LatestKnownChanges\r\n      ,CONVERT(date, GETDATE()) as snapshotdate\r\nFROM [ComplianceCatalyst].[dbo].[ChangeMonitoringProcessingUnitState] with (nolock)\r\n",
+            "partitionOption": "None",
+            "queryTimeout": "02:00:00",
+            "datasetSettings": {
+              "type": "SqlServerTable",
+              "typeProperties": {
+                "database": "ComplianceCatalyst"
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "47bbc55a-58b7-466b-800e-37fe08d0bd2b"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "Append",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "ext_ComplianceCatalystV1"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "ComplianceCatalystV1",
+        "dependsOn": [
+          {
+            "activity": "FinUsersAccounts",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PBISemanticModelRefresh",
+        "typeProperties": {
+          "method": "post",
+          "groupId": "aedd58a1-3fc3-4d18-b48d-a8d0953254bf",
+          "datasetId": "9f9afee4-5740-4873-b961-625a2d55c685",
+          "commitMode": "Transactional",
+          "waitOnCompletion": true,
+          "operationType": "SemanticModelRefresh"
+        },
+        "externalReferences": {
+          "connection": "ca159731-83e9-46a1-b8ff-2d3300949d7f"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "comcatModel",
+        "dependsOn": [
+          {
+            "activity": "TableUpdateAlerts",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "ParquetSource",
+            "storeSettings": {
+              "type": "LakehouseReadSettings",
+              "recursive": true,
+              "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+              "type": "ParquetReadSettings"
+            },
+            "datasetSettings": {
+              "type": "Parquet",
+              "typeProperties": {
+                "location": {
+                  "type": "LakehouseLocation",
+                  "folderPath": "comCatV2AlertsDIM"
+                },
+                "compressionCodec": "snappy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Files"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "dimAlertsComCatV2"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "SharingId",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "SharingId",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "AccountName",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "AccountName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "AlertCriteria",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "AlertCriteria",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "alertName",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "alertName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "Count",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "Count",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "AlertDate",
+                  "type": "DateTime",
+                  "physicalType": "INT96"
+                },
+                "sink": {
+                  "name": "AlertDate",
+                  "physicalType": "timestamp"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourAlert",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "hourAlert",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "snapshotdate",
+                  "type": "Date",
+                  "physicalType": "DATE"
+                },
+                "sink": {
+                  "name": "snapshotdate",
+                  "physicalType": "date"
+                }
+              },
+              {
+                "source": {
+                  "name": "eom_snapshotdate",
+                  "type": "Date",
+                  "physicalType": "DATE"
+                },
+                "sink": {
+                  "name": "eom_snapshotdate",
+                  "physicalType": "date"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "TableUpdateAlerts",
+        "dependsOn": [
+          {
+            "activity": "comCatDIM",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "ParquetSource",
+            "storeSettings": {
+              "type": "LakehouseReadSettings",
+              "recursive": true,
+              "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+              "type": "ParquetReadSettings"
+            },
+            "datasetSettings": {
+              "type": "Parquet",
+              "typeProperties": {
+                "location": {
+                  "type": "LakehouseLocation",
+                  "folderPath": "comCatV2RisksDIM"
+                },
+                "compressionCodec": "snappy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Files"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "comcatv2risksdim"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "SharingId",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "SharingId",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "AccountName",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "AccountName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "snapshot_date",
+                  "type": "Date",
+                  "physicalType": "DATE"
+                },
+                "sink": {
+                  "name": "snapshot_date",
+                  "physicalType": "date"
+                }
+              },
+              {
+                "source": {
+                  "name": "eom_snapshotdate",
+                  "type": "Date",
+                  "physicalType": "DATE"
+                },
+                "sink": {
+                  "name": "eom_snapshotdate",
+                  "physicalType": "date"
+                }
+              },
+              {
+                "source": {
+                  "name": "ProductId",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "ProductId",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "nr_tasks",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "nr_tasks",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "avg_execution_seconds",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "avg_execution_seconds",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "max_execution_seconds",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "max_execution_seconds",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "average_wait_seconds",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "average_wait_seconds",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "max_wait_seconds",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "max_wait_seconds",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "totalDuration",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "totalDuration",
+                  "physicalType": "long"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "TableUpdateRisks",
+        "dependsOn": [
+          {
+            "activity": "comCatDIM",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PBISemanticModelRefresh",
+        "typeProperties": {
+          "method": "post",
+          "groupId": "aedd58a1-3fc3-4d18-b48d-a8d0953254bf",
+          "datasetId": "a7299019-074f-4fbd-bb3b-1458f7b34b12",
+          "commitMode": "Transactional",
+          "waitOnCompletion": true,
+          "operationType": "SemanticModelRefresh"
+        },
+        "externalReferences": {
+          "connection": "ca159731-83e9-46a1-b8ff-2d3300949d7f"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "comCatAll",
+        "dependsOn": [
+          {
+            "activity": "TableUpdateRisks",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      }
+    ],
+    "parameters": {
+      "cw_items_brz": {
+        "type": "Array",
+        "defaultValue": [
+          {
+            "source": {
+              "table": "Alerts"
+            },
+            "destination": {
+              "table": "dbo_Alerts"
+            },
+            "copyActivity": {
+              "translator": {
+                "type": "TabularTranslator",
+                "mappings": [
+                  {
+                    "source": {
+                      "name": "Id",
+                      "type": "Int64",
+                      "physicalType": "bigint"
+                    },
+                    "sink": {
+                      "name": "Id",
+                      "physicalType": "long"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ProductId",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "ProductId",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "DatabaseContext",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "DatabaseContext",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "SharingId",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "SharingId",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "PortfolioId",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "PortfolioId",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "AlertFamily",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "AlertFamily",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "AlertCriteria",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "AlertCriteria",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "AlertDate",
+                      "type": "DateTime",
+                      "physicalType": "datetime"
+                    },
+                    "sink": {
+                      "name": "AlertDate",
+                      "physicalType": "timestamp"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "Status",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "Status",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "Details",
+                      "type": "String",
+                      "physicalType": "nvarchar",
+                      "length": "MAX"
+                    },
+                    "sink": {
+                      "name": "Details",
+                      "physicalType": "string"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ModificationUser",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "ModificationUser",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ModificationDate",
+                      "type": "DateTime",
+                      "physicalType": "datetime"
+                    },
+                    "sink": {
+                      "name": "ModificationDate",
+                      "physicalType": "timestamp"
+                    }
+                  }
+                ],
+                "typeConversion": true,
+                "typeConversionSettings": {
+                  "allowDataTruncation": true,
+                  "treatBooleanAsNumber": false
+                }
+              }
+            }
+          },
+          {
+            "source": {
+              "table": "RiskAssessments"
+            },
+            "destination": {
+              "table": "dbo_RiskAssessments"
+            },
+            "copyActivity": {
+              "translator": {
+                "type": "TabularTranslator",
+                "mappings": [
+                  {
+                    "source": {
+                      "name": "Id",
+                      "type": "Int64",
+                      "physicalType": "bigint"
+                    },
+                    "sink": {
+                      "name": "Id",
+                      "physicalType": "long"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "UserId",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "UserId",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ProcessId",
+                      "type": "Guid",
+                      "physicalType": "uniqueidentifier"
+                    },
+                    "sink": {
+                      "name": "ProcessId",
+                      "physicalType": "string"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "SyncStatus",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "SyncStatus",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ServerName",
+                      "type": "String",
+                      "physicalType": "nvarchar",
+                      "length": "64"
+                    },
+                    "sink": {
+                      "name": "ServerName",
+                      "physicalType": "string"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "DebugServerName",
+                      "type": "String",
+                      "physicalType": "nvarchar",
+                      "length": "64"
+                    },
+                    "sink": {
+                      "name": "DebugServerName",
+                      "physicalType": "string"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "StartedOn",
+                      "type": "DateTime",
+                      "physicalType": "datetime"
+                    },
+                    "sink": {
+                      "name": "StartedOn",
+                      "physicalType": "timestamp"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ItemType",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "ItemType",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ParentProcessId",
+                      "type": "Guid",
+                      "physicalType": "uniqueidentifier"
+                    },
+                    "sink": {
+                      "name": "ParentProcessId",
+                      "physicalType": "string"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "FinishedOn",
+                      "type": "DateTime",
+                      "physicalType": "datetime"
+                    },
+                    "sink": {
+                      "name": "FinishedOn",
+                      "physicalType": "timestamp"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "ProductId",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "ProductId",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "Priority",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "Priority",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "TaskType",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "TaskType",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "EntityType",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "EntityType",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "CarryOver",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "CarryOver",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "RequestedOn",
+                      "type": "DateTime",
+                      "physicalType": "datetime"
+                    },
+                    "sink": {
+                      "name": "RequestedOn",
+                      "physicalType": "timestamp"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "Context",
+                      "type": "String",
+                      "physicalType": "varchar",
+                      "length": "MAX"
+                    },
+                    "sink": {
+                      "name": "Context",
+                      "physicalType": "string"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "NextCheckDate",
+                      "type": "DateTime",
+                      "physicalType": "datetime"
+                    },
+                    "sink": {
+                      "name": "NextCheckDate",
+                      "physicalType": "timestamp"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "RemainingAttempt",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "RemainingAttempt",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "DuplicateCheck",
+                      "type": "String",
+                      "physicalType": "varchar",
+                      "length": "100"
+                    },
+                    "sink": {
+                      "name": "DuplicateCheck",
+                      "physicalType": "string"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "SharingId",
+                      "type": "Int32",
+                      "physicalType": "int"
+                    },
+                    "sink": {
+                      "name": "SharingId",
+                      "physicalType": "integer"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "BulkId",
+                      "type": "Guid",
+                      "physicalType": "uniqueidentifier"
+                    },
+                    "sink": {
+                      "name": "BulkId",
+                      "physicalType": "string"
+                    }
+                  }
+                ],
+                "typeConversion": true,
+                "typeConversionSettings": {
+                  "allowDataTruncation": true,
+                  "treatBooleanAsNumber": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

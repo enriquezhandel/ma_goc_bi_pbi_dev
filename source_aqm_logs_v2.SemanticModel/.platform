@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "source_aqm_logs_v2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bbcfb842-712c-43c8-9625-f1cedd1a81e2"
+  }
+}

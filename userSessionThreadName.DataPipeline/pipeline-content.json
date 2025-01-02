@@ -1,0 +1,80 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Dataflow1",
+        "type": "RefreshDataflow",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "dataflowId": "7354abe1-ac7c-436b-909a-9aa95aa98e3b",
+          "workspaceId": "aedd58a1-3fc3-4d18-b48d-a8d0953254bf",
+          "notifyOption": "NoNotification"
+        }
+      },
+      {
+        "name": "Dataflow2",
+        "type": "RefreshDataflow",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "dataflowId": "a7beffd1-7eab-47e3-accf-9e0315172e3b",
+          "workspaceId": "aedd58a1-3fc3-4d18-b48d-a8d0953254bf",
+          "notifyOption": "NoNotification"
+        }
+      },
+      {
+        "name": "Office 365 Outlook1",
+        "type": "Office365Outlook",
+        "dependsOn": [
+          {
+            "activity": "Dataflow1",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          },
+          {
+            "activity": "Dataflow2",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "inputs": {
+            "method": "post",
+            "path": "/v2/Mail",
+            "body": {
+              "To": "enriqueh@moodys.com",
+              "Subject": "test",
+              "Body": "<p>test</p>",
+              "Sensitivity": "",
+              "Importance": "Normal"
+            }
+          }
+        }
+      }
+    ],
+    "logicAppsConnectionPayload": {
+      "id": "/subscriptions/df9d8663-bb9c-4fc2-a535-ec3381742d67/resourceGroups/connections-aedd58a1-3fc3-4d18-b48d-a8d0953254bf/providers/Microsoft.Web/connections/1_42ba26fc-446a-435d-897a-f7ff14b14812_e15ae057-0302-4629-b7c9-673cd79c6d37",
+      "properties": {
+        "api": {
+          "name": "office365",
+          "id": "/subscriptions/df9d8663-bb9c-4fc2-a535-ec3381742d67/providers/Microsoft.Web/locations/eastus2/managedApis/office365"
+        }
+      }
+    }
+  }
+}

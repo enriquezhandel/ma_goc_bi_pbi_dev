@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "threadsExperience"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "189a1546-75db-44fc-885d-0da72e4f4298"
+  }
+}

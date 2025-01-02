@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "airbusUserExperience"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2365e613-9abd-45b1-9bf6-102608c64a79"
+  }
+}

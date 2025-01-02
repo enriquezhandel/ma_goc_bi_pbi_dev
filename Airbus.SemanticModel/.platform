@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Airbus"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9588167e-3ab3-4018-9ca5-8253f799c610"
+  }
+}

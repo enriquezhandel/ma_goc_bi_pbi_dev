@@ -1,0 +1,760 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "b0297516-da4d-44ae-946c-54e63781d89f",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "userSessionsDIM",
+        "dependsOn": []
+      },
+      {
+        "type": "PBISemanticModelRefresh",
+        "typeProperties": {
+          "method": "post",
+          "groupId": "aedd58a1-3fc3-4d18-b48d-a8d0953254bf",
+          "datasetId": "5eeecc2b-752d-4e07-8445-654e6fe633f0",
+          "commitMode": "Transactional",
+          "waitOnCompletion": true,
+          "operationType": "SemanticModelRefresh"
+        },
+        "externalReferences": {
+          "connection": "ca159731-83e9-46a1-b8ff-2d3300949d7f"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "userSessionsSemantic",
+        "dependsOn": [
+          {
+            "activity": "copyUserActionsDIM",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          },
+          {
+            "activity": "copyUserSessionsDIM",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "ParquetSource",
+            "storeSettings": {
+              "type": "LakehouseReadSettings",
+              "recursive": true,
+              "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+              "type": "ParquetReadSettings"
+            },
+            "datasetSettings": {
+              "type": "Parquet",
+              "typeProperties": {
+                "location": {
+                  "type": "LakehouseLocation",
+                  "folderPath": "actionsDim"
+                },
+                "compressionCodec": "snappy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Files"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "actionsdim"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "userSessionIdTotal",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "userSessionIdTotal",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "startTime_utc_hour",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "startTime_utc_hour",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "apdexCategory",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "apdexCategory",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "application",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "application",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "duration_seconds",
+                  "type": "Single",
+                  "physicalType": "FLOAT"
+                },
+                "sink": {
+                  "name": "duration_seconds",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "threadname",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "threadname",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "accountname",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "accountname",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "country",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "country",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "snapshot_date",
+                  "type": "Date",
+                  "physicalType": "DATE"
+                },
+                "sink": {
+                  "name": "snapshot_date",
+                  "physicalType": "date"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "copyUserActionsDIM",
+        "dependsOn": [
+          {
+            "activity": "userSessionsDIM",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "ParquetSource",
+            "storeSettings": {
+              "type": "LakehouseReadSettings",
+              "recursive": true,
+              "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+              "type": "ParquetReadSettings"
+            },
+            "datasetSettings": {
+              "type": "Parquet",
+              "typeProperties": {
+                "location": {
+                  "type": "LakehouseLocation",
+                  "folderPath": "sessionsDim"
+                },
+                "compressionCodec": "snappy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Files"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "sessionsdim"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "userSessionIdTotal",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "userSessionIdTotal",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "country",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "country",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "userActionCount",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "userActionCount",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "numberOfRageClicks",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "numberOfRageClicks",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "accountname",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "accountname",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "session_userExperienceScore",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "session_userExperienceScore",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "application",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "application",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "snapshot_date",
+                  "type": "Date",
+                  "physicalType": "DATE"
+                },
+                "sink": {
+                  "name": "snapshot_date",
+                  "physicalType": "date"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "copyUserSessionsDIM",
+        "dependsOn": [
+          {
+            "activity": "userSessionsDIM",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "ParquetSource",
+            "storeSettings": {
+              "type": "LakehouseReadSettings",
+              "recursive": true,
+              "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+              "type": "ParquetReadSettings"
+            },
+            "datasetSettings": {
+              "type": "Parquet",
+              "typeProperties": {
+                "location": {
+                  "type": "LakehouseLocation",
+                  "folderPath": "comCatOnly"
+                },
+                "compressionCodec": "snappy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Files"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "comCatOnly"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "elastic_id",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "elastic_id",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "userSessionId",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "userSessionId",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "startTime_utc",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "startTime_utc",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "startTime_utc_hour",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "startTime_utc_hour",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "apdexCategory",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "apdexCategory",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "application",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "application",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "duration",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "duration",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "duration_seconds",
+                  "type": "Single",
+                  "physicalType": "FLOAT"
+                },
+                "sink": {
+                  "name": "duration_seconds",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "name",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "name",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "targetUrl",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "targetUrl",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "type",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "type",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "threadname",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "threadname",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "reportbooksection",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "reportbooksection",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "searchby",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "searchby",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "accountid",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "accountid",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "accountname",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "accountname",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "userId",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "userId",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "country",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "country",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "snapshot_date",
+                  "type": "Date",
+                  "physicalType": "DATE"
+                },
+                "sink": {
+                  "name": "snapshot_date",
+                  "physicalType": "date"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "ComCatOnly",
+        "dependsOn": [
+          {
+            "activity": "userSessionsDIM",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PBISemanticModelRefresh",
+        "typeProperties": {
+          "method": "post",
+          "groupId": "aedd58a1-3fc3-4d18-b48d-a8d0953254bf",
+          "datasetId": "a7299019-074f-4fbd-bb3b-1458f7b34b12",
+          "commitMode": "Transactional",
+          "waitOnCompletion": true,
+          "operationType": "SemanticModelRefresh"
+        },
+        "externalReferences": {
+          "connection": "ca159731-83e9-46a1-b8ff-2d3300949d7f"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "ComCatALL",
+        "dependsOn": [
+          {
+            "activity": "ComCatOnly",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.138.7462.2 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"WebModelingEdit\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"XCUGCEHOWFEUFO4ETIWNE6JPVY-UFMN3LWDH4ME3NENVDIJKMSUX4.datawarehouse.fabric.microsoft.com\", \"b9e5b58f-fadd-4eed-a044-717d9af5b35f\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "7fdb334c-ce8f-4398-b616-9e4cdedb6ee3"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "66571927-cb92-eaf9-993e-24c27cf3fde9",
+        "fromColumn": "snapshotdate",
+        "fromTable": "dimAlertsComCatV2",
+        "toColumn": "Date",
+        "toTable": "calendar"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "ext_ComplianceCatalystV1",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "MonitoringType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ae3b6a79-53e2-4216-ae3b-063a3ee6c387",
+            "sourceColumn": "MonitoringType",
+            "sourceLineageTag": "MonitoringType",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonitoringNature",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2b9286a4-bb00-45cd-b5fa-1943ed271679",
+            "sourceColumn": "MonitoringNature",
+            "sourceLineageTag": "MonitoringNature",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PreviousCheckDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "96dfcea4-5f73-4c04-b7cc-b89135435fff",
+            "sourceColumn": "PreviousCheckDate",
+            "sourceLineageTag": "PreviousCheckDate",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LatestKnownChanges",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "6516e932-dcd7-4bfc-aa2d-a0bf1de23149",
+            "sourceColumn": "LatestKnownChanges",
+            "sourceLineageTag": "LatestKnownChanges",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshotdate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "1ee1adf5-459b-4c38-a455-37cae82c55cc",
+            "sourceColumn": "snapshotdate",
+            "sourceLineageTag": "snapshotdate",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "6a9f14a4-34d8-4650-b403-0207fff8a9eb",
+        "partitions": [
+          {
+            "name": "ext_ComplianceCatalystV1",
+            "mode": "directLake",
+            "source": {
+              "entityName": "ext_ComplianceCatalystV1",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[ext_ComplianceCatalystV1]"
+      },
+      {
+        "name": "calendar",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              },
+              {
+                "property": "FormatString"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "180ee8e1-1e20-4088-91a0-45d58c5eb793",
+            "sourceColumn": "Date",
+            "sourceLineageTag": "Date",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f5a139ac-557a-4c26-8921-f4ad5850e710",
+            "sourceColumn": "Month",
+            "sourceLineageTag": "Month",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EOMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              },
+              {
+                "property": "FormatString"
+              },
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": " yyyy-mmmm",
+            "lineageTag": "ef731535-5017-418c-8d18-124a32e74bda",
+            "sortByColumn": "Date",
+            "sourceColumn": "EOMonth",
+            "sourceLineageTag": "EOMonth",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c94261f2-0682-4c5d-b5f1-f99bfccd3a56",
+        "partitions": [
+          {
+            "name": "calendar",
+            "mode": "directLake",
+            "source": {
+              "entityName": "calendar",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[calendar]"
+      },
+      {
+        "name": "dimAlertsComCatV2",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SharingId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "522814a6-4c39-4ea1-89a9-45edcd1fbd12",
+            "sourceColumn": "SharingId",
+            "sourceLineageTag": "SharingId",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "AccountName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "01c94eb5-fabf-464b-a1a1-d1f56449fb98",
+            "sourceColumn": "AccountName",
+            "sourceLineageTag": "AccountName",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AlertCriteria",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5aec7413-03c1-475b-8e21-bbaecdaf73a1",
+            "sourceColumn": "AlertCriteria",
+            "sourceLineageTag": "AlertCriteria",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "alertName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "026831b9-70fb-4d12-bada-8e52e4b0c556",
+            "sourceColumn": "alertName",
+            "sourceLineageTag": "alertName",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f57a5a73-c791-46ad-b266-ef1f8bfc9e09",
+            "sourceColumn": "Count",
+            "sourceLineageTag": "Count",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AlertDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "b1b2fba9-50bb-441b-96fe-32d8c08d35eb",
+            "sourceColumn": "AlertDate",
+            "sourceLineageTag": "AlertDate",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hourAlert",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bce9a48d-9d97-4483-af8b-cff1903367e0",
+            "sourceColumn": "hourAlert",
+            "sourceLineageTag": "hourAlert",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "snapshotdate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              },
+              {
+                "property": "FormatString"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "86f403ed-40f9-49b2-9144-aab9602c7adf",
+            "sourceColumn": "snapshotdate",
+            "sourceLineageTag": "snapshotdate",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eom_snapshotdate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "95e46528-1805-43b9-a31e-9331bfdedc96",
+            "sourceColumn": "eom_snapshotdate",
+            "sourceLineageTag": "eom_snapshotdate",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "7b5c809c-e5f8-411e-9eb3-854e94149acf",
+        "partitions": [
+          {
+            "name": "dimAlertsComCatV2",
+            "mode": "directLake",
+            "source": {
+              "entityName": "dimAlertsComCatV2",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[dimAlertsComCatV2]"
+      }
+    ]
+  }
+}

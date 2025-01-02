@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "dimFactAirbus"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a6f71af9-f864-4469-9030-fee66ac2c212"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "dimSessions",
+        "type": "RefreshDataflow",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "dataflowId": "9d62ade4-064b-43b4-802b-fc8cca0e30ec",
+          "workspaceId": "aedd58a1-3fc3-4d18-b48d-a8d0953254bf",
+          "notifyOption": "NoNotification"
+        }
+      }
+    ]
+  }
+}

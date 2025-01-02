@@ -1,0 +1,1114 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DirectQuery to AS - Airbus\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "dimactionairbus.country": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimActionAirbus",
+                    "ConceptualProperty": "country"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Country": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dimactionairbus.monthyear": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimActionAirbus",
+                    "ConceptualProperty": "MonthYear"
+                  }
+                },
+                "State": "Generated"
+              },
+              "dimactionairbus.threadname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimActionAirbus",
+                    "ConceptualProperty": "threadname"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "User Action": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dimactionairbus.userid": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimActionAirbus",
+                    "ConceptualProperty": "userId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "User": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dimfactairbus.monthyear": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimFactAirbus",
+                    "ConceptualProperty": "MonthYear"
+                  }
+                },
+                "State": "Generated"
+              },
+              "dimfactairbus.snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimFactAirbus",
+                    "ConceptualProperty": "snapshot_date"
+                  }
+                },
+                "State": "Generated"
+              },
+              "dimfactairbus.userid": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimFactAirbus",
+                    "ConceptualProperty": "userId"
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DirectQuery to AS - Airbus",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "True"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = AnalysisServices.Database(\"powerbi://api.powerbi.com/v1.0/myorg/MA_GOC_DEV\", \"Airbus\"),",
+          "    Cubes = Table.Combine(Source[Data]),",
+          "    Cube = Cubes{[Id=\"Model\", Kind=\"Cube\"]}[Data]",
+          "in",
+          "    Cube"
+        ],
+        "kind": "m",
+        "lineageTag": "e8e6de83-878b-44d2-894e-6abf9a2cc727"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "7d148175-3a5b-43a1-84ad-6257ddc96ad0",
+        "fromColumn": "userId",
+        "fromTable": "dimFactAirbus",
+        "toColumn": "userID",
+        "toTable": "users_airbus"
+      },
+      {
+        "name": "db369bfb-a350-4a84-b2f7-7598ac6732c9",
+        "fromColumn": "session_userExperienceScore",
+        "fromTable": "dimFactAirbus",
+        "toColumn": "ExperienceScore",
+        "toTable": "cardinaluserexperience"
+      },
+      {
+        "name": "9c30b995-8110-4f68-b6fd-34aad66df3bf",
+        "fromColumn": "application",
+        "fromTable": "dimFactAirbus",
+        "toColumn": "Application",
+        "toTable": "applicationsdim"
+      },
+      {
+        "name": "135f9471-0c17-410c-8a66-9d9870626901",
+        "fromColumn": "snapshot_date",
+        "fromTable": "dimFactAirbus",
+        "toColumn": "Date",
+        "toTable": "calendar"
+      },
+      {
+        "name": "638d3d61-a4d6-4348-b042-d815ac6c128e",
+        "fromColumn": "userId",
+        "fromTable": "dimActionAirbus",
+        "toColumn": "userID",
+        "toTable": "users_airbus"
+      },
+      {
+        "name": "3f0ce362-2180-4955-8dd2-c37c86b98136",
+        "fromColumn": "actionExperience",
+        "fromTable": "dimActionAirbus",
+        "toColumn": "ExperienceScore",
+        "toTable": "cardinaluserexperience"
+      },
+      {
+        "name": "c278c923-50a6-4875-b75d-031ab8a6cfc4",
+        "fromColumn": "application",
+        "fromTable": "dimActionAirbus",
+        "toColumn": "Application",
+        "toTable": "applicationsdim"
+      },
+      {
+        "name": "7f394206-1564-4b96-97fa-b79b9afb7f86",
+        "fromColumn": "snapshot_date",
+        "fromTable": "dimActionAirbus",
+        "toColumn": "Date",
+        "toTable": "calendar"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "dimFactAirbus",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Source.Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "549a4778-27c7-4b62-ab24-f036408f15a6",
+            "sourceColumn": "Source.Name",
+            "sourceLineageTag": "a12232bf-c075-4696-9e74-76356575da63",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "elastic_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "3651b6c3-2c4b-4826-9ab6-e718d9ce3943",
+            "sourceColumn": "elastic_id",
+            "sourceLineageTag": "21028900-26d5-4c21-accf-bf31376906e4",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userSessionId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "63373b61-0775-43c6-bdf5-9ed509982198",
+            "sourceColumn": "userSessionId",
+            "sourceLineageTag": "ec5d832a-922b-44df-b575-83601a49a877",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "2591d936-e7c3-424d-b157-f7ab99c052b4",
+            "sourceColumn": "userId",
+            "sourceLineageTag": "075e3579-4605-428e-85a2-dcfc71bb761e",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "c8c1d5b0-4cde-494e-ba89-8befe2f2fc44",
+            "sourceColumn": "country",
+            "sourceLineageTag": "7913651b-53ec-4aed-9892-3895770bbf40",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userActionCount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "06c81dc0-e762-4690-8b02-4c6e1a367c67",
+            "sourceColumn": "userActionCount",
+            "sourceLineageTag": "27dd9910-21fe-4d4d-9941-53ddde7328ca",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "numberOfRageClicks",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0a037477-c0ab-449d-9f27-71cf3b188db9",
+            "sourceColumn": "numberOfRageClicks",
+            "sourceLineageTag": "0fc70b8a-e050-4539-a73a-370e3b99d724",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "session_duration",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "02d6d4b6-e090-41f5-9105-793b70a442c2",
+            "sourceColumn": "session_duration",
+            "sourceLineageTag": "86aaf2f2-69d7-4fa3-af7a-68c26e754d91",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "accountname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "e8df6bd4-9daa-495f-b7b9-aac2ee77fd75",
+            "sourceColumn": "accountname",
+            "sourceLineageTag": "689d8739-ca03-4c05-8ab2-e665f51d07f0",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "stringProperties",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "b1658ad5-1dec-4cab-b3ca-ec947cd530cb",
+            "sourceColumn": "stringProperties",
+            "sourceLineageTag": "05051f34-6a7e-4944-8d05-660a4f3f19d8",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "browserFamily",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "6948bd45-f89e-47ce-b639-f027efdab907",
+            "sourceColumn": "browserFamily",
+            "sourceLineageTag": "9a30424f-db6a-40a3-a4a7-6acb0c55d576",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "session_userExperienceScore",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "0e255f2c-c5e8-488f-8407-c47705bc8f17",
+            "sourceColumn": "session_userExperienceScore",
+            "sourceLineageTag": "db3b57e4-f5ad-4eb9-9dba-83db8f86c984",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "browserMajorVersion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "5b948903-3685-4ce3-bfbd-ed454b841661",
+            "sourceColumn": "browserMajorVersion",
+            "sourceLineageTag": "9207516a-54ed-461a-bad2-de00439acb71",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "application",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "1d046a24-2324-4e86-bf72-426014f11068",
+            "sourceColumn": "application",
+            "sourceLineageTag": "32d72852-efe2-478d-ab87-9bde5dfeff05",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "dateTime",
+            "formatString": "mm/dd/yyyy",
+            "lineageTag": "a9f27528-bf85-4059-a032-81599c082418",
+            "sourceColumn": "snapshot_date",
+            "sourceLineageTag": "0aad0bea-e686-46d3-bb11-06802179e583",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "Name"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(dimFactAirbus[snapshot_date], \"MMMM\") & \" \" & FORMAT(dimFactAirbus[snapshot_date], \"YYYY\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "96e613d8-42de-4f35-ae4e-23dcf3c9293b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "7f18af90-2fb0-4f1d-87e2-fdd561326f20",
+        "partitions": [
+          {
+            "name": "dimFactAirbus",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "dimFactAirbus",
+              "expressionSource": "DirectQuery to AS - Airbus",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "fc4bd340-4889-4e5c-8de4-8d6a6ecdd151"
+      },
+      {
+        "name": "dimActionAirbus",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Source.Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "9fdfc7de-5e98-4b59-8913-adb55f8f0bf9",
+            "sourceColumn": "Source.Name",
+            "sourceLineageTag": "54127cee-e913-42dc-b476-2ba03c8afe65",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "elastic_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "217daadb-dcc8-4a38-81fa-bea8ef683ab1",
+            "sourceColumn": "elastic_id",
+            "sourceLineageTag": "bd943c7d-0090-4c0f-85a0-87ba6909b9bd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userSessionId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "4b4243bf-efd1-4fb5-8478-5e3e3d7a8b12",
+            "sourceColumn": "userSessionId",
+            "sourceLineageTag": "a771c98a-1e28-464f-88df-31c21684a863",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "startTime_utc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "dateTime",
+            "formatString": "General Number",
+            "lineageTag": "8441d629-e38e-4887-8971-bfee922f46e4",
+            "sourceColumn": "startTime_utc",
+            "sourceLineageTag": "4b03090a-6d19-41d0-ac07-c3eb1d11ac9c",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hour_action_utc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "849b3b10-ae2a-43e0-b527-c9b0ddfe70cb",
+            "sourceColumn": "hour_action_utc",
+            "sourceLineageTag": "0e923ef7-e5d6-446c-9e7b-1da417b70037",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "actionExperience",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "d122b74f-766f-433d-bf98-33a2229a9960",
+            "sourceColumn": "actionExperience",
+            "sourceLineageTag": "121732cc-2d6c-41aa-9e3e-f0e15218e06d",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "application",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "253d9e73-373c-403c-a736-e8e20d072071",
+            "sourceColumn": "application",
+            "sourceLineageTag": "515543ab-ecca-4fda-9f53-99a7b5aa583c",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "duration",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1cc2e4b2-eb29-4c89-a012-f6c37c40f925",
+            "sourceColumn": "duration",
+            "sourceLineageTag": "9ab66716-8771-457b-b7b5-06fc412a3b0d",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "0888fde1-af12-47d4-8be4-8da8aac51868",
+            "sourceColumn": "name",
+            "sourceLineageTag": "6b2e542c-fb77-473b-b66a-9dfcce66143a",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "targetUrl",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "2b264cf4-07d0-4a79-a6ed-952e49fd3d6f",
+            "sourceColumn": "targetUrl",
+            "sourceLineageTag": "e35ea2af-dc04-4f00-a6ba-efe91b5d11d5",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "82b9d03a-df37-42c6-89b2-accdb2fffe7f",
+            "sourceColumn": "type",
+            "sourceLineageTag": "7d42c0f8-dba8-4d7a-a4b5-35dc964ba9c1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "threadname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "3e09de05-b099-45c5-8912-0797c0447fbb",
+            "sourceColumn": "threadname",
+            "sourceLineageTag": "1ad89042-6e81-43b8-b0a1-97593e4cfd31",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "reportbooksection",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "c81a674a-63bc-4fce-967c-87444809e258",
+            "sourceColumn": "reportbooksection",
+            "sourceLineageTag": "12441aca-9ede-4e9d-b156-c5a3bb3c3432",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "searchby",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "e7081b55-c7af-4a70-93ea-457e2b088d12",
+            "sourceColumn": "searchby",
+            "sourceLineageTag": "9fd07c07-92cf-4751-a70b-f44f157c487a",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "accountid",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "45f65714-70d9-4474-9bff-a812eaee2a20",
+            "sourceColumn": "accountid",
+            "sourceLineageTag": "e3378725-f176-4615-b2cf-fb71d4d98d69",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "accountname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "2c5ccb82-df3f-46aa-9ffd-68debe4601d2",
+            "sourceColumn": "accountname",
+            "sourceLineageTag": "dd828692-54ab-4766-8589-5a3d5aee81bb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "7ccc41ab-2271-4ea2-86fa-71c98546a8f0",
+            "sourceColumn": "userId",
+            "sourceLineageTag": "e1324351-cac9-4f82-ad80-24e254a73448",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "eb6d9246-0a2a-4410-8f1b-5b72021b21ec",
+            "sourceColumn": "country",
+            "sourceLineageTag": "ed1e626a-59a7-4626-9846-2415e8cd06cd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "801fe8b6-00ab-42f9-82b7-6d0bf5e71095",
+            "sourceColumn": "snapshot_date",
+            "sourceLineageTag": "cce697ab-3e02-4668-938d-840ea0b6f42e",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "Name"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(dimActionAirbus[snapshot_date], \"MMMM\") & \" \" & FORMAT(dimActionAirbus[snapshot_date], \"YYYY\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "5a6a82a7-7ad9-4d1e-8dd8-52cda90f1aed",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "d05fd6ac-654b-4a06-b8bd-d03637aa2dd3",
+        "partitions": [
+          {
+            "name": "dimActionAirbus",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "dimActionAirbus",
+              "expressionSource": "DirectQuery to AS - Airbus",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "5028e729-c4bf-4cd1-bf2f-dfc458fc43e9"
+      },
+      {
+        "name": "cardinaluserexperience",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ExperienceScore",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "2ded4633-2854-45ca-b254-ef96196ee345",
+            "sourceColumn": "ExperienceScore",
+            "sourceLineageTag": "91fd536c-b5dd-438b-845c-deae7886535f",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e49d1b87-4388-42f7-bf22-c9c27eb33675",
+            "sourceColumn": "Order",
+            "sourceLineageTag": "80d368fe-41b8-4ce5-a591-d8d52a28492f",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ActionExperienceScore",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "9a30f81c-1180-4b4b-83bf-57cf252e5b14",
+            "sourceColumn": "ActionExperienceScore",
+            "sourceLineageTag": "8e1e5d24-5688-41fa-93e9-b9f733bc1edd",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "93ff3e19-4499-4ca6-82dd-ba3db5038073",
+        "partitions": [
+          {
+            "name": "cardinaluserexperience",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "cardinaluserexperience",
+              "expressionSource": "DirectQuery to AS - Airbus",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "850e0513-79db-4fa7-a959-d498a19f3662"
+      },
+      {
+        "name": "applicationsdim",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Application",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "76cd04be-50e1-48c5-976b-7224fab0d4e8",
+            "sourceColumn": "Application",
+            "sourceLineageTag": "5b7c2deb-df89-414f-86bd-516ff1908fa3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "abe92901-0c3f-44ac-baf5-507f719ceef0",
+            "sourceColumn": "Order",
+            "sourceLineageTag": "a0614a37-517a-417f-8be9-257aab846b56",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "lineageTag": "30ae6b1e-c522-4ac1-9392-f403c44ccb57",
+            "sourceColumn": "Type",
+            "sourceLineageTag": "ad8225bb-6b2f-4bc6-b2d4-0c48748377c8",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5faf792b-40df-47e1-8cc2-cc90e6459ab9",
+        "partitions": [
+          {
+            "name": "applicationsdim",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "applicationsdim",
+              "expressionSource": "DirectQuery to AS - Airbus",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "f3802bd0-1a74-4995-a205-e30f5b556ffd"
+      },
+      {
+        "name": "users_airbus",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "userID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "594b1a73-d714-4f73-b34a-8a20f88b732d",
+            "sourceColumn": "userID",
+            "sourceLineageTag": "e0478921-47b8-49d8-adac-83b0b7347c29",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "index",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b2d4324c-15b9-4d8d-a247-fc9562109879",
+            "sourceColumn": "index",
+            "sourceLineageTag": "95833a63-168e-4e7e-8d86-5a89b3a233eb",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "1bf5fce4-5490-44f3-90ef-8af723fbc073",
+        "partitions": [
+          {
+            "name": "users_airbus",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "users_airbus",
+              "expressionSource": "DirectQuery to AS - Airbus",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "184a4d2c-6fe4-41c5-8635-d9c659d29a8d"
+      },
+      {
+        "name": "calendar",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isNullable": false,
+            "lineageTag": "8d758296-85bd-42b7-bfb6-8f68dcb3f8c0",
+            "sourceColumn": "Date",
+            "sourceLineageTag": "0c9b9085-a02c-4a5a-a84a-2e639be21326",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Uncategorized",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3941ceba-4706-40b3-a93b-ffbdb2f3658a",
+            "sourceColumn": "Month",
+            "sourceLineageTag": "d61486e7-ab2d-4b2a-a756-a81fbc384cf6",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MonthYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT('calendar'[Date], \"MMMM\") & \" \" & FORMAT('calendar'[Date], \"YYYY\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "275727da-cd20-4675-a3c9-bdb8e9f212e7",
+            "sortByColumn": "Month",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "9a464a3d-8f5b-42dd-b572-b80687e48547",
+        "partitions": [
+          {
+            "name": "calendar",
+            "mode": "directQuery",
+            "source": {
+              "entityName": "calendar",
+              "expressionSource": "DirectQuery to AS - Airbus",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "c2ce15df-4e1b-49ba-a41a-292a4f51f72a"
+      }
+    ]
+  }
+}

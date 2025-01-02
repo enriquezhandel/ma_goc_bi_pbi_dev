@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "aqmLogsAnalyst"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c04a6d0e-bc11-495e-836a-c6e1f117f2d4"
+  }
+}

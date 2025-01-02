@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "ComCatV2AlertAnalysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "939a78ae-ec8c-4413-8e5c-b8d54bce0fbe"
+  }
+}

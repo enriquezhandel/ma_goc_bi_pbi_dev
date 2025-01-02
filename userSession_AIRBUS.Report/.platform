@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "userSession_AIRBUS"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "872c23ba-fb96-4674-9500-9cc1d6086904"
+  }
+}

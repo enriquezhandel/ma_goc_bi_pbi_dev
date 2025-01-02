@@ -1,0 +1,1091 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.135.7455.3 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"WebModelingEdit\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          },
+          {
+            "name": "PBI_RemovedChildren",
+            "value": "[{\"remoteItemId\":{\"analysisServicesObject\":{\"sourceName\":null,\"sourceLineageTag\":\"[dbo].[calendarDim]\"}},\"objectType\":\"Table\"}]"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"XCUGCEHOWFEUFO4ETIWNE6JPVY-UFMN3LWDH4ME3NENVDIJKMSUX4.datawarehouse.fabric.microsoft.com\", \"b9e5b58f-fadd-4eed-a044-717d9af5b35f\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "07bd7e3c-51be-488d-8b56-9e6c323ede9b"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "e998b4fb-34f8-b067-b0a2-67911ea351e2",
+        "fromColumn": "session_userExperienceScore",
+        "fromTable": "userSessionView",
+        "toColumn": "ExperienceScore",
+        "toTable": "cardinaluserexperience"
+      },
+      {
+        "name": "13e0f267-de93-6b7c-d56c-6753a4cba2c4",
+        "fromColumn": "apdexCategory",
+        "fromTable": "userActionsView",
+        "toColumn": "ExperienceScore",
+        "toTable": "cardinaluserexperience"
+      },
+      {
+        "name": "55573d48-3421-9de3-bff4-f239ba9d529b",
+        "fromColumn": "userId",
+        "fromTable": "userActionsView",
+        "toColumn": "userId",
+        "toTable": "userView"
+      },
+      {
+        "name": "d9746de5-8dc3-07c0-64c3-6c196cef93e6",
+        "fromColumn": "userId",
+        "fromTable": "userSessionView",
+        "toColumn": "userId",
+        "toTable": "userView"
+      },
+      {
+        "name": "eae52ebf-428a-1b54-f722-3d5be6bf57f2",
+        "fromColumn": "accountname",
+        "fromTable": "userSessionView",
+        "toColumn": "accountname",
+        "toTable": "accountView"
+      },
+      {
+        "name": "8348f429-9bbc-926c-5666-91c15795507f",
+        "fromColumn": "accountname",
+        "fromTable": "userActionsView",
+        "toColumn": "accountname",
+        "toTable": "accountView"
+      },
+      {
+        "name": "fe23bd77-4c7a-3f26-7eb8-ba6f5268a0e5",
+        "fromColumn": "country",
+        "fromTable": "userSessionView",
+        "toColumn": "country",
+        "toTable": "countryView"
+      },
+      {
+        "name": "8b736d75-c7c1-7d24-fe5f-7035957caf23",
+        "fromColumn": "country",
+        "fromTable": "userActionsView",
+        "toColumn": "country",
+        "toTable": "countryView"
+      },
+      {
+        "name": "8d0d538f-bee5-78f2-c6ae-11a5f3ee0da2",
+        "fromColumn": "application",
+        "fromTable": "userSessionView",
+        "toColumn": "Application",
+        "toTable": "applicationsdim"
+      },
+      {
+        "name": "f336ecf0-d98a-a672-793d-472082f988d0",
+        "fromColumn": "application",
+        "fromTable": "userActionsView",
+        "toColumn": "Application",
+        "toTable": "applicationsdim"
+      },
+      {
+        "name": "e8e8f360-7327-77d5-deb7-99a09b05fda7",
+        "fromColumn": "snapshot_date",
+        "fromTable": "userActionsView",
+        "toColumn": "Date",
+        "toTable": "calendar"
+      },
+      {
+        "name": "5caaf587-61b5-b817-80cb-04b35efb00e5",
+        "fromColumn": "snapshot_date",
+        "fromTable": "userSessionView",
+        "toColumn": "Date",
+        "toTable": "calendar"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "userSessionView",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "elastic_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f8233953-700d-46bb-bba2-8d215aa8f1ad",
+            "sourceColumn": "elastic_id",
+            "sourceLineageTag": "elastic_id",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userSessionId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "09f62619-b97a-4c36-9866-106b5de05e4d",
+            "sourceColumn": "userSessionId",
+            "sourceLineageTag": "userSessionId",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b9ba23ab-1add-495e-9551-6a30fa3fd1b4",
+            "sourceColumn": "userId",
+            "sourceLineageTag": "userId",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cad15f00-ddef-457f-8572-275287a323ff",
+            "sourceColumn": "country",
+            "sourceLineageTag": "country",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userActionCount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "01e6ad33-d0cf-4a7a-8ca2-ed5f48dff263",
+            "sourceColumn": "userActionCount",
+            "sourceLineageTag": "userActionCount",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "numberOfRageClicks",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "81d6d44f-90c5-406d-b29b-1e67db7237a5",
+            "sourceColumn": "numberOfRageClicks",
+            "sourceLineageTag": "numberOfRageClicks",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "session_duration",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3e5df39f-0d78-4e6e-bdf3-0a38b1bcc194",
+            "sourceColumn": "session_duration",
+            "sourceLineageTag": "session_duration",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "accountname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "59084ba9-08ed-46d2-a983-2a93cc0d1f3a",
+            "sourceColumn": "accountname",
+            "sourceLineageTag": "accountname",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "browserFamily",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5c11ca55-43c7-44d1-8772-d21783160fba",
+            "sourceColumn": "browserFamily",
+            "sourceLineageTag": "browserFamily",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "session_userExperienceScore",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "77d4d7a2-1b3a-4611-ab83-de9de10ec4a3",
+            "sourceColumn": "session_userExperienceScore",
+            "sourceLineageTag": "session_userExperienceScore",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "browserMajorVersion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9612fc50-737c-40e1-87ff-17b255479921",
+            "sourceColumn": "browserMajorVersion",
+            "sourceLineageTag": "browserMajorVersion",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "application",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c3ba4abe-0ec7-4f13-bf89-6c72b6570d42",
+            "sourceColumn": "application",
+            "sourceLineageTag": "application",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "988f1c6f-363a-475c-9a5d-1cc7d982dcd6",
+            "sourceColumn": "userType",
+            "sourceLineageTag": "userType",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              },
+              {
+                "property": "FormatString"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "25e0e393-b754-4637-825a-02e7db7b67d3",
+            "sourceColumn": "snapshot_date",
+            "sourceLineageTag": "snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "1d312d2b-dfad-4f3c-b759-51ad9a594b4a",
+        "partitions": [
+          {
+            "name": "userSessionView",
+            "mode": "directLake",
+            "source": {
+              "entityName": "userSessionView",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[userSessionView]"
+      },
+      {
+        "name": "cardinaluserexperience",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ExperienceScore",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ff67549b-b13b-47bd-9970-b62f1886f377",
+            "sortByColumn": "Order",
+            "sourceColumn": "ExperienceScore",
+            "sourceLineageTag": "ExperienceScore",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c7a939cf-6c22-4bc1-91d5-d1a3b85a6483",
+            "sourceColumn": "Order",
+            "sourceLineageTag": "Order",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ActionExperienceScore",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f9538b9a-bcbe-40d5-921e-b61b82b32d7f",
+            "sourceColumn": "ActionExperienceScore",
+            "sourceLineageTag": "ActionExperienceScore",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c3ac2b60-6add-4eb7-b83e-4d6b022ecfb4",
+        "partitions": [
+          {
+            "name": "cardinaluserexperience",
+            "mode": "directLake",
+            "source": {
+              "entityName": "cardinaluserexperience",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[cardinaluserexperience]"
+      },
+      {
+        "name": "applicationsdim",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Application",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7179456c-ff64-4ea7-a0d2-91d5800187b7",
+            "sourceColumn": "Application",
+            "sourceLineageTag": "Application",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3e7cda0b-a24f-43ef-8d0a-bae6321623ac",
+            "sourceColumn": "Order",
+            "sourceLineageTag": "Order",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6c53ca8e-de63-444e-9475-396e27f29883",
+            "sourceColumn": "Type",
+            "sourceLineageTag": "Type",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e5f70526-a10f-4b82-9325-53dc8916965b",
+        "partitions": [
+          {
+            "name": "applicationsdim",
+            "mode": "directLake",
+            "source": {
+              "entityName": "applicationsdim",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[applicationsdim]"
+      },
+      {
+        "name": "accountView",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "accountname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "80e45c0b-43e6-4027-ae34-827668f1819a",
+            "sourceColumn": "accountname",
+            "sourceLineageTag": "accountname",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "fdd2eaf2-24cf-42da-b437-d927a83d63be",
+        "partitions": [
+          {
+            "name": "accountView",
+            "mode": "directLake",
+            "source": {
+              "entityName": "accountView",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[accountView]"
+      },
+      {
+        "name": "userView",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "userId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "00c04f7c-2178-40f4-8253-720720c34447",
+            "sourceColumn": "userId",
+            "sourceLineageTag": "userId",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "2e06af19-2ac9-488a-abe7-5b8536a8a6b0",
+        "partitions": [
+          {
+            "name": "userView",
+            "mode": "directLake",
+            "source": {
+              "entityName": "userView",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[userView]"
+      },
+      {
+        "name": "countryView",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3df78970-7c47-4780-b920-0b6a1919f41f",
+            "sourceColumn": "country",
+            "sourceLineageTag": "country",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d1c0e9ab-073e-4e1e-aaf8-88a74e53f827",
+        "partitions": [
+          {
+            "name": "countryView",
+            "mode": "directLake",
+            "source": {
+              "entityName": "countryView",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[countryView]"
+      },
+      {
+        "name": "userActionsView",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "elastic_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "08ea7777-ae87-4623-a46e-b4ecd809325e",
+            "sourceColumn": "elastic_id",
+            "sourceLineageTag": "elastic_id",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userSessionId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "36f96e37-76cb-49ed-817d-0ff53fb0376a",
+            "sourceColumn": "userSessionId",
+            "sourceLineageTag": "userSessionId",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "startTime_utc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6cfb775a-e86e-44a9-a98f-8484f6c25ad1",
+            "sourceColumn": "startTime_utc",
+            "sourceLineageTag": "startTime_utc",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "startTime_utc_hour",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d793fccc-1735-4db1-b23e-c05f9fafb86f",
+            "sourceColumn": "startTime_utc_hour",
+            "sourceLineageTag": "startTime_utc_hour",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "apdexCategory",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a25243fe-fe3b-4959-8f11-54b4b19063c4",
+            "sourceColumn": "apdexCategory",
+            "sourceLineageTag": "apdexCategory",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "application",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2b8272dc-42a6-414e-a0f6-bbd4180a4b48",
+            "sourceColumn": "application",
+            "sourceLineageTag": "application",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "duration",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5a61ec2a-c819-4e97-ab36-0500e4bcd449",
+            "sourceColumn": "duration",
+            "sourceLineageTag": "duration",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "duration_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "49d1081b-fc9e-4b8e-8fd0-97453eebeeae",
+            "sourceColumn": "duration_seconds",
+            "sourceLineageTag": "duration_seconds",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4a58e74c-5db4-4e47-a1da-1aa96ebdf451",
+            "sourceColumn": "name",
+            "sourceLineageTag": "name",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "targetUrl",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ab5dadaa-6d71-4b6c-a2ff-6729f8aaad8a",
+            "sourceColumn": "targetUrl",
+            "sourceLineageTag": "targetUrl",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f858fdab-bb6e-4292-bfc9-b3800ec9f19c",
+            "sourceColumn": "type",
+            "sourceLineageTag": "type",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "threadname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f212a110-90cc-473d-8261-351ab39c3048",
+            "sourceColumn": "threadname",
+            "sourceLineageTag": "threadname",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "reportbooksection",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b7451ebd-645c-4654-9d2f-f8b49f840fba",
+            "sourceColumn": "reportbooksection",
+            "sourceLineageTag": "reportbooksection",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "searchby",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2956c52b-c1ed-4a40-ba18-7f2c794a498d",
+            "sourceColumn": "searchby",
+            "sourceLineageTag": "searchby",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "accountid",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7b974eda-5f01-4913-a957-f77d8100eac6",
+            "sourceColumn": "accountid",
+            "sourceLineageTag": "accountid",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "accountname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fd8d390a-17de-4542-a798-4e2d85edabd9",
+            "sourceColumn": "accountname",
+            "sourceLineageTag": "accountname",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "23bbe3f5-7735-4ef1-aea4-c116d226a8a3",
+            "sourceColumn": "userId",
+            "sourceLineageTag": "userId",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b2aefc9f-916c-41a0-8231-5f494a3bad89",
+            "sourceColumn": "country",
+            "sourceLineageTag": "country",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "01c8bc73-8441-4c49-8d54-65caba07deab",
+            "sourceColumn": "snapshot_date",
+            "sourceLineageTag": "snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "715c4048-2d9d-491f-81df-f8d962c41239",
+        "partitions": [
+          {
+            "name": "userActionsView",
+            "mode": "directLake",
+            "source": {
+              "entityName": "userActionsView",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[userActionsView]"
+      },
+      {
+        "name": "calendar",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              },
+              {
+                "property": "FormatString"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "1dcd698b-a6f7-4a8c-9958-187793d3178b",
+            "sourceColumn": "Date",
+            "sourceLineageTag": "Date",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7e127499-ca2f-4e8c-832c-2dc77fccccf8",
+            "sourceColumn": "Month",
+            "sourceLineageTag": "Month",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "EOMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              },
+              {
+                "property": "FormatString"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-mmmm",
+            "lineageTag": "96bfa620-4711-4a08-9375-2320d365126b",
+            "sourceColumn": "EOMonth",
+            "sourceLineageTag": "EOMonth",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "196aa701-a537-4bb0-b397-524039fdd507",
+        "partitions": [
+          {
+            "name": "calendar",
+            "mode": "directLake",
+            "source": {
+              "entityName": "calendar",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[calendar]"
+      }
+    ]
+  }
+}

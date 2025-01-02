@@ -1,0 +1,2157 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"curated_user_actions_comcatv2\",\"calendardim\",\"experience_score\",\"raw_comcatv2_moduletracking\",\"structured_comcatv2_alerts\",\"structured_comcatv2_riskassesmentcompanylvl\",\"structured_comcatv2_riskassesmentkpis\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.138.1004.0 (24.11)"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "calendar.eomonth": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "calendar",
+                    "ConceptualProperty": "EOMonth"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "calendardim.date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "calendardim",
+                    "ConceptualProperty": "date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Day": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "cardinaluserexperience.experiencescore": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "cardinaluserexperience",
+                    "ConceptualProperty": "ExperienceScore"
+                  }
+                },
+                "State": "Generated"
+              },
+              "comcatonly.accountname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "comCatOnly",
+                    "ConceptualProperty": "accountname"
+                  }
+                },
+                "State": "Generated"
+              },
+              "comcatonly.snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "comCatOnly",
+                    "ConceptualProperty": "snapshot_date"
+                  }
+                },
+                "State": "Generated"
+              },
+              "comcatonly.threadname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "comCatOnly",
+                    "ConceptualProperty": "threadname"
+                  }
+                },
+                "State": "Generated"
+              },
+              "comcatonly.userid": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "comCatOnly",
+                    "ConceptualProperty": "userId"
+                  }
+                },
+                "State": "Generated"
+              },
+              "comcatv2risksdim.snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "comcatv2risksdim",
+                    "ConceptualProperty": "snapshot_date"
+                  }
+                },
+                "State": "Generated"
+              },
+              "curated_user_actions_comcatv2.accountname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "curated_user_actions_comcatv2",
+                    "ConceptualProperty": "accountname"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Account Name": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "curated_user_actions_comcatv2.end_of_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "curated_user_actions_comcatv2",
+                    "ConceptualProperty": "end_of_month"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "curated_user_actions_comcatv2.snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "curated_user_actions_comcatv2",
+                    "ConceptualProperty": "snapshot_date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Timeframe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "curated_user_actions_comcatv2.userid": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "curated_user_actions_comcatv2",
+                    "ConceptualProperty": "userId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "User": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dimalertscomcatv2.accountname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlertsComCatV2",
+                    "ConceptualProperty": "AccountName"
+                  }
+                },
+                "State": "Generated"
+              },
+              "dimalertscomcatv2.alertname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlertsComCatV2",
+                    "ConceptualProperty": "alertName"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Alert Name": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dimalertscomcatv2.snapshotdate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlertsComCatV2",
+                    "ConceptualProperty": "snapshotdate"
+                  }
+                },
+                "State": "Generated"
+              },
+              "raw_comcatv2_moduletracking.eom_snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "raw_comcatv2_moduletracking",
+                    "ConceptualProperty": "eom_snapshot_date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "raw_comcatv2_moduletracking.snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "raw_comcatv2_moduletracking",
+                    "ConceptualProperty": "snapshot_date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Day": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Timeframe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "structured_comcatv2_riskassesmentcompanylvl.end_of_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "structured_comcatv2_riskassesmentcompanylvl",
+                    "ConceptualProperty": "end_of_month"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "structured_comcatv2_riskassesmentcompanylvl.snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "structured_comcatv2_riskassesmentcompanylvl",
+                    "ConceptualProperty": "snapshot_date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Timeframe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "structured_comcatv2_riskassesmentkpis.end_of_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "structured_comcatv2_riskassesmentkpis",
+                    "ConceptualProperty": "end_of_month"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "structured_comcatv2_riskassesmentkpis.snapshot_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "structured_comcatv2_riskassesmentkpis",
+                    "ConceptualProperty": "snapshot_date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Day": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Timeframe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "d2d082bc-a37a-0056-7a24-402c2a5c0693",
+        "fromColumn": "snapshot_date",
+        "fromTable": "curated_user_actions_comcatv2",
+        "toColumn": "date",
+        "toTable": "calendardim"
+      },
+      {
+        "name": "2b10f039-797e-0d42-2e4c-47d020593825",
+        "fromColumn": "apdexCategory",
+        "fromTable": "curated_user_actions_comcatv2",
+        "toColumn": "ExperienceScore",
+        "toTable": "experience_score"
+      },
+      {
+        "name": "8dd5c290-fb60-ddf8-d3d1-e94482696ae8",
+        "fromColumn": "snapshot_date",
+        "fromTable": "raw_comcatv2_moduletracking",
+        "toColumn": "date",
+        "toTable": "calendardim"
+      },
+      {
+        "name": "ab9dddb3-f8fd-daba-a0a7-c78bcbc65007",
+        "fromColumn": "snapshot_date",
+        "fromTable": "structured_comcatv2_alerts",
+        "toColumn": "date",
+        "toTable": "calendardim"
+      },
+      {
+        "name": "e9419b9a-aba0-d205-288c-b14010e0fa13",
+        "fromColumn": "snapshot_date",
+        "fromTable": "structured_comcatv2_riskassesmentcompanylvl",
+        "toColumn": "date",
+        "toTable": "calendardim"
+      },
+      {
+        "name": "5651c63e-f23b-8d13-c69f-060f027a7875",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "snapshot_date",
+        "fromTable": "structured_comcatv2_riskassesmentkpis",
+        "toColumn": "date",
+        "toTable": "calendardim"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "curated_user_actions_comcatv2",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "elastic_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "51241275-2ef4-4a50-9621-244cca5ff97f",
+            "sourceColumn": "elastic_id",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userSessionId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "af66441d-b19b-4e65-aa9f-6888beb1a9af",
+            "sourceColumn": "userSessionId",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "startTime_utc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "df0560a3-cc0b-491d-9a24-6710df072552",
+            "sourceColumn": "startTime_utc",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "startTime_utc_hour",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "626ce278-d2af-49c1-9655-17f6bd739be8",
+            "sourceColumn": "startTime_utc_hour",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "apdexCategory",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "941a91aa-af88-46bb-8bcc-1649a42a0f24",
+            "sourceColumn": "apdexCategory",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "application",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eafcd597-15ac-4702-8013-a27b09167688",
+            "sourceColumn": "application",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "duration",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ac116493-edfe-4522-9823-7004a5cd3c7a",
+            "sourceColumn": "duration",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "duration_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00",
+            "lineageTag": "9e475523-b6f3-4358-9414-104d38901272",
+            "sourceColumn": "duration_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9362d648-9b7b-4c20-9348-da224664128c",
+            "sourceColumn": "name",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "targetUrl",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c971c4ef-9fe4-4822-b487-3aef0e0aca91",
+            "sourceColumn": "targetUrl",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3fdc8650-3c5e-4e22-a164-cc8a4ba79ad2",
+            "sourceColumn": "type",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "threadname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0eef39d8-dc8b-4e32-a8db-7d9635c11c42",
+            "sourceColumn": "threadname",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "reportbooksection",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f5bd725f-455e-4ac9-8e5c-04fc73e81a05",
+            "sourceColumn": "reportbooksection",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "searchby",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e77fa17d-da68-4e7b-9625-4c536f7522a1",
+            "sourceColumn": "searchby",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "accountname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "73bf5e5a-5297-426d-b907-644b31646c4a",
+            "sourceColumn": "accountname",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "userId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "752fadd0-81b3-44e8-aa03-6835870a4725",
+            "sourceColumn": "userId",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "796a5691-4d9a-406f-aaed-8545bd9b36d3",
+            "sourceColumn": "country",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "dc889e2e-a213-42da-8119-5f6234a1d79c",
+            "sourceColumn": "snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "end_of_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-mmmm",
+            "lineageTag": "5580f2d6-8dfc-4892-8550-508c124cfb6a",
+            "sourceColumn": "end_of_month",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "efe346e2-3932-4949-bc43-342bb6c47e27",
+        "partitions": [
+          {
+            "name": "curated_user_actions_comcatv2",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DatabricksMultiCloud.Catalogs(\"dbc-25db401b-39a2.cloud.databricks.com\", \"/sql/1.0/warehouses/2d81cde05e292363\", [Catalog = \"\", Database = \"\"]),",
+                "    ds_goc_bronze_dev_Database = Source{[Name=\"ds_goc_bronze_dev\",Kind=\"Database\"]}[Data],",
+                "    ds_goc_gold_dev_Schema = ds_goc_bronze_dev_Database{[Name=\"ds_goc_gold_dev\",Kind=\"Schema\"]}[Data],",
+                "    curated_user_actions_comcatv2_View = ds_goc_gold_dev_Schema{[Name=\"curated_user_actions_comcatv2\",Kind=\"View\"]}[Data]",
+                "in",
+                "    curated_user_actions_comcatv2_View"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "calendardim",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "m/d/yyyy",
+            "lineageTag": "839e7947-40bb-4e3d-94ba-0d323a5c0840",
+            "sourceColumn": "date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "88b0857a-75e9-4f9d-9da6-212327734a1e",
+            "sourceColumn": "year",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "480c5e6a-957a-4d64-8abb-1691ffccfc65",
+            "sourceColumn": "month",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "950e46a7-ce57-4e7e-8e36-ee9058b7d71e",
+            "sourceColumn": "day",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "day_of_week",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "23a769ed-ed34-4267-803b-c2f60d67f267",
+            "sourceColumn": "day_of_week",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "week_of_year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8fd2260f-e2b9-4368-a8d7-fe6fd0b8a3b6",
+            "sourceColumn": "week_of_year",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a74a4d1a-22a5-41cf-b54c-038770c18b9c",
+            "sourceColumn": "quarter",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "2230c121-0648-4259-97a9-ca6349b4bba2",
+        "partitions": [
+          {
+            "name": "calendardim",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DatabricksMultiCloud.Catalogs(\"dbc-25db401b-39a2.cloud.databricks.com\", \"/sql/1.0/warehouses/2d81cde05e292363\", [Catalog = \"\", Database = \"\"]),",
+                "    ds_goc_bronze_dev_Database = Source{[Name=\"ds_goc_bronze_dev\",Kind=\"Database\"]}[Data],",
+                "    ds_goc_dim_dev_Schema = ds_goc_bronze_dev_Database{[Name=\"ds_goc_dim_dev\",Kind=\"Schema\"]}[Data],",
+                "    calendardim_Table = ds_goc_dim_dev_Schema{[Name=\"calendardim\",Kind=\"Table\"]}[Data]",
+                "in",
+                "    calendardim_Table"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "experience_score",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ExperienceScore",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "58c6680b-84ce-4b1e-a661-c4f0daacf3b9",
+            "sortByColumn": "Order",
+            "sourceColumn": "ExperienceScore",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a2bada22-fc4e-400a-8a9e-0182a25e3d72",
+            "sourceColumn": "Order",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "0ca40c1f-2ad2-45a0-9109-9055c02daad6",
+        "partitions": [
+          {
+            "name": "experience_score",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DatabricksMultiCloud.Catalogs(\"dbc-25db401b-39a2.cloud.databricks.com\", \"/sql/1.0/warehouses/2d81cde05e292363\", [Catalog = \"\", Database = \"\"]),",
+                "    ds_goc_bronze_dev_Database = Source{[Name=\"ds_goc_bronze_dev\",Kind=\"Database\"]}[Data],",
+                "    ds_goc_dim_dev_Schema = ds_goc_bronze_dev_Database{[Name=\"ds_goc_dim_dev\",Kind=\"Schema\"]}[Data],",
+                "    experience_score_Table = ds_goc_dim_dev_Schema{[Name=\"experience_score\",Kind=\"Table\"]}[Data]",
+                "in",
+                "    experience_score_Table"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "raw_comcatv2_moduletracking",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "TrackId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6a0117e7-e062-4f13-94b3-ccaa3f0afcb5",
+            "sourceColumn": "TrackId",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CreationDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "e48bb31e-9fa9-4288-a9d6-39dd7d1cf2a4",
+            "sourceColumn": "CreationDate",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StartDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "34a53025-67e0-4212-8a9a-e07b423126eb",
+            "sourceColumn": "StartDate",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EndDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "b23f330d-b895-4af7-abb7-e2cdb5229d09",
+            "sourceColumn": "EndDate",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UserId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dbfef737-ea91-41b1-8f45-a6cd78f7e94a",
+            "sourceColumn": "UserId",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "ModuleId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ddd0651a-756f-478f-8287-15cdad1be899",
+            "sourceColumn": "ModuleId",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8a8e60e2-a010-47d9-b41e-1640d16f0bdc",
+            "sourceColumn": "ProductId",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UserName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "027cffec-7e48-428c-af46-70bd8e8e06b5",
+            "sourceColumn": "UserName",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UserClientName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "303f7e9e-5d1c-44f9-9806-c75cc97a7469",
+            "sourceColumn": "UserClientName",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WaitTime",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6c130731-3cd2-464e-a29c-b62e7e94fca3",
+            "sourceColumn": "WaitTime",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ExecutionTime",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bd35ff4c-ea59-4e65-b346-92a0d36996b5",
+            "sourceColumn": "ExecutionTime",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "64b46625-dd25-41ee-b0c5-42ea3e1848e6",
+            "sourceColumn": "snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eom_snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-mmmm",
+            "isNullable": false,
+            "lineageTag": "c5bf757a-094e-4c63-902a-6cccde001948",
+            "sourceColumn": "eom_snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Duration",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "349497fc-90c8-4ed6-a9c7-7cf688fe3283",
+            "sourceColumn": "Duration",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "528c095b-bf63-46a9-82f7-6b9c910ebf02",
+        "partitions": [
+          {
+            "name": "raw_comcatv2_moduletracking",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DatabricksMultiCloud.Catalogs(\"dbc-25db401b-39a2.cloud.databricks.com\", \"/sql/1.0/warehouses/2d81cde05e292363\", [Catalog = \"\", Database = \"\"]),",
+                "    ds_goc_bronze_dev_Database = Source{[Name=\"ds_goc_bronze_dev\",Kind=\"Database\"]}[Data],",
+                "    ds_goc_bronze_dev_Schema = ds_goc_bronze_dev_Database{[Name=\"ds_goc_bronze_dev\",Kind=\"Schema\"]}[Data],",
+                "    raw_comcatv2_moduletracking_View = ds_goc_bronze_dev_Schema{[Name=\"raw_comcatv2_moduletracking\",Kind=\"View\"]}[Data],",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(raw_comcatv2_moduletracking_View, \"EndDate\", \"EndDate - Copy\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Duplicated Column\",{{\"EndDate - Copy\", \"snapshot_date\"}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"snapshot_date\", type date}}),",
+                "    #\"Duplicated Column1\" = Table.DuplicateColumn(#\"Changed Type\", \"snapshot_date\", \"snapshot_date - Copy\"),",
+                "    #\"Calculated End of Month\" = Table.TransformColumns(#\"Duplicated Column1\",{{\"snapshot_date - Copy\", Date.EndOfMonth, type date}}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Calculated End of Month\",{{\"snapshot_date - Copy\", \"eom_snapshot_date\"}}),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Renamed Columns1\", \"Duration\", each [WaitTime]+[ExecutionTime]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Added Custom\",{{\"Duration\", Int64.Type}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Changed Type1\",{\"TrackId\", \"CreationDate\", \"StartDate\", \"EndDate\", \"UserId\", \"ModuleId\", \"ProductId\", \"UserName\", \"UserClientName\", \"WaitTime\", \"ExecutionTime\", \"Duration\", \"snapshot_date\", \"eom_snapshot_date\"})",
+                "in",
+                "    #\"Reordered Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "structured_comcatv2_alerts",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SharingId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e0d1a28c-cd27-400f-a32c-08a9ae0fdf84",
+            "sourceColumn": "SharingId",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "AccountName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "74f34c43-c34b-45cd-ab6d-d1024d45d8ce",
+            "sourceColumn": "AccountName",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AlertCriteria",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ac7370ce-1c22-4de3-85df-aabbf747c92e",
+            "sourceColumn": "AlertCriteria",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "alertName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b4053b8-33e9-4a06-88a2-b678cca8d0f9",
+            "sourceColumn": "alertName",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "81a912b1-fc9f-4ca3-9bc1-6bcdfd8c567c",
+            "sourceColumn": "Count",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AlertDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "5f793da9-6ffd-4093-abd8-be6d16a37c8a",
+            "sourceColumn": "AlertDate",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hourAlert",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "791aaecb-5e37-4c08-bbd3-ffe69b4a238e",
+            "sourceColumn": "hourAlert",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "e868aa2d-df2d-4c99-bd10-10949c2b7528",
+            "sourceColumn": "snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eom_snapshotdate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-mmmm",
+            "lineageTag": "bdf1400e-074d-450b-91de-3d4eb2ca67b9",
+            "sourceColumn": "eom_snapshotdate",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "07d13e67-6a87-43ab-9f23-d23ba73a4e7e",
+        "partitions": [
+          {
+            "name": "structured_comcatv2_alerts",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DatabricksMultiCloud.Catalogs(\"dbc-25db401b-39a2.cloud.databricks.com\", \"/sql/1.0/warehouses/2d81cde05e292363\", [Catalog = \"\", Database = \"\"]),",
+                "    ds_goc_bronze_dev_Database = Source{[Name=\"ds_goc_bronze_dev\",Kind=\"Database\"]}[Data],",
+                "    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name=\"ds_goc_silver_dev\",Kind=\"Schema\"]}[Data],",
+                "    structured_comcatv2_alerts_View = ds_goc_silver_dev_Schema{[Name=\"structured_comcatv2_alerts\",Kind=\"View\"]}[Data],",
+                "    #\"Renamed Columns\" = Table.RenameColumns(structured_comcatv2_alerts_View,{{\"snapshotdate\", \"snapshot_date\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "structured_comcatv2_riskassesmentcompanylvl",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SharingId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ff3280e4-1d7b-40b5-967b-e8cdb3e34f09",
+            "sourceColumn": "SharingId",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "AccountName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "79243956-4c92-4f05-9e2f-d05accd0a04e",
+            "sourceColumn": "AccountName",
+            "sourceProviderType": "nvarchar(65535)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "04129581-fa76-4f75-8750-34b10becc4f6",
+            "sourceColumn": "snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eom_snapshotdate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "c76dbf9b-1299-4540-aacc-df08a9608eb6",
+            "sourceColumn": "eom_snapshotdate",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "987f17cb-7f4f-4545-8f80-b6e685c52118",
+            "sourceColumn": "ProductId",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "num_tasks",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1f6132bd-1298-4359-82ca-31ec8fee8bc6",
+            "sourceColumn": "num_tasks",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00",
+            "lineageTag": "aa313f70-ff05-4aac-86ad-f188ee78f04d",
+            "sourceColumn": "average_execution_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00",
+            "lineageTag": "3061439d-19b6-4cb6-9307-221aae39e298",
+            "sourceColumn": "average_waiting_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "median_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d38b450c-a40b-4aff-afe3-6a0a573a91f8",
+            "sourceColumn": "median_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "median_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f9dc65ef-4aa0-4e7d-86e3-0c5566f1fe35",
+            "sourceColumn": "median_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p90_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c9a610fe-072a-437d-b1ef-a40895635c4f",
+            "sourceColumn": "p90_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p90_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4765bb24-a127-474c-801f-68cd8bef8648",
+            "sourceColumn": "p90_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p95_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5fafea54-1ddf-4f23-b06d-149ba19f59ba",
+            "sourceColumn": "p95_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p95_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "21ccb180-6ccb-43cf-a7bc-b8c46440c729",
+            "sourceColumn": "p95_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "total_average_duration_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00",
+            "lineageTag": "d851d36f-eae0-4142-84a1-1fc79d8a7cae",
+            "sourceColumn": "total_average_duration_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "total_median_duration_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3f1b8949-8e51-41fb-bcf5-d6b1bef62600",
+            "sourceColumn": "total_median_duration_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "end_of_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-mmmm",
+            "lineageTag": "875f844e-93b2-4043-82b0-dd725e6cf585",
+            "sourceColumn": "end_of_month",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "9c6c1199-b59a-4f77-acb6-3ca91d7cfe29",
+        "partitions": [
+          {
+            "name": "structured_comcatv2_riskassesmentcompanylvl",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DatabricksMultiCloud.Catalogs(\"dbc-25db401b-39a2.cloud.databricks.com\", \"/sql/1.0/warehouses/2d81cde05e292363\", [Catalog = \"\", Database = \"\"]),",
+                "    ds_goc_bronze_dev_Database = Source{[Name=\"ds_goc_bronze_dev\",Kind=\"Database\"]}[Data],",
+                "    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name=\"ds_goc_silver_dev\",Kind=\"Schema\"]}[Data],",
+                "    structured_comcatv2_riskassesmentcompanylvl_View = ds_goc_silver_dev_Schema{[Name=\"structured_comcatv2_riskassesmentcompanylvl\",Kind=\"View\"]}[Data]",
+                "in",
+                "    structured_comcatv2_riskassesmentcompanylvl_View"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "structured_comcatv2_riskassesmentkpis",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "avg_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "80874c02-3252-4583-823a-2e7d3e40bb19",
+            "sourceColumn": "avg_waiting_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "avg_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "bce3b637-9761-4a6e-a0c5-051659dcaead",
+            "sourceColumn": "avg_execution_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "stddev_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c04a3f99-1125-4fad-875c-876a28d22163",
+            "sourceColumn": "stddev_waiting_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "stddev_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "9bc051e2-ef8b-4d8e-b067-c12ba9e0e4fa",
+            "sourceColumn": "stddev_execution_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "weighted_avg_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "81d3add6-7fd1-4f60-911c-78ab8a242216",
+            "sourceColumn": "weighted_avg_waiting_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "weighted_avg_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3a6967fc-dff6-4958-91f9-f39b327de997",
+            "sourceColumn": "weighted_avg_execution_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "median_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "536cda4b-8cf8-4159-832c-3f79a63a1934",
+            "sourceColumn": "median_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "median_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8e9a8d70-1a62-448e-8564-b9f5ba967010",
+            "sourceColumn": "median_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p90_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d9c1e0e7-dabb-4505-af4e-9768af8f6e04",
+            "sourceColumn": "p90_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p95_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c24a8642-7f9a-425d-b330-de1f9565e4bb",
+            "sourceColumn": "p95_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p90_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dbb0b9c2-0dbb-4dcb-80ef-c125437db879",
+            "sourceColumn": "p90_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "p95_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "12aad746-b84e-43c8-84a5-a1a29ff14de0",
+            "sourceColumn": "p95_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "snapshot_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "1c9865fd-faa5-4a2f-888a-2cc697e6af04",
+            "sourceColumn": "snapshot_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "daily_stddev_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d3a3fb9f-1fc9-4b29-bab2-d287d2bf1ae6",
+            "sourceColumn": "daily_stddev_waiting_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_stddev_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "39b18e07-038c-437d-a56d-63a200fdc7f1",
+            "sourceColumn": "daily_stddev_execution_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_median_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0.00",
+            "lineageTag": "89961837-3cfd-44dd-96fd-2096ebdb39c6",
+            "sourceColumn": "daily_median_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_median_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6ac336a4-684d-4874-8239-82e4aac625d1",
+            "sourceColumn": "daily_median_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_avg_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00",
+            "lineageTag": "19680696-e150-4aea-9788-e7b8430a34b5",
+            "sourceColumn": "daily_avg_waiting_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_avg_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00",
+            "lineageTag": "28407261-861d-430e-b2a5-83fb0893169f",
+            "sourceColumn": "daily_avg_execution_seconds",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_num_task",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "83f23f44-3fa1-45ee-991c-d5987a70adde",
+            "sourceColumn": "daily_num_task",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_p90_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "67cffdda-e406-453c-b22a-568871d7e2fd",
+            "sourceColumn": "daily_p90_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_p90_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d55a2b67-0c5e-4356-8c77-67f4f0b32588",
+            "sourceColumn": "daily_p90_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_p95_waiting_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "46753d0d-5887-4b89-b0a2-98f4e20d0e95",
+            "sourceColumn": "daily_p95_waiting_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "daily_p95_execution_seconds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "32bb603e-6b1d-45ab-aa49-b1dae971571b",
+            "sourceColumn": "daily_p95_execution_seconds",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "end_of_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-mmmm",
+            "lineageTag": "f016b6e0-2d51-4140-b8e8-d8033d5a4e21",
+            "sourceColumn": "end_of_month",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "084a87d3-6ad5-401d-a77c-7d8c94c3694c",
+        "partitions": [
+          {
+            "name": "structured_comcatv2_riskassesmentkpis",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DatabricksMultiCloud.Catalogs(\"dbc-25db401b-39a2.cloud.databricks.com\", \"/sql/1.0/warehouses/2d81cde05e292363\", [Catalog = \"\", Database = \"\"]),",
+                "    ds_goc_bronze_dev_Database = Source{[Name=\"ds_goc_bronze_dev\",Kind=\"Database\"]}[Data],",
+                "    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name=\"ds_goc_silver_dev\",Kind=\"Schema\"]}[Data],",
+                "    structured_comcatv2_riskassesmentkpis_View = ds_goc_silver_dev_Schema{[Name=\"structured_comcatv2_riskassesmentkpis\",Kind=\"View\"]}[Data],",
+                "    #\"Renamed Columns\" = Table.RenameColumns(structured_comcatv2_riskassesmentkpis_View,{{\"transaction_day\", \"snapshot_date\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

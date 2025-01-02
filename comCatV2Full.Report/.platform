@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "comCatV2Full"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "964b966c-ae76-420a-82f2-2fa4f2428c42"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../source_aqm_logs_v2.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

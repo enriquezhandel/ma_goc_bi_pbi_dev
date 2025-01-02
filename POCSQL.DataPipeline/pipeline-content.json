@@ -1,0 +1,258 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "SqlServerSource",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "SqlServerTable",
+              "typeProperties": {
+                "schema": "ProductStrategy",
+                "table": "v_DashboardSubscribers",
+                "database": "FinStats"
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "2784e74d-877e-4b12-8b06-933613ed5389"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "ProductStrategy_v_DashboardSubscribers"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "gocDEVBI",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "307b753c-bf1d-4f1a-99be-6b8dc2916608",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "UserId",
+                  "type": "Int32",
+                  "physicalType": "int"
+                },
+                "sink": {
+                  "name": "UserId",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "UserName",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "255"
+                },
+                "sink": {
+                  "name": "UserName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "FirstName",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "32"
+                },
+                "sink": {
+                  "name": "FirstName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "LastName",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "64"
+                },
+                "sink": {
+                  "name": "LastName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "Email",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "64"
+                },
+                "sink": {
+                  "name": "Email",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "SubAccountId",
+                  "type": "Int32",
+                  "physicalType": "int"
+                },
+                "sink": {
+                  "name": "SubAccountId",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "PrimaryAccountId",
+                  "type": "Int32",
+                  "physicalType": "int"
+                },
+                "sink": {
+                  "name": "PrimaryAccountId",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "AccountName",
+                  "type": "String",
+                  "physicalType": "nvarchar",
+                  "length": "128"
+                },
+                "sink": {
+                  "name": "AccountName",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "AccountType",
+                  "type": "String",
+                  "physicalType": "varchar",
+                  "length": "64"
+                },
+                "sink": {
+                  "name": "AccountType",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "AccountExpiration",
+                  "type": "DateTime",
+                  "physicalType": "date"
+                },
+                "sink": {
+                  "name": "AccountExpiration",
+                  "physicalType": "date"
+                }
+              },
+              {
+                "source": {
+                  "name": "AwsRegion",
+                  "type": "String",
+                  "physicalType": "varchar",
+                  "length": "5"
+                },
+                "sink": {
+                  "name": "AwsRegion",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "CreditsExpiration",
+                  "type": "DateTime",
+                  "physicalType": "date"
+                },
+                "sink": {
+                  "name": "CreditsExpiration",
+                  "physicalType": "date"
+                }
+              },
+              {
+                "source": {
+                  "name": "NumSubscriptons",
+                  "type": "Int32",
+                  "physicalType": "int"
+                },
+                "sink": {
+                  "name": "NumSubscriptons",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "productId",
+                  "type": "Int32",
+                  "physicalType": "int"
+                },
+                "sink": {
+                  "name": "productId",
+                  "physicalType": "integer"
+                }
+              },
+              {
+                "source": {
+                  "name": "product",
+                  "type": "String",
+                  "physicalType": "varchar",
+                  "length": "64"
+                },
+                "sink": {
+                  "name": "product",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "dtExtract",
+                  "type": "String",
+                  "physicalType": "varchar",
+                  "length": "19"
+                },
+                "sink": {
+                  "name": "dtExtract",
+                  "physicalType": "string"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy_a1k",
+        "dependsOn": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,4773 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"AlertMetrics\",\"Sample File\",\"Parameter1\",\"Transform Sample File\",\"Transform File\",\"dimAlert\",\"CCV1MonitoringData\",\"Sample File (2)\",\"Parameter2\",\"Transform Sample File (2)\",\"Transform File (2)\",\"enums_output\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.136.1202.0 (24.09)"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "CCV1_monitoring_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "CCV1 monitoring data": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "CCV1MonitoringData": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "data": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "monitoring data": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "ccv1 monitoring information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "ccv1 monitoring fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "ccv1 monitoring info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "ccv1 monitoring statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "monitoring information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "monitoring fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "monitoring info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "monitoring statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "ccv1 monitoring document": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "ccv1 monitoring figure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.LatestKnownChangeFinal__copy": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "ConceptualProperty": "LatestKnownChangeFinal - Copy"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "LatestKnownChangeFinal - copy": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "LatestKnownChangeFinal copy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - reproduction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - duplicate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - replica": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - facsimile": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - print": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - photocopy": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - fake": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - counterfeit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - imitation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "latestknownchangefinal - model": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.latest_known_change_final": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "ConceptualProperty": "LatestKnownChangeFinal"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "latest known change final": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "LatestKnownChangeFinal": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "latest known change decider": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.464
+                    }
+                  },
+                  {
+                    "latest known change round": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.45
+                    }
+                  },
+                  {
+                    "latest known change match": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.45
+                    }
+                  },
+                  {
+                    "latest known change game": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.45
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "VariationSet": "Variation",
+                    "VariationSource": "LatestKnownChangeFinal"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "latest known change final date hierarchy": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date hierarchy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.day": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Day",
+                    "VariationSet": "Variation",
+                    "VariationSource": "LatestKnownChangeFinal"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "latest known change final day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "day": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Month",
+                    "VariationSet": "Variation",
+                    "VariationSource": "LatestKnownChangeFinal"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "latest known change final month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "latest known change final mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.quarter": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Quarter",
+                    "VariationSet": "Variation",
+                    "VariationSource": "LatestKnownChangeFinal"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "latest known change final quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "latest known change final qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.867
+                    }
+                  },
+                  {
+                    "qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Year",
+                    "VariationSet": "Variation",
+                    "VariationSource": "LatestKnownChangeFinal"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "latest known change final year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "latest known change final yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.monitoring_nature": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "ConceptualProperty": "MonitoringNature"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "monitoring nature": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "MonitoringNature": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "nature": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "monitoring wildlife": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "monitoring flora": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "monitoring fauna": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "monitoring environment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "wildlife": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "flora": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "fauna": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "environment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "monitoring countryside": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "monitoring landscape": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.monitoring_type": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "ConceptualProperty": "MonitoringType"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "monitoring type": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "MonitoringType": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "type": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "monitoring category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "monitoring genre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "monitoring manner": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "monitoring variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "genre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "manner": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "monitoring brand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "monitoring class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.previous_check_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "ConceptualProperty": "PreviousCheckDate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "previous check date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "PreviousCheckDate": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "check date": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "previous check moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "check moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "previous check period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "check period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "previous cheque date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "previous checkup date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "previous inspection date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "previous payment date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "cheque date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "checkup date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "VariationSet": "Variation",
+                    "VariationSource": "PreviousCheckDate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "previous check date hierarchy": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date hierarchy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "hierarchy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "check date hierarchy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.day": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Day",
+                    "VariationSet": "Variation",
+                    "VariationSource": "PreviousCheckDate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "previous check day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "previous check date day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "check day": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "date day": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "check date day": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "previous cheque date day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous checkup date day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous inspection date day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous payment date day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous check moment day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous cheque day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "previous checkup day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "previous inspection day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "previous payment day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "cheque date day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Month",
+                    "VariationSet": "Variation",
+                    "VariationSource": "PreviousCheckDate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "previous check month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "previous check date month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "check month": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "date month": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "check date month": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "previous check date mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "previous check mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "check date mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "check mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "date mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "previous cheque date month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous checkup date month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous inspection date month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous payment date month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.quarter": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Quarter",
+                    "VariationSet": "Variation",
+                    "VariationSource": "PreviousCheckDate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "previous check quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "previous check date quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "check quarter": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "date quarter": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "check date quarter": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "previous check date qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.857
+                    }
+                  },
+                  {
+                    "previous check qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.846
+                    }
+                  },
+                  {
+                    "check date qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.846
+                    }
+                  },
+                  {
+                    "check qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.833
+                    }
+                  },
+                  {
+                    "date qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.833
+                    }
+                  },
+                  {
+                    "qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  },
+                  {
+                    "previous cheque date quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous checkup date quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous inspection date quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous payment date quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Year",
+                    "VariationSet": "Variation",
+                    "VariationSource": "PreviousCheckDate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "previous check year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "previous check date year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "check year": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "date year": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "check date year": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "previous check date yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "previous check yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "check date yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "check yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "date yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "previous cheque date year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous checkup date year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous inspection date year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "previous payment date year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  }
+                ]
+              },
+              "CCV1_monitoring_data.source_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "CCV1MonitoringData",
+                    "ConceptualProperty": "Source.Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "source.name": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dim_alert": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dim alert": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "dimAlert": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "alert": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "ready": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "dim siren": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.451
+                    }
+                  }
+                ]
+              },
+              "dim_alert.alert_criterion": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "ConceptualProperty": "AlertCriteria"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "alert criterion": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "AlertCriteria": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "criterion": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "alert principle": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "alert norm": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "alert yardstick": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "principle": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "norm": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "yardstick": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "alert standard": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "alert measure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "alert condition": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "alert benchmark": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "dim_alert.log_count": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "ConceptualProperty": "logCount"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "log count": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "logCount": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "log amount": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "dim_alert.sharing_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "ConceptualProperty": "SharingId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sharing id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "SharingId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "sharing": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "sharing identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sharing identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sharing identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "sharing credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "distribution": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "allocation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "division": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "allotment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "involvement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "membership": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  }
+                ]
+              },
+              "dim_alert.snapshotdate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "ConceptualProperty": "snapshotdate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "snapshotdate": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "Timeframe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "dim_alert.snapshotdate.variation.date_hierarchy": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "Hierarchy": "Date Hierarchy",
+                    "VariationSet": "Variation",
+                    "VariationSource": "snapshotdate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "snapshotdate date hierarchy": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date hierarchy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "dim_alert.snapshotdate.variation.date_hierarchy.day": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Day",
+                    "VariationSet": "Variation",
+                    "VariationSource": "snapshotdate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "snapshotdate day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "day": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "dim_alert.snapshotdate.variation.date_hierarchy.month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Month",
+                    "VariationSet": "Variation",
+                    "VariationSource": "snapshotdate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "snapshotdate month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "snapshotdate mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
+              "dim_alert.snapshotdate.variation.date_hierarchy.quarter": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Quarter",
+                    "VariationSet": "Variation",
+                    "VariationSource": "snapshotdate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "snapshotdate quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "snapshotdate qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.833
+                    }
+                  },
+                  {
+                    "qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  }
+                ]
+              },
+              "dim_alert.snapshotdate.variation.date_hierarchy.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dimAlert",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Year",
+                    "VariationSet": "Variation",
+                    "VariationSource": "snapshotdate"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "snapshotdate year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "snapshotdate yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
+              "enums_output": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "enums_output"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "enums output": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "enum output": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "enums_output": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "enum production": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "enum productivity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "enum yield": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "enum harvest": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "enum crop": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "enums_output.enum_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "enums_output",
+                    "ConceptualProperty": "Enum Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "enum name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "enum nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "enum title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "enum label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "enum tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Alert Name": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "enums_output.value": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "enums_output",
+                    "ConceptualProperty": "Value"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "value": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "assessment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "worth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "price": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "charge": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "rate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "importance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "significance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "usefulness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "consequence": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Relationships": {
+              "CCV1_monitoring_data_has_LatestKnownChangeFinal__copy": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.LatestKnownChangeFinal__copy"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data"
+                      }
+                    },
+                    "ID": "CCV1_monitoring_data_have_LatestKnownChangeFinal__copies",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.LatestKnownChangeFinal__copy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.LatestKnownChangeFinal__copy"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_has_latest_known_change_final": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data"
+                      }
+                    },
+                    "ID": "CCV1_monitoring_data_have_latest_known_change_finals",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.latest_known_change_final": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_has_monitoring_nature": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.monitoring_nature"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data"
+                      }
+                    },
+                    "ID": "CCV1_monitoring_data_have_monitoring_natures",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.monitoring_nature": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.monitoring_nature"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_has_monitoring_type": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.monitoring_type"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data"
+                      }
+                    },
+                    "ID": "CCV1_monitoring_data_have_monitoring_types",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.monitoring_type": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.monitoring_type"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_has_previous_check_date": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.previous_check_date"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data"
+                      }
+                    },
+                    "ID": "CCV1_monitoring_data_have_previous_check_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.previous_check_date": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_has_source_name": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.source_name"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data"
+                      }
+                    },
+                    "ID": "CCV1_monitoring_data_have_source_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.source_name": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.source_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_is_checked_on_previous_check_date": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "CCV1_monitoring_data_are_checked_on_previous_check_dates",
+                    "State": "Generated",
+                    "Verb": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data"
+                      },
+                      "Verbs": [
+                        {
+                          "check": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.9
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.previous_check_date": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "When": {
+                    "Role": "CCV1_monitoring_data.previous_check_date"
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_is_known_on_latest_known_change_final": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "CCV1_monitoring_data_are_known_on_latest_known_change_finals",
+                    "State": "Generated",
+                    "Verb": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data"
+                      },
+                      "Verbs": [
+                        {
+                          "know": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.9
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data"
+                    }
+                  },
+                  "CCV1_monitoring_data.latest_known_change_final": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "When": {
+                    "Role": "CCV1_monitoring_data.latest_known_change_final"
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_latest_known_change_final_has_variation_date_hierarchy": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final"
+                      }
+                    },
+                    "ID": "latest_known_change_finals_have_latest_known_change_final_date_hierarchies",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.latest_known_change_final": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final"
+                    }
+                  },
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_latest_known_change_final_variation_date_hierarchy_has_day": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.day"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "latest_known_change_final_date_hierarchies_have_latest_known_change_final_days",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.day": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.day"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_latest_known_change_final_variation_date_hierarchy_has_month": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.month"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "latest_known_change_final_date_hierarchies_have_latest_known_change_final_months",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.month": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.month"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_latest_known_change_final_variation_date_hierarchy_has_quarter": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.quarter"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "latest_known_change_final_date_hierarchies_have_latest_known_change_final_quarters",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.quarter": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.quarter"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_latest_known_change_final_variation_date_hierarchy_has_year": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.year"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "latest_known_change_final_date_hierarchies_have_latest_known_change_final_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.year": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.latest_known_change_final.variation.date_hierarchy.year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_previous_check_date_has_variation_date_hierarchy": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.previous_check_date"
+                      }
+                    },
+                    "ID": "previous_check_dates_have_previous_check_date_hierarchies",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.previous_check_date": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date"
+                    }
+                  },
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_previous_check_date_variation_date_hierarchy_has_day": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.day"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "previous_check_date_hierarchies_have_previous_check_days",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.day": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.day"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_previous_check_date_variation_date_hierarchy_has_month": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.month"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "previous_check_date_hierarchies_have_previous_check_months",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.month": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.month"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_previous_check_date_variation_date_hierarchy_has_quarter": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.quarter"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "previous_check_date_hierarchies_have_previous_check_quarters",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.quarter": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.quarter"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "CCV1_monitoring_data_previous_check_date_variation_date_hierarchy_has_year": {
+                "Binding": {
+                  "ConceptualEntity": "CCV1MonitoringData"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.year"
+                      },
+                      "Subject": {
+                        "Role": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "previous_check_date_hierarchies_have_previous_check_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy"
+                    }
+                  },
+                  "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.year": {
+                    "Target": {
+                      "Entity": "CCV1_monitoring_data.previous_check_date.variation.date_hierarchy.year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_has_enums_output": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "enums_output"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert"
+                      }
+                    },
+                    "ID": "dim_alerts_have_enums_outputs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert": {
+                    "Target": {
+                      "Entity": "dim_alert"
+                    }
+                  },
+                  "enums_output": {
+                    "Target": {
+                      "Entity": "enums_output"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_has_log_count": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.log_count"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert"
+                      }
+                    },
+                    "ID": "dim_alerts_have_log_counts",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert": {
+                    "Target": {
+                      "Entity": "dim_alert"
+                    }
+                  },
+                  "dim_alert.log_count": {
+                    "Target": {
+                      "Entity": "dim_alert.log_count"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_has_sharing_id": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.sharing_id"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert"
+                      }
+                    },
+                    "ID": "dim_alerts_have_sharing_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert": {
+                    "Target": {
+                      "Entity": "dim_alert"
+                    }
+                  },
+                  "dim_alert.sharing_id": {
+                    "Target": {
+                      "Entity": "dim_alert.sharing_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_has_snapshotdate": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.snapshotdate"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert"
+                      }
+                    },
+                    "ID": "dim_alerts_have_snapshotdates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert": {
+                    "Target": {
+                      "Entity": "dim_alert"
+                    }
+                  },
+                  "dim_alert.snapshotdate": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_snapshotdate_has_variation_date_hierarchy": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert.snapshotdate"
+                      }
+                    },
+                    "ID": "snapshotdates_have_snapshotdate_date_hierarchies",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert.snapshotdate": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate"
+                    }
+                  },
+                  "dim_alert.snapshotdate.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_snapshotdate_variation_date_hierarchy_has_day": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy.day"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "snapshotdate_date_hierarchies_have_snapshotdate_days",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert.snapshotdate.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy"
+                    }
+                  },
+                  "dim_alert.snapshotdate.variation.date_hierarchy.day": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy.day"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_snapshotdate_variation_date_hierarchy_has_month": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy.month"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "snapshotdate_date_hierarchies_have_snapshotdate_months",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert.snapshotdate.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy"
+                    }
+                  },
+                  "dim_alert.snapshotdate.variation.date_hierarchy.month": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy.month"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_snapshotdate_variation_date_hierarchy_has_quarter": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy.quarter"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "snapshotdate_date_hierarchies_have_snapshotdate_quarters",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert.snapshotdate.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy"
+                    }
+                  },
+                  "dim_alert.snapshotdate.variation.date_hierarchy.quarter": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy.quarter"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "dim_alert_snapshotdate_variation_date_hierarchy_has_year": {
+                "Binding": {
+                  "ConceptualEntity": "dimAlert"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy.year"
+                      },
+                      "Subject": {
+                        "Role": "dim_alert.snapshotdate.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "snapshotdate_date_hierarchies_have_snapshotdate_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dim_alert.snapshotdate.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy"
+                    }
+                  },
+                  "dim_alert.snapshotdate.variation.date_hierarchy.year": {
+                    "Target": {
+                      "Entity": "dim_alert.snapshotdate.variation.date_hierarchy.year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "enums_output_has_enum_name": {
+                "Binding": {
+                  "ConceptualEntity": "enums_output"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "enums_output.enum_name"
+                      },
+                      "Subject": {
+                        "Role": "enums_output"
+                      }
+                    },
+                    "ID": "enums_outputs_have_enum_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "enums_output": {
+                    "Target": {
+                      "Entity": "enums_output"
+                    }
+                  },
+                  "enums_output.enum_name": {
+                    "Target": {
+                      "Entity": "enums_output.enum_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "enums_output_has_value": {
+                "Binding": {
+                  "ConceptualEntity": "enums_output"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "enums_output.value"
+                      },
+                      "Subject": {
+                        "Role": "enums_output"
+                      }
+                    },
+                    "ID": "enums_outputs_have_values",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "enums_output": {
+                    "Target": {
+                      "Entity": "enums_output"
+                    }
+                  },
+                  "enums_output.value": {
+                    "Target": {
+                      "Entity": "enums_output.value"
+                    }
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "Sample File",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Binary"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"X:\\AlertMetrics\"),",
+          "    Navigation1 = Source{0}[Content]",
+          "in",
+          "    Navigation1"
+        ],
+        "kind": "m",
+        "lineageTag": "ca9a5434-643f-43af-a536-e523579a9f61",
+        "queryGroup": "Transform File from AlertMetrics\\Helper Queries"
+      },
+      {
+        "name": "Parameter1",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Binary"
+          }
+        ],
+        "expression": "#\"Sample File\" meta [IsParameterQuery=true, BinaryIdentifier=#\"Sample File\", Type=\"Binary\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "8564f19b-afde-4f9c-92ae-e23a74f65a00",
+        "queryGroup": "Transform File from AlertMetrics\\Helper Queries"
+      },
+      {
+        "name": "Transform Sample File",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Csv.Document(Parameter1,[Delimiter=\"|\", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+          "in",
+          "    #\"Promoted Headers\""
+        ],
+        "kind": "m",
+        "lineageTag": "e59734b6-d51a-48fd-a34f-f0549c239fb9",
+        "queryGroup": "Transform File from AlertMetrics"
+      },
+      {
+        "name": "Transform File",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Function"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = (Parameter1 as binary) => let",
+          "    Source = Csv.Document(Parameter1,[Delimiter=\"|\", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+          "in",
+          "    #\"Promoted Headers\"",
+          "in",
+          "    Source"
+        ],
+        "kind": "m",
+        "lineageTag": "45c3386b-f771-4746-86d2-f04121bcff8d",
+        "mAttributes": "[ FunctionQueryBinding = \"{\"\"exemplarFormulaName\"\":\"\"Transform Sample File\"\"}\" ]",
+        "queryGroup": "Transform File from AlertMetrics\\Helper Queries"
+      },
+      {
+        "name": "AlertMetrics",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"X:\\AlertMetrics\"),",
+          "    #\"Filtered Hidden Files1\" = Table.SelectRows(Source, each [Attributes]?[Hidden]? <> true),",
+          "    #\"Invoke Custom Function1\" = Table.AddColumn(#\"Filtered Hidden Files1\", \"Transform File\", each #\"Transform File\"([Content])),",
+          "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Invoke Custom Function1\", {\"Name\", \"Source.Name\"}),",
+          "    #\"Removed Other Columns1\" = Table.SelectColumns(#\"Renamed Columns1\", {\"Source.Name\", \"Transform File\"}),",
+          "    #\"Expanded Table Column1\" = Table.ExpandTableColumn(#\"Removed Other Columns1\", \"Transform File\", Table.ColumnNames(#\"Transform File\"(#\"Sample File\"))),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded Table Column1\",{{\"Source.Name\", type text}, {\"SharingId\", Int64.Type}, {\"AlertCriteria\", Int64.Type}, {\"Count\", Int64.Type}, {\"snapshotdate\", type datetime}}),",
+          "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Source.Name\"}),",
+          "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Removed Columns\", \"snapshotdate\", \"snapshotdate - Copy\"),",
+          "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Duplicated Column\",{{\"snapshotdate\", type date}}),",
+          "    #\"Extracted Hour\" = Table.TransformColumns(#\"Changed Type1\",{{\"snapshotdate - Copy\", Time.Hour, Int64.Type}}),",
+          "    #\"Renamed Columns\" = Table.RenameColumns(#\"Extracted Hour\",{{\"snapshotdate - Copy\", \"Hour\"}})",
+          "in",
+          "    #\"Renamed Columns\""
+        ],
+        "kind": "m",
+        "lineageTag": "1897a21b-0cca-4555-b654-872dc9d4d839"
+      },
+      {
+        "name": "Sample File (2)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Binary"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"X:\\CCV1MonitoringData\"),",
+          "    Navigation1 = Source{0}[Content]",
+          "in",
+          "    Navigation1"
+        ],
+        "kind": "m",
+        "lineageTag": "9aba88bc-fdd6-4f09-bd2f-a4035e6f4eaa",
+        "queryGroup": "Transform File from CCV1MonitoringData\\Helper Queries"
+      },
+      {
+        "name": "Parameter2",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Binary"
+          }
+        ],
+        "expression": "#\"Sample File (2)\" meta [IsParameterQuery=true, BinaryIdentifier=#\"Sample File (2)\", Type=\"Binary\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "c06458ee-5804-4d17-8eaf-bb2059aaa422",
+        "queryGroup": "Transform File from CCV1MonitoringData\\Helper Queries"
+      },
+      {
+        "name": "Transform Sample File (2)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Csv.Document(Parameter2,[Delimiter=\"|\", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+          "in",
+          "    #\"Promoted Headers\""
+        ],
+        "kind": "m",
+        "lineageTag": "e23cd963-3e22-43c8-b226-bc67556d73c9",
+        "queryGroup": "Transform File from CCV1MonitoringData"
+      },
+      {
+        "name": "Transform File (2)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Function"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = (Parameter2 as binary) => let",
+          "    Source = Csv.Document(Parameter2,[Delimiter=\"|\", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+          "in",
+          "    #\"Promoted Headers\"",
+          "in",
+          "    Source"
+        ],
+        "kind": "m",
+        "lineageTag": "cb41246b-1f40-496e-a5ec-764eebfcd955",
+        "mAttributes": "[ FunctionQueryBinding = \"{\"\"exemplarFormulaName\"\":\"\"Transform Sample File (2)\"\"}\" ]",
+        "queryGroup": "Transform File from CCV1MonitoringData\\Helper Queries"
+      }
+    ],
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "folder": "Transform File from AlertMetrics"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "folder": "Transform File from AlertMetrics\\Helper Queries"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "2"
+          }
+        ],
+        "folder": "Transform File from CCV1MonitoringData"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "folder": "Transform File from CCV1MonitoringData\\Helper Queries"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "685b8c73-508f-493c-940e-f2bc8dd39301",
+        "fromColumn": "snapshotdate",
+        "fromTable": "dimAlert",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_ff4c5a07-af46-46ee-9660-55500a3c4ed5"
+      },
+      {
+        "name": "03538437-57fe-484b-93dc-89e01b395a96",
+        "fromColumn": "PreviousCheckDate",
+        "fromTable": "CCV1MonitoringData",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_2a3a2974-a0a6-47fb-9aa3-5fa2ce17e345"
+      },
+      {
+        "name": "93f50e51-0d0a-4713-b6b2-834df9e5332f",
+        "fromColumn": "LatestKnownChangeFinal",
+        "fromTable": "CCV1MonitoringData",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_25e7abaf-8176-46dc-9cb4-3fea50a38d3a"
+      },
+      {
+        "name": "8d24d2bd-563f-c6da-96bd-89f5078122e6",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "AlertCriteria",
+        "fromTable": "dimAlert",
+        "toCardinality": "many",
+        "toColumn": "Value",
+        "toTable": "enums_output"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "dimAlert",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SharingId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8a11bfde-746b-4587-8eb4-b11a1f81eabc",
+            "sourceColumn": "SharingId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AlertCriteria",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "785139cf-295a-4e6b-b690-0e71abbf6a55",
+            "sourceColumn": "AlertCriteria",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "snapshotdate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "4c787ebf-2d30-41c1-989a-5f61e6badcf6",
+            "sourceColumn": "snapshotdate",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_ff4c5a07-af46-46ee-9660-55500a3c4ed5"
+                },
+                "isDefault": true,
+                "relationship": "685b8c73-508f-493c-940e-f2bc8dd39301"
+              }
+            ]
+          },
+          {
+            "name": "logCount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5b05aa0c-5b68-4a13-8166-4e794f35dfbd",
+            "sourceColumn": "logCount",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "d26de939-cf4f-4ff5-b7e1-18ad300af135",
+        "partitions": [
+          {
+            "name": "dimAlert",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = AlertMetrics,",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"SharingId\", \"AlertCriteria\", \"Count\", \"snapshotdate\"}),",
+                "    #\"Grouped Rows\" = Table.Group(#\"Removed Other Columns\", {\"SharingId\", \"AlertCriteria\", \"snapshotdate\"}, {{\"Count\", each List.Sum([Count]), type nullable number}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Grouped Rows\",{{\"Count\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"Count\", \"logCount\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_d842e146-b1b2-441d-b2bb-4be101ee29c1",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "917076db-95ca-4247-8c15-e680342369c9",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "03aaffea-a759-4f8e-b3c4-22a40a5a3613",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "a1f05066-2ec8-4e18-b0aa-1cbf27905c84",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "4dfaf0e5-8487-4bc4-9735-c3f11ae1bfa5",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "ffde4a72-2373-4ed6-87a8-35222586527e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "09964116-52af-41e7-8e5b-399be285f509",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "75c5f74c-0c54-4605-9c11-c9922a10e1fc",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "cbfde4e2-d64f-4bcd-ab74-cdd60a59a2e2",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "28b973a4-5053-4310-b302-622bf1d275cb",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "3da574ae-e097-4d1e-b8e3-827678475dc7",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "3afcfdb8-e83a-41a6-915f-136670020be0",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "21dac277-d13e-465a-9fc6-7c2a593dfa32"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "86f034ef-2c8b-4a0b-bd6d-05849f4883e4",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_d842e146-b1b2-441d-b2bb-4be101ee29c1",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_ff4c5a07-af46-46ee-9660-55500a3c4ed5",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "9fa023aa-356e-49f6-a1b4-41ce871bbe25",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "c936c611-96dc-4bec-a607-a0640515e111",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "679b2b27-a8b5-44dc-a488-dbe649b9a53f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "319efa04-65e2-406b-bfbb-56291f93ff21",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "b8a79e95-8b55-4e0d-a564-c55fd5e6780b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "866c41c7-f44d-4a29-830d-ec23f1bdc7da",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "08deaec3-6e65-4ae7-8d3e-0b753e32c24f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "2bc90de9-eda0-4f33-a954-2f5672408b7d",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "8f9f01e5-a842-4732-b0a1-1315f83e3248",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "fbec483c-f5b8-4fe3-8d34-387e8e9380d1",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "73b00c6a-e781-49da-9ccc-226bf407f32e",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "6bb97bb9-54c5-44ee-878f-fcf6fdc97f50"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "7fb7ebaf-36a6-47ae-913d-97b6630a4069",
+        "partitions": [
+          {
+            "name": "LocalDateTable_ff4c5a07-af46-46ee-9660-55500a3c4ed5",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('dimAlert'[snapshotdate])), 1, 1), Date(Year(MAX('dimAlert'[snapshotdate])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "CCV1MonitoringData",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Source.Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "686000d9-ee34-47fe-9acd-720b11994b2a",
+            "sourceColumn": "Source.Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonitoringType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb851406-d61f-43f6-bd35-34eab4141798",
+            "sourceColumn": "MonitoringType",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonitoringNature",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "22a78820-04b0-445f-9a5f-922e342c7034",
+            "sourceColumn": "MonitoringNature",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PreviousCheckDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "3fb7c845-6e44-4abe-a85d-cb3760eb16bf",
+            "sourceColumn": "PreviousCheckDate",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_2a3a2974-a0a6-47fb-9aa3-5fa2ce17e345"
+                },
+                "isDefault": true,
+                "relationship": "03538437-57fe-484b-93dc-89e01b395a96"
+              }
+            ]
+          },
+          {
+            "name": "LatestKnownChangeFinal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "056bbfe3-c73e-4c91-a368-6ed0a1039a2e",
+            "sourceColumn": "LatestKnownChangeFinal",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_25e7abaf-8176-46dc-9cb4-3fea50a38d3a"
+                },
+                "isDefault": true,
+                "relationship": "93f50e51-0d0a-4713-b6b2-834df9e5332f"
+              }
+            ]
+          },
+          {
+            "name": "LatestKnownChangeFinal - Copy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1b6c51b5-219d-467b-8161-e48e5614f150",
+            "sourceColumn": "LatestKnownChangeFinal - Copy",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d5703ca1-5f4c-42fd-a5ee-f54dbfa0aca0",
+        "partitions": [
+          {
+            "name": "CCV1MonitoringData",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Folder.Files(\"X:\\CCV1MonitoringData\"),",
+                "    #\"Filtered Hidden Files1\" = Table.SelectRows(Source, each [Attributes]?[Hidden]? <> true),",
+                "    #\"Invoke Custom Function1\" = Table.AddColumn(#\"Filtered Hidden Files1\", \"Transform File (2)\", each #\"Transform File (2)\"([Content])),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Invoke Custom Function1\", {\"Name\", \"Source.Name\"}),",
+                "    #\"Removed Other Columns1\" = Table.SelectColumns(#\"Renamed Columns1\", {\"Source.Name\", \"Transform File (2)\"}),",
+                "    #\"Expanded Table Column1\" = Table.ExpandTableColumn(#\"Removed Other Columns1\", \"Transform File (2)\", Table.ColumnNames(#\"Transform File (2)\"(#\"Sample File (2)\"))),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded Table Column1\",{{\"Source.Name\", type text}, {\"MonitoringType\", type text}, {\"MonitoringNature\", type text}, {\"PreviousCheckDate\", type datetime}, {\"LatestKnwonChanges\", Int64.Type}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Changed Type\",{{\"LatestKnwonChanges\", type text}}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Changed Type1\", \"LatestKnwonChanges\", \"LatestKnwonChanges - Copy\"),",
+                "    #\"Split Column by Position\" = Table.SplitColumn(#\"Duplicated Column\", \"LatestKnwonChanges - Copy\", Splitter.SplitTextByPositions({0, 10}, false), {\"LatestKnwonChanges - Copy.1\", \"LatestKnwonChanges - Copy.2\"}),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Split Column by Position\",{{\"LatestKnwonChanges - Copy.1\", Int64.Type}, {\"LatestKnwonChanges - Copy.2\", Int64.Type}}),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Changed Type2\", \"LatestKnownChangeFinal\", each if  [#\"LatestKnwonChanges - Copy.1\"] = null then [LatestKnwonChanges] else [#\"LatestKnwonChanges - Copy.1\"]),",
+                "    #\"Changed Type3\" = Table.TransformColumnTypes(#\"Added Custom\",{{\"LatestKnownChangeFinal\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type3\",\"00\",\"\",Replacer.ReplaceText,{\"LatestKnownChangeFinal\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Replaced Value\",{\"LatestKnwonChanges\", \"LatestKnwonChanges - Copy.1\", \"LatestKnwonChanges - Copy.2\"}),",
+                "    #\"Duplicated Column1\" = Table.DuplicateColumn(#\"Removed Columns\", \"LatestKnownChangeFinal\", \"LatestKnownChangeFinal - Copy\"),",
+                "    #\"Changed Type4\" = Table.TransformColumnTypes(#\"Duplicated Column1\",{{\"LatestKnownChangeFinal\", type date}})",
+                "in",
+                "    #\"Changed Type4\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_2a3a2974-a0a6-47fb-9aa3-5fa2ce17e345",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "ea2feaec-ee9a-45f9-9479-8af7014c40c8",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "1e05bcd8-ab88-40c4-9f3f-98184427cbba",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "499e84d2-0695-4dc9-94f3-0a7562d1ca43",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "e376ca60-2ef1-417b-bd21-1b13e37b85b1",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "edf80339-239f-4fe3-a69c-0eac543c8e6d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "22ce2560-7196-4cdb-9e45-2ad2889e5a9b",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "a5ef4e1f-87a6-4875-957d-abc3d437e639",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "71bd1216-a281-467b-961c-c368a9a5ae39",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "643e9012-edd3-4a86-ace4-4717a068b60d",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "265149e7-2658-40cc-8118-2f9627bd14f1",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "90dd80a6-eefc-4fa0-9a1f-bb935dfe830d",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "f5af9151-2f82-4bb6-89b8-3750ac65a601"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "6031bc1a-78de-472a-94e6-4a8dc0777b54",
+        "partitions": [
+          {
+            "name": "LocalDateTable_2a3a2974-a0a6-47fb-9aa3-5fa2ce17e345",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('CCV1MonitoringData'[PreviousCheckDate])), 1, 1), Date(Year(MAX('CCV1MonitoringData'[PreviousCheckDate])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_25e7abaf-8176-46dc-9cb4-3fea50a38d3a",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "957ada91-0fc1-43d5-b8f8-9e2bc8b35a35",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "7740e6b0-fc17-44a3-ac04-ef7e29d94648",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "dfd083d9-b6f7-4370-986e-cd600c25433c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "82d82a0b-1454-46be-b5a7-da3c905c62cc",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "a52b7178-9f81-450c-b861-99a4ee0ac50d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "8759fd68-1cd2-46ee-9815-f207ab3d785b",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "4e714f5e-8e40-45da-88b7-85fde81a461a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "d872d460-ac9b-4606-9304-c3e28bd34813",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "b2c25848-73d1-48b2-b9ec-0f3b9f4a15e1",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "9933cda4-bf9d-47cc-a2f3-8a652f63dd7b",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "964fd9c1-4094-41fc-ad02-2dab7e7deb34",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "d7c96227-01e4-4c40-8116-a4cacb676cee"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "3710655a-735c-4d20-9d87-ee0e3049b26b",
+        "partitions": [
+          {
+            "name": "LocalDateTable_25e7abaf-8176-46dc-9cb4-3fea50a38d3a",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('CCV1MonitoringData'[LatestKnownChangeFinal])), 1, 1), Date(Year(MAX('CCV1MonitoringData'[LatestKnownChangeFinal])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "enums_output",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Enum Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8cd9bfa8-5813-47de-b4cc-ce9278d5cb2f",
+            "sourceColumn": "Enum Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4732442a-ba14-451c-ba24-9bbdf413c055",
+            "sourceColumn": "Value",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4b805968-92fb-454c-a5cb-f8e9a09236e1",
+        "partitions": [
+          {
+            "name": "enums_output",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\enriqueh\\OneDrive - moodys.com\\Documents\\MA\\Nosara Lakehouse\\AlertAnalysis\\enums_output.csv\"),[Delimiter=\",\", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Enum Name\", type text}, {\"Value\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
