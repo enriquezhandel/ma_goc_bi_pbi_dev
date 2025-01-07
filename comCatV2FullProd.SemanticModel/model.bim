@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.138.1004.0 (24.11)"
+        "value": "2.138.1452.0 (24.11)"
       }
     ],
     "culture": "en-US",
@@ -2151,6 +2151,1072 @@
             }
           }
         ]
+      },
+      {
+        "name": "5c556a58-6b18-475c-afd9-b3d707655900",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "14"
+          },
+          {
+            "name": "activeQueries",
+            "value": "2"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "745.9908892564913"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "22.51131315162689"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "3.0176391529477398"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "8.733"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "curated_user_actions_comcatv2_accountname",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "accountname",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "curated_user_actions_comcatv2_userId",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "userId",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "2",
+            "alternateOf": {
+              "baseTable": "curated_user_actions_comcatv2",
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "2665f68c-5605-46d0-b6db-338e5adea25f",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "8"
+          },
+          {
+            "name": "activeQueries",
+            "value": "2"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "214.09566887709238"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "7.3270300353066791"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "3.4223158617528906"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "20.945"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "curated_user_actions_comcatv2_threadname",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "threadname",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "experience_score_ExperienceScore",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "ExperienceScore",
+                "table": "experience_score"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "experience_score_Order",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "Order",
+                "table": "experience_score"
+              }
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "3",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "double",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "4",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "apdexCategory",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "min"
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "5",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "elastic_id",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "6",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "8612fbd6-50ed-48dd-ac59-619172498347",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "13"
+          },
+          {
+            "name": "activeQueries",
+            "value": "3"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "350.86050821795368"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "9.6614554496409628"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "2.7536457433503148"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "0.145"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "curated_user_actions_comcatv2_end_of_month",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "end_of_month",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "calendardim_date",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "date",
+                "table": "calendardim"
+              }
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "experience_score_ExperienceScore",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "ExperienceScore",
+                "table": "experience_score"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "experience_score_Order",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "Order",
+                "table": "experience_score"
+              }
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "4",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "double",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "5",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "snapshot_date",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "min"
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "6",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "snapshot_date",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "max"
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "7",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "d7cd2f7d-4899-4182-82cc-a9bdac0dc0e5",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "6"
+          },
+          {
+            "name": "activeQueries",
+            "value": "2"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "171.44269050019471"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "5.0982244022097243"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "2.9737193153789985"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "7.342"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "curated_user_actions_comcatv2_reportbooksection",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "reportbooksection",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "experience_score_ExperienceScore",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "ExperienceScore",
+                "table": "experience_score"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "experience_score_Order",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "Order",
+                "table": "experience_score"
+              }
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "3",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "double",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "4",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "apdexCategory",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "min"
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "5",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "elastic_id",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "6",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "873e1896-b024-4ed0-927a-b4ebf9104a36",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "11"
+          },
+          {
+            "name": "activeQueries",
+            "value": "3"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "189.58060462372998"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "5.7735655985587959"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "3.0454410724229293"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "10.234"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "structured_comcatv2_alerts_AccountName",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "AccountName",
+                "table": "structured_comcatv2_alerts"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "structured_comcatv2_alerts_snapshot_date",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "snapshot_date",
+                "table": "structured_comcatv2_alerts"
+              }
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "2",
+            "alternateOf": {
+              "baseTable": "structured_comcatv2_alerts",
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "3",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "Count",
+                "table": "structured_comcatv2_alerts"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "b1a9d4ff-3308-4f1c-91d9-d759f74f8bd4",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "42"
+          },
+          {
+            "name": "activeQueries",
+            "value": "11"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "110.46579335165103"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "3.416125357723967"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "3.0924734744349793"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "11.756"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "raw_comcatv2_moduletracking_UserClientName",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "UserClientName",
+                "table": "raw_comcatv2_moduletracking"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "raw_comcatv2_moduletracking_snapshot_date",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "snapshot_date",
+                "table": "raw_comcatv2_moduletracking"
+              }
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "raw_comcatv2_moduletracking_eom_snapshot_date",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "eom_snapshot_date",
+                "table": "raw_comcatv2_moduletracking"
+              }
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "3",
+            "alternateOf": {
+              "baseTable": "raw_comcatv2_moduletracking",
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "4",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "WaitTime",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "5",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "ExecutionTime",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "6",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "Duration",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "7",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "TrackId",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "8",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "UserId",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "9",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "WaitTime",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "10",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "ExecutionTime",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "11",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "Duration",
+                "table": "raw_comcatv2_moduletracking"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "b4e2abba-86ea-4605-bd4f-442a2ec6dd69",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "9"
+          },
+          {
+            "name": "activeQueries",
+            "value": "4"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "38.932537281413133"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "1.0622049716783746"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "2.7283219791212638"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "0.047"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "structured_comcatv2_alerts_snapshot_date",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "snapshot_date",
+                "table": "structured_comcatv2_alerts"
+              }
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "structured_comcatv2_alerts_eom_snapshotdate",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "eom_snapshotdate",
+                "table": "structured_comcatv2_alerts"
+              }
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "2",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "Count",
+                "table": "structured_comcatv2_alerts"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "3",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "AccountName",
+                "table": "structured_comcatv2_alerts"
+              },
+              "summarization": "min"
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "4",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "snapshot_date",
+                "table": "structured_comcatv2_alerts"
+              },
+              "summarization": "min"
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "5",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "snapshot_date",
+                "table": "structured_comcatv2_alerts"
+              },
+              "summarization": "max"
+            },
+            "dataType": "dateTime",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "dee684df-9b2e-4965-a085-3ecadb171ca4",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "6"
+          },
+          {
+            "name": "activeQueries",
+            "value": "2"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "38.132340829290705"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "9.10128020256162"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "23.867614745462017"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "397.809"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "curated_user_actions_comcatv2_duration_seconds",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "double",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "curated_user_actions_comcatv2_reportbooksection",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "reportbooksection",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "2",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "double",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "3",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "reportbooksection",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "min"
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "4",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
+      },
+      {
+        "name": "07a069d8-3bf3-443a-9a79-93fc35d8a4db",
+        "annotations": [
+          {
+            "name": "activeFrequency",
+            "value": "8"
+          },
+          {
+            "name": "activeQueries",
+            "value": "2"
+          },
+          {
+            "name": "relativeGain(%)",
+            "value": "20.045271798933282"
+          },
+          {
+            "name": "relativeLift(%)",
+            "value": "11.044709961949113"
+          },
+          {
+            "name": "relativeSize(%)",
+            "value": "55.098828655128862"
+          },
+          {
+            "name": "estimatedCardinality(Krows)",
+            "value": "918.789"
+          },
+          {
+            "name": "avoidQueryHints",
+            "value": "false"
+          }
+        ],
+        "columns": [
+          {
+            "name": "curated_user_actions_comcatv2_duration_seconds",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "double",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "curated_user_actions_comcatv2_threadname",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "threadname",
+                "table": "curated_user_actions_comcatv2"
+              }
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "2",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "sum"
+            },
+            "dataType": "double",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "3",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "threadname",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "min"
+            },
+            "dataType": "string",
+            "isAvailableInMdx": false
+          },
+          {
+            "name": "4",
+            "alternateOf": {
+              "baseColumn": {
+                "column": "duration_seconds",
+                "table": "curated_user_actions_comcatv2"
+              },
+              "summarization": "count"
+            },
+            "dataType": "int64",
+            "isAvailableInMdx": false
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "Partition",
+            "mode": "import",
+            "source": {
+              "type": "inferred"
+            }
+          }
+        ],
+        "systemManaged": true
       }
     ]
   }
