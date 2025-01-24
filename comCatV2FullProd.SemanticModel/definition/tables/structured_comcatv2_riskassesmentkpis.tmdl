@@ -1,0 +1,283 @@
+table structured_comcatv2_riskassesmentkpis
+	lineageTag: 084a87d3-6ad5-401d-a77c-7d8c94c3694c
+
+	column avg_waiting_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: 80874c02-3252-4583-823a-2e7d3e40bb19
+		summarizeBy: sum
+		sourceColumn: avg_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_execution_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: bce3b637-9761-4a6e-a0c5-051659dcaead
+		summarizeBy: sum
+		sourceColumn: avg_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stddev_waiting_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: c04a3f99-1125-4fad-875c-876a28d22163
+		summarizeBy: sum
+		sourceColumn: stddev_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stddev_execution_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: 9bc051e2-ef8b-4d8e-b067-c12ba9e0e4fa
+		summarizeBy: sum
+		sourceColumn: stddev_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column weighted_avg_waiting_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: 81d3add6-7fd1-4f60-911c-78ab8a242216
+		summarizeBy: sum
+		sourceColumn: weighted_avg_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column weighted_avg_execution_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: 3a6967fc-dff6-4958-91f9-f39b327de997
+		summarizeBy: sum
+		sourceColumn: weighted_avg_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column median_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 536cda4b-8cf8-4159-832c-3f79a63a1934
+		summarizeBy: sum
+		sourceColumn: median_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column median_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8e9a8d70-1a62-448e-8564-b9f5ba967010
+		summarizeBy: sum
+		sourceColumn: median_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p90_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d9c1e0e7-dabb-4505-af4e-9768af8f6e04
+		summarizeBy: sum
+		sourceColumn: p90_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p95_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c24a8642-7f9a-425d-b330-de1f9565e4bb
+		summarizeBy: sum
+		sourceColumn: p95_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p90_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: dbb0b9c2-0dbb-4dcb-80ef-c125437db879
+		summarizeBy: sum
+		sourceColumn: p90_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p95_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 12aad746-b84e-43c8-84a5-a1a29ff14de0
+		summarizeBy: sum
+		sourceColumn: p95_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 1c9865fd-faa5-4a2f-888a-2cc697e6af04
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column daily_stddev_waiting_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: d3a3fb9f-1fc9-4b29-bab2-d287d2bf1ae6
+		summarizeBy: sum
+		sourceColumn: daily_stddev_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column daily_stddev_execution_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: 39b18e07-038c-437d-a56d-63a200fdc7f1
+		summarizeBy: sum
+		sourceColumn: daily_stddev_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column daily_median_waiting_seconds
+		dataType: int64
+		formatString: 0.00
+		sourceProviderType: bigint
+		lineageTag: 89961837-3cfd-44dd-96fd-2096ebdb39c6
+		summarizeBy: sum
+		sourceColumn: daily_median_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_median_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 6ac336a4-684d-4874-8239-82e4aac625d1
+		summarizeBy: sum
+		sourceColumn: daily_median_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_avg_waiting_seconds
+		dataType: double
+		formatString: 0.00
+		sourceProviderType: double
+		lineageTag: 19680696-e150-4aea-9788-e7b8430a34b5
+		summarizeBy: sum
+		sourceColumn: daily_avg_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_avg_execution_seconds
+		dataType: double
+		formatString: 0.00
+		sourceProviderType: double
+		lineageTag: 28407261-861d-430e-b2a5-83fb0893169f
+		summarizeBy: sum
+		sourceColumn: daily_avg_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_num_task
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 83f23f44-3fa1-45ee-991c-d5987a70adde
+		summarizeBy: sum
+		sourceColumn: daily_num_task
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_p90_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 67cffdda-e406-453c-b22a-568871d7e2fd
+		summarizeBy: sum
+		sourceColumn: daily_p90_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_p90_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d55a2b67-0c5e-4356-8c77-67f4f0b32588
+		summarizeBy: sum
+		sourceColumn: daily_p90_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_p95_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 46753d0d-5887-4b89-b0a2-98f4e20d0e95
+		summarizeBy: sum
+		sourceColumn: daily_p95_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column daily_p95_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 32bb603e-6b1d-45ab-aa49-b1dae971571b
+		summarizeBy: sum
+		sourceColumn: daily_p95_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_of_month
+		dataType: dateTime
+		formatString: yyyy-mmmm
+		sourceProviderType: date
+		lineageTag: f016b6e0-2d51-4140-b8e8-d8033d5a4e21
+		summarizeBy: none
+		sourceColumn: end_of_month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	partition structured_comcatv2_riskassesmentkpis = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_silver_dev",Kind="Schema"]}[Data],
+				    structured_comcatv2_riskassesmentkpis_View = ds_goc_silver_dev_Schema{[Name="structured_comcatv2_riskassesmentkpis",Kind="View"]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(structured_comcatv2_riskassesmentkpis_View,{{"transaction_day", "snapshot_date"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "OrbisFullProd"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6012dcc6-86c8-a08d-4fc9-ed25e423f0f3"
+  }
+}

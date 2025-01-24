@@ -1,0 +1,97 @@
+table sessionsdim
+	lineageTag: 342f8d20-ea56-45d4-8403-f0cc0e3720aa
+	sourceLineageTag: [dbo].[sessionsdim]
+
+	column userSessionIdTotal
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5870a790-ae45-418a-9ec2-dbb7bd819ee7
+		sourceLineageTag: userSessionIdTotal
+		summarizeBy: sum
+		sourceColumn: userSessionIdTotal
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6802a2ca-fd1d-43a3-8b96-3bba547eaa6c
+		sourceLineageTag: country
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column userActionCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: fce85fed-f594-466c-a272-1151e99bf724
+		sourceLineageTag: userActionCount
+		summarizeBy: sum
+		sourceColumn: userActionCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column numberOfRageClicks
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c49d3f70-edc9-4553-92d1-39fba53f90c9
+		sourceLineageTag: numberOfRageClicks
+		summarizeBy: sum
+		sourceColumn: numberOfRageClicks
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountname
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3d4331ea-dbf7-46fd-82b5-9c0d83599698
+		sourceLineageTag: accountname
+		summarizeBy: none
+		sourceColumn: accountname
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_userExperienceScore
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7e5ff618-5558-4b5e-81c5-88cf8adae95f
+		sourceLineageTag: session_userExperienceScore
+		summarizeBy: none
+		sourceColumn: session_userExperienceScore
+
+		annotation SummarizationSetBy = Automatic
+
+	column application
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 932c794a-4333-45ee-b9d7-6f9e4f7c3557
+		sourceLineageTag: application
+		summarizeBy: none
+		sourceColumn: application
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: ed265eea-12e0-4b02-aa7c-ed4b1aecbb23
+		sourceLineageTag: snapshot_date
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition sessionsdim = entity
+		mode: directLake
+		source
+			entityName: sessionsdim
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

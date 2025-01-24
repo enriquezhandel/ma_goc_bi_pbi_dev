@@ -1,0 +1,23 @@
+table accountView
+	lineageTag: 74b66e87-67cb-4fd0-83d1-1a823b388a83
+	sourceLineageTag: [dbo].[accountView]
+
+	column accountname
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0463147d-d1a9-4788-be6c-750d1b301c9e
+		sourceLineageTag: accountname
+		summarizeBy: none
+		sourceColumn: accountname
+
+		annotation SummarizationSetBy = Automatic
+
+	partition accountView = entity
+		mode: directLake
+		source
+			entityName: accountView
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

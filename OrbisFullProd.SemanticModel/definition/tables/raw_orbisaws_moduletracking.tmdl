@@ -1,0 +1,169 @@
+table raw_orbisaws_moduletracking
+	lineageTag: b72afc59-a7e9-459f-950c-bc998f63ec73
+
+	column TrackId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 4897fc6f-219b-48fe-b70c-e94654f18d1f
+		summarizeBy: none
+		sourceColumn: TrackId
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreationDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 491ec5bf-3762-422c-8411-c11c1e788cc7
+		summarizeBy: none
+		sourceColumn: CreationDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column StartDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 7ae0fa79-12dc-4774-9736-a2a8ef2860d7
+		summarizeBy: none
+		sourceColumn: StartDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column EndDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: c36cbcfe-bb74-49a9-b083-14f9d58677e2
+		summarizeBy: none
+		sourceColumn: EndDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e49186cd-b807-4ee9-9689-7fd5b900b64b
+		summarizeBy: count
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModuleId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 9ec5368e-626a-4e7b-b0f6-9f1c01e6e538
+		summarizeBy: none
+		sourceColumn: ModuleId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: f16bd82a-3d46-4046-827e-2bb397576024
+		summarizeBy: none
+		sourceColumn: ProductId
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 0040c664-6340-45d8-9971-7b9c76dc3f53
+		summarizeBy: none
+		sourceColumn: UserName
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserClientName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 833c2b78-65d0-4c2d-925d-330354131506
+		summarizeBy: none
+		sourceColumn: UserClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	column WaitTime
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d318e07f-61e4-4298-86dd-c0574c93a7e2
+		summarizeBy: sum
+		sourceColumn: WaitTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column ExecutionTime
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1b8cff4e-f9b1-407f-8df2-036e19cad1ab
+		summarizeBy: sum
+		sourceColumn: ExecutionTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 0c5365a2-7e72-44c5-8b0a-ff8a16e82a3d
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column eom_snapshot_date
+		dataType: dateTime
+		isNullable: false
+		formatString: yyyy-mmmm
+		sourceProviderType: date
+		lineageTag: 24efadac-b466-4098-bf26-0226b33d791b
+		summarizeBy: none
+		sourceColumn: eom_snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	column Duration
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8db49a48-8399-4216-a259-2dc385e5ee5f
+		summarizeBy: sum
+		sourceColumn: Duration
+
+		annotation SummarizationSetBy = Automatic
+
+	partition raw_orbisaws_moduletracking = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_bronze_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_bronze_dev",Kind="Schema"]}[Data],
+				    raw_orbisaws_moduletracking_View = ds_goc_bronze_dev_Schema{[Name="raw_orbisaws_moduletracking",Kind="View"]}[Data],
+				    #"Duplicated Column" = Table.DuplicateColumn(raw_orbisaws_moduletracking_View, "StartDate", "StartDate - Copy"),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Duplicated Column",{{"StartDate - Copy", type date}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"StartDate - Copy", "snapshot_date"}}),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Renamed Columns", "snapshot_date", "snapshot_date - Copy"),
+				    #"Calculated End of Month" = Table.TransformColumns(#"Duplicated Column1",{{"snapshot_date - Copy", Date.EndOfMonth, type date}}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Calculated End of Month",{{"snapshot_date - Copy", "eom_snapshot_date"}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Renamed Columns1", each true),
+				    #"Added Custom" = Table.AddColumn(#"Filtered Rows", "Duration", each [WaitTime]+[ExecutionTime]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"Duration", Int64.Type}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

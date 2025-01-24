@@ -1,0 +1,116 @@
+table dimAlertsComCatV2
+	lineageTag: 7b5c809c-e5f8-411e-9eb3-854e94149acf
+	sourceLineageTag: [dbo].[dimAlertsComCatV2]
+
+	column SharingId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 522814a6-4c39-4ea1-89a9-45edcd1fbd12
+		sourceLineageTag: SharingId
+		summarizeBy: count
+		sourceColumn: SharingId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 01c94eb5-fabf-464b-a1a1-d1f56449fb98
+		sourceLineageTag: AccountName
+		summarizeBy: none
+		sourceColumn: AccountName
+
+		annotation SummarizationSetBy = Automatic
+
+	column AlertCriteria
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 5aec7413-03c1-475b-8e21-bbaecdaf73a1
+		sourceLineageTag: AlertCriteria
+		summarizeBy: sum
+		sourceColumn: AlertCriteria
+
+		annotation SummarizationSetBy = Automatic
+
+	column alertName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 026831b9-70fb-4d12-bada-8e52e4b0c556
+		sourceLineageTag: alertName
+		summarizeBy: none
+		sourceColumn: alertName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Count
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f57a5a73-c791-46ad-b266-ef1f8bfc9e09
+		sourceLineageTag: Count
+		summarizeBy: sum
+		sourceColumn: Count
+
+		annotation SummarizationSetBy = Automatic
+
+	column AlertDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: b1b2fba9-50bb-441b-96fe-32d8c08d35eb
+		sourceLineageTag: AlertDate
+		summarizeBy: none
+		sourceColumn: AlertDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column hourAlert
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: bce9a48d-9d97-4483-af8b-cff1903367e0
+		sourceLineageTag: hourAlert
+		summarizeBy: sum
+		sourceColumn: hourAlert
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshotdate
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 86f403ed-40f9-49b2-9144-aab9602c7adf
+		sourceLineageTag: snapshotdate
+		summarizeBy: none
+		sourceColumn: snapshotdate
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column eom_snapshotdate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 95e46528-1805-43b9-a31e-9331bfdedc96
+		sourceLineageTag: eom_snapshotdate
+		summarizeBy: none
+		sourceColumn: eom_snapshotdate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimAlertsComCatV2 = entity
+		mode: directLake
+		source
+			entityName: dimAlertsComCatV2
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

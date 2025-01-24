@@ -1,0 +1,199 @@
+table curated_user_actions_orbisaws
+	lineageTag: 7790478d-630f-40f9-b5b0-9fa1911fc99a
+
+	column elastic_id
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: ada5ea14-2e31-4ab1-a46d-6d80c46ca69b
+		summarizeBy: none
+		sourceColumn: elastic_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column userSessionId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: e4c4a9a4-d49a-4c9c-ba47-f63f8ff2829f
+		summarizeBy: none
+		sourceColumn: userSessionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column startTime_utc
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 73ab69fa-a5b9-44a0-8535-309a39ee5e90
+		summarizeBy: none
+		sourceColumn: startTime_utc
+
+		annotation SummarizationSetBy = Automatic
+
+	column startTime_utc_hour
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 8992e4d6-2710-4402-88db-bdc01ff88bff
+		summarizeBy: sum
+		sourceColumn: startTime_utc_hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column apdexCategory
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: ad3c0228-40d2-469c-8cd2-c1a902304c85
+		summarizeBy: none
+		sourceColumn: apdexCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column application
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 07a30f32-25d1-4009-ae17-a50d3b105f15
+		summarizeBy: none
+		sourceColumn: application
+
+		annotation SummarizationSetBy = Automatic
+
+	column duration
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2a003252-abce-4bcf-8a36-fa984ceae423
+		summarizeBy: sum
+		sourceColumn: duration
+
+		annotation SummarizationSetBy = Automatic
+
+	column duration_seconds
+		dataType: double
+		sourceProviderType: double
+		lineageTag: 9382094a-b458-41ca-a3a4-281add445946
+		summarizeBy: sum
+		sourceColumn: duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column name
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 4d0e6d5a-dd6a-4a11-a0e1-92b0d4f99da4
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column targetUrl
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 2f4a09dd-2886-4961-8493-50cfb7730959
+		summarizeBy: none
+		sourceColumn: targetUrl
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: a0fb6ac2-2895-4468-a5c3-94b9ad374e0b
+		summarizeBy: none
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column threadname
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: f3604bc6-2a50-4f2b-91bf-cb2dabc4f45e
+		summarizeBy: none
+		sourceColumn: threadname
+
+		annotation SummarizationSetBy = Automatic
+
+	column reportbooksection
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 2fef7af7-817c-4b2e-8fd0-0a28dad9741e
+		summarizeBy: none
+		sourceColumn: reportbooksection
+
+		annotation SummarizationSetBy = Automatic
+
+	column searchby
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 4c618d47-9f8a-4dff-9eb1-d5caecd66663
+		summarizeBy: none
+		sourceColumn: searchby
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountname
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 0659aa40-a023-4132-abb6-1901fbf2be76
+		summarizeBy: none
+		sourceColumn: accountname
+
+		annotation SummarizationSetBy = Automatic
+
+	column userId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 3b94c651-fdbb-4d64-b16a-512846a66dca
+		summarizeBy: none
+		sourceColumn: userId
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 6772520f-4885-4ef2-b05d-a91e2c324f7f
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 2279de99-e40e-4289-9f72-bed60d97c972
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column end_of_month
+		dataType: dateTime
+		formatString: yyyy-mmmm
+		sourceProviderType: date
+		lineageTag: 09f103da-2c2e-4889-ab83-d3d2cf859d54
+		summarizeBy: none
+		sourceColumn: end_of_month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	partition curated_user_actions_orbisaws = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_gold_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_gold_dev",Kind="Schema"]}[Data],
+				    curated_user_actions_orbisaws_View = ds_goc_gold_dev_Schema{[Name="curated_user_actions_orbisaws",Kind="View"]}[Data]
+				in
+				    curated_user_actions_orbisaws_View
+
+	annotation PBI_ResultType = Table
+

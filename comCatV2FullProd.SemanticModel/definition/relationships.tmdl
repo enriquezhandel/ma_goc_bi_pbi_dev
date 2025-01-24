@@ -1,0 +1,26 @@
+relationship d2d082bc-a37a-0056-7a24-402c2a5c0693
+	fromColumn: curated_user_actions_comcatv2.snapshot_date
+	toColumn: calendardim.date
+
+relationship 2b10f039-797e-0d42-2e4c-47d020593825
+	fromColumn: curated_user_actions_comcatv2.apdexCategory
+	toColumn: experience_score.ExperienceScore
+
+relationship 8dd5c290-fb60-ddf8-d3d1-e94482696ae8
+	fromColumn: raw_comcatv2_moduletracking.snapshot_date
+	toColumn: calendardim.date
+
+relationship ab9dddb3-f8fd-daba-a0a7-c78bcbc65007
+	fromColumn: structured_comcatv2_alerts.snapshot_date
+	toColumn: calendardim.date
+
+relationship e9419b9a-aba0-d205-288c-b14010e0fa13
+	fromColumn: structured_comcatv2_riskassesmentcompanylvl.snapshot_date
+	toColumn: calendardim.date
+
+relationship 5651c63e-f23b-8d13-c69f-060f027a7875
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: structured_comcatv2_riskassesmentkpis.snapshot_date
+	toColumn: calendardim.date
+

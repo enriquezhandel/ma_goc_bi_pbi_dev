@@ -1,0 +1,111 @@
+table structured_comcatv2_alerts
+	lineageTag: 07d13e67-6a87-43ab-9f23-d23ba73a4e7e
+
+	column SharingId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e0d1a28c-cd27-400f-a32c-08a9ae0fdf84
+		summarizeBy: count
+		sourceColumn: SharingId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 74f34c43-c34b-45cd-ab6d-d1024d45d8ce
+		summarizeBy: none
+		sourceColumn: AccountName
+
+		annotation SummarizationSetBy = Automatic
+
+	column AlertCriteria
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ac7370ce-1c22-4de3-85df-aabbf747c92e
+		summarizeBy: sum
+		sourceColumn: AlertCriteria
+
+		annotation SummarizationSetBy = Automatic
+
+	column alertName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 0b4053b8-33e9-4a06-88a2-b678cca8d0f9
+		summarizeBy: none
+		sourceColumn: alertName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Count
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 81a912b1-fc9f-4ca3-9bc1-6bcdfd8c567c
+		summarizeBy: sum
+		sourceColumn: Count
+
+		annotation SummarizationSetBy = Automatic
+
+	column AlertDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 5f793da9-6ffd-4093-abd8-be6d16a37c8a
+		summarizeBy: none
+		sourceColumn: AlertDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column hourAlert
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 791aaecb-5e37-4c08-bbd3-ffe69b4a238e
+		summarizeBy: sum
+		sourceColumn: hourAlert
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: e868aa2d-df2d-4c99-bd10-10949c2b7528
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column eom_snapshotdate
+		dataType: dateTime
+		formatString: yyyy-mmmm
+		sourceProviderType: date
+		lineageTag: bdf1400e-074d-450b-91de-3d4eb2ca67b9
+		summarizeBy: none
+		sourceColumn: eom_snapshotdate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	partition structured_comcatv2_alerts = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_silver_dev",Kind="Schema"]}[Data],
+				    structured_comcatv2_alerts_View = ds_goc_silver_dev_Schema{[Name="structured_comcatv2_alerts",Kind="View"]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(structured_comcatv2_alerts_View,{{"snapshotdate", "snapshot_date"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

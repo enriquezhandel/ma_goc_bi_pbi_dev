@@ -1,0 +1,4 @@
+relationship 66571927-cb92-eaf9-993e-24c27cf3fde9
+	fromColumn: dimAlertsComCatV2.snapshotdate
+	toColumn: calendar.Date
+

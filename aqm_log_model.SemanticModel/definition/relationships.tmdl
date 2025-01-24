@@ -1,0 +1,8 @@
+relationship 33f58a86-cad4-f462-3a7a-d74bf48766f6
+	fromColumn: aqmalertdim.date
+	toColumn: calendar.Date
+
+relationship ac22eb42-941f-b677-3091-1e9daaa19a70
+	fromColumn: aqmlogdim.date
+	toColumn: calendar.Date
+

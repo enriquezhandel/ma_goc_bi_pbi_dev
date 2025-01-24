@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["curated_user_actions_comcatv2","calendardim","experience_score","raw_comcatv2_moduletracking","structured_comcatv2_alerts","structured_comcatv2_riskassesmentcompanylvl","structured_comcatv2_riskassesmentkpis"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.139.1678.0 (24.12)+2a034ab280bddf891eb7bb9ebfe6996f9c3a3196
+
+ref table curated_user_actions_comcatv2
+ref table calendardim
+ref table experience_score
+ref table raw_comcatv2_moduletracking
+ref table structured_comcatv2_alerts
+ref table structured_comcatv2_riskassesmentcompanylvl
+ref table structured_comcatv2_riskassesmentkpis
+
+ref cultureInfo en-US
+

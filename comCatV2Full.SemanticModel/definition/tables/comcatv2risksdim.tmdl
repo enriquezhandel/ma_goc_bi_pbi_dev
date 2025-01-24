@@ -1,0 +1,139 @@
+table comcatv2risksdim
+	lineageTag: 1a98c497-2dc0-49ae-add4-3233a950ae77
+	sourceLineageTag: [dbo].[comcatv2risksdim]
+
+	column SharingId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 197652d5-3933-4e16-8b98-def3c9429bf1
+		sourceLineageTag: SharingId
+		summarizeBy: count
+		sourceColumn: SharingId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 01333b9a-995d-4335-a1c4-4719adcbc15c
+		sourceLineageTag: AccountName
+		summarizeBy: none
+		sourceColumn: AccountName
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 4c0532be-0a48-4a1b-971a-1c1f182d996f
+		sourceLineageTag: snapshot_date
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		changedProperty = FormatString
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column eom_snapshotdate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 36f2c02b-f5da-43c0-922a-1bd82b230c05
+		sourceLineageTag: eom_snapshotdate
+		summarizeBy: none
+		sourceColumn: eom_snapshotdate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 9647721e-5d14-40b2-823c-a80045422cad
+		sourceLineageTag: ProductId
+		summarizeBy: count
+		sourceColumn: ProductId
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_tasks
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: eb6fd3fc-34f2-4249-9ff5-a1775b9be718
+		sourceLineageTag: nr_tasks
+		summarizeBy: sum
+		sourceColumn: nr_tasks
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 60f81522-6ef3-4725-8451-3cc488e14b56
+		sourceLineageTag: avg_execution_seconds
+		summarizeBy: sum
+		sourceColumn: avg_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 037ae59c-a559-4d0c-b2fa-8cfb3c70ad99
+		sourceLineageTag: max_execution_seconds
+		summarizeBy: sum
+		sourceColumn: max_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column average_wait_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 34fe41a4-38ed-4f1a-94e2-17eb31d5e68c
+		sourceLineageTag: average_wait_seconds
+		summarizeBy: sum
+		sourceColumn: average_wait_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_wait_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 0cf90793-3212-43c7-adce-b7f9bee7d096
+		sourceLineageTag: max_wait_seconds
+		summarizeBy: sum
+		sourceColumn: max_wait_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalDuration
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b9c2010f-bda0-4b46-9059-7e1756d4e7b7
+		sourceLineageTag: totalDuration
+		summarizeBy: sum
+		sourceColumn: totalDuration
+
+		annotation SummarizationSetBy = Automatic
+
+	partition comcatv2risksdim = entity
+		mode: directLake
+		source
+			entityName: comcatv2risksdim
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

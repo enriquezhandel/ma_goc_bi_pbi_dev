@@ -1,0 +1,40 @@
+table calendarDim
+	lineageTag: 39e76c11-8c50-4083-b766-14a6e34c57c0
+	sourceLineageTag: [dbo].[calendarDim]
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 8fae1418-1019-46c8-84fb-acf9450f5478
+		sourceLineageTag: snapshot_date
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column MonthYear
+		dataType: string
+		sourceProviderType: nvarchar(122)
+		lineageTag: c4c4ae6f-7975-4281-9587-9309475fa478
+		sourceLineageTag: MonthYear
+		summarizeBy: none
+		sourceColumn: MonthYear
+
+		annotation SummarizationSetBy = Automatic
+
+	partition calendarDim = entity
+		mode: directLake
+		source
+			entityName: calendarDim
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

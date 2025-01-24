@@ -1,0 +1,40 @@
+relationship b2a1b14d-e1b9-bcf8-d8f3-fde4f0d72c0f
+	fromColumn: actionsdim.apdexCategory
+	toColumn: cardinaluserexperience.ExperienceScore
+
+relationship cd1fb9e4-f22c-45a5-2be1-8f32b7e9169e
+	fromColumn: sessionsdim.session_userExperienceScore
+	toColumn: cardinaluserexperience.ExperienceScore
+
+relationship 64d0c04d-2f24-e4f5-1c9e-f4c0f2d3bf1b
+	fromColumn: actionsdim.country
+	toColumn: countryView.country
+
+relationship 437e6da7-6804-9de0-b5a1-b05b15fc215c
+	fromColumn: sessionsdim.country
+	toColumn: countryView.country
+
+relationship f814df8c-ed13-f089-8bed-7f09e1c3876b
+	fromColumn: actionsdim.snapshot_date
+	toColumn: calendarDim.snapshot_date
+
+relationship 127004bb-fccc-3578-1662-f490074a5457
+	fromColumn: sessionsdim.snapshot_date
+	toColumn: calendarDim.snapshot_date
+
+relationship 50c5af7a-df43-67c9-64b5-a5352737e749
+	fromColumn: actionsdim.accountname
+	toColumn: accountView.accountname
+
+relationship cbb5d433-4d2e-434e-ac2a-5ddd4459fcb6
+	fromColumn: sessionsdim.accountname
+	toColumn: accountView.accountname
+
+relationship 6fbad56e-1ef0-df72-04d5-b71cb2ddfe58
+	fromColumn: actionsdim.application
+	toColumn: applicationsdim.Application
+
+relationship 72f7a036-cbfe-edbe-4885-1813158f6b4c
+	fromColumn: sessionsdim.application
+	toColumn: applicationsdim.Application
+

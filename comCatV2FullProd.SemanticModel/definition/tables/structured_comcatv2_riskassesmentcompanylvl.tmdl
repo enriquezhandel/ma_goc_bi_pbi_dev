@@ -1,0 +1,193 @@
+table structured_comcatv2_riskassesmentcompanylvl
+	lineageTag: 9c6c1199-b59a-4f77-acb6-3ca91d7cfe29
+
+	column SharingId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ff3280e4-1d7b-40b5-967b-e8cdb3e34f09
+		summarizeBy: count
+		sourceColumn: SharingId
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 79243956-4c92-4f05-9e2f-d05accd0a04e
+		summarizeBy: none
+		sourceColumn: AccountName
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 04129581-fa76-4f75-8750-34b10becc4f6
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column eom_snapshotdate
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: c76dbf9b-1299-4540-aacc-df08a9608eb6
+		summarizeBy: none
+		sourceColumn: eom_snapshotdate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ProductId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 987f17cb-7f4f-4545-8f80-b6e685c52118
+		summarizeBy: count
+		sourceColumn: ProductId
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_tasks
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 1f6132bd-1298-4359-82ca-31ec8fee8bc6
+		summarizeBy: sum
+		sourceColumn: num_tasks
+
+		annotation SummarizationSetBy = Automatic
+
+	column average_execution_seconds
+		dataType: double
+		formatString: 0.00
+		sourceProviderType: double
+		lineageTag: aa313f70-ff05-4aac-86ad-f188ee78f04d
+		summarizeBy: sum
+		sourceColumn: average_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column average_waiting_seconds
+		dataType: double
+		formatString: 0.00
+		sourceProviderType: double
+		lineageTag: 3061439d-19b6-4cb6-9307-221aae39e298
+		summarizeBy: sum
+		sourceColumn: average_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column median_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d38b450c-a40b-4aff-afe3-6a0a573a91f8
+		summarizeBy: sum
+		sourceColumn: median_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column median_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f9dc65ef-4aa0-4e7d-86e3-0c5566f1fe35
+		summarizeBy: sum
+		sourceColumn: median_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p90_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c9a610fe-072a-437d-b1ef-a40895635c4f
+		summarizeBy: sum
+		sourceColumn: p90_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p90_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4765bb24-a127-474c-801f-68cd8bef8648
+		summarizeBy: sum
+		sourceColumn: p90_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p95_execution_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5fafea54-1ddf-4f23-b06d-149ba19f59ba
+		summarizeBy: sum
+		sourceColumn: p95_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p95_waiting_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 21ccb180-6ccb-43cf-a7bc-b8c46440c729
+		summarizeBy: sum
+		sourceColumn: p95_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_average_duration_seconds
+		dataType: double
+		formatString: 0.00
+		sourceProviderType: double
+		lineageTag: d851d36f-eae0-4142-84a1-1fc79d8a7cae
+		summarizeBy: sum
+		sourceColumn: total_average_duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_median_duration_seconds
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 3f1b8949-8e51-41fb-bcf5-d6b1bef62600
+		summarizeBy: sum
+		sourceColumn: total_median_duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_of_month
+		dataType: dateTime
+		formatString: yyyy-mmmm
+		sourceProviderType: date
+		lineageTag: 875f844e-93b2-4043-82b0-dd725e6cf585
+		summarizeBy: none
+		sourceColumn: end_of_month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	partition structured_comcatv2_riskassesmentcompanylvl = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_silver_dev",Kind="Schema"]}[Data],
+				    structured_comcatv2_riskassesmentcompanylvl_View = ds_goc_silver_dev_Schema{[Name="structured_comcatv2_riskassesmentcompanylvl",Kind="View"]}[Data]
+				in
+				    structured_comcatv2_riskassesmentcompanylvl_View
+
+	annotation PBI_ResultType = Table
+

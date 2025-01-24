@@ -1,0 +1,61 @@
+table calendar
+	lineageTag: 34228fbb-c86c-49d1-bd51-71a656938bde
+	sourceLineageTag: [dbo].[calendar]
+
+	column Date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: varchar(8000)
+		lineageTag: fa0feb2c-1b1c-4908-b3d4-2a921fb6fb61
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Month
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 3276ee99-0a72-4061-b763-ecfe2d5d09a8
+		sourceLineageTag: Month
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column EOMonth
+		dataType: dateTime
+		isNullable: false
+		formatString: yyyy-mmmm
+		sourceProviderType: varchar(8000)
+		lineageTag: a5061d24-57bb-4b73-b230-00703f381973
+		sourceLineageTag: EOMonth
+		summarizeBy: distinctCount
+		sourceColumn: EOMonth
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		changedProperty = SummarizeBy
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	partition calendar = entity
+		mode: directLake
+		source
+			entityName: calendar
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

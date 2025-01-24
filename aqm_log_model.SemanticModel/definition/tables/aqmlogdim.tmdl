@@ -1,0 +1,81 @@
+table aqmlogdim
+	lineageTag: 688f2867-0eff-410a-b659-2b8c77766386
+	sourceLineageTag: [dbo].[aqmlogdim]
+
+	column provider
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 13e05008-5a53-44bf-9864-749b7c369452
+		sourceLineageTag: provider
+		summarizeBy: none
+		sourceColumn: provider
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5fded91f-55aa-4031-a0af-93abe2bb86af
+		sourceLineageTag: source
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column service
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a5978c1b-fdb6-4e81-8a8d-c148a85476f7
+		sourceLineageTag: service
+		summarizeBy: none
+		sourceColumn: service
+
+		annotation SummarizationSetBy = Automatic
+
+	column intance_per_hour
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: ca458386-448c-4a84-bb57-b7fcfec02727
+		sourceLineageTag: intance_per_hour
+		summarizeBy: sum
+		sourceColumn: intance_per_hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column hour
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 16268362-343e-409e-bd86-d2d44428ad54
+		sourceLineageTag: hour
+		summarizeBy: none
+		sourceColumn: hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: varchar(8000)
+		lineageTag: cba0d1c4-2c32-4951-a50b-1ed9c6129a4b
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition aqmlogdim = entity
+		mode: directLake
+		source
+			entityName: aqmlogdim
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

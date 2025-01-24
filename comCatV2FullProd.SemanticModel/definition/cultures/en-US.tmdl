@@ -1,0 +1,427 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "comcatonly.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "comCatOnly",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "comcatonly.threadname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "comCatOnly",
+			          "ConceptualProperty": "threadname"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "comcatonly.accountname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "comCatOnly",
+			          "ConceptualProperty": "accountname"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "comcatonly.userid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "comCatOnly",
+			          "ConceptualProperty": "userId"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "cardinaluserexperience.experiencescore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cardinaluserexperience",
+			          "ConceptualProperty": "ExperienceScore"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "calendar.eomonth": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calendar",
+			          "ConceptualProperty": "EOMonth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendardim.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calendardim",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_comcatv2.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_comcatv2",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_comcatv2.end_of_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_comcatv2",
+			          "ConceptualProperty": "end_of_month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_comcatv2.userid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_comcatv2",
+			          "ConceptualProperty": "userId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "User": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_comcatv2.accountname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_comcatv2",
+			          "ConceptualProperty": "accountname"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "comcatv2risksdim.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "comcatv2risksdim",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "structured_comcatv2_riskassesmentcompanylvl.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_riskassesmentcompanylvl",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_riskassesmentcompanylvl.end_of_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_riskassesmentcompanylvl",
+			          "ConceptualProperty": "end_of_month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimalertscomcatv2.snapshotdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimAlertsComCatV2",
+			          "ConceptualProperty": "snapshotdate"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "dimalertscomcatv2.accountname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimAlertsComCatV2",
+			          "ConceptualProperty": "AccountName"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "dimalertscomcatv2.alertname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimAlertsComCatV2",
+			          "ConceptualProperty": "alertName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Alert Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_riskassesmentkpis.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_riskassesmentkpis",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_riskassesmentkpis.end_of_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_riskassesmentkpis",
+			          "ConceptualProperty": "end_of_month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "raw_comcatv2_moduletracking.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_comcatv2_moduletracking",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "raw_comcatv2_moduletracking.eom_snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_comcatv2_moduletracking",
+			          "ConceptualProperty": "eom_snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "raw_comcatv2_moduletracking.userclientname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_comcatv2_moduletracking",
+			          "ConceptualProperty": "UserClientName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Company Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_alerts.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_alerts",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "experience_score.experiencescore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "experience_score",
+			          "ConceptualProperty": "ExperienceScore"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Experience Score": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

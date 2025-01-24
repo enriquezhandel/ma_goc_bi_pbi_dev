@@ -1,0 +1,16 @@
+relationship 92068017-979e-ccde-549c-754ab71856ae
+	fromColumn: dimAlertsComCatV2.snapshotdate
+	toColumn: calendar.Date
+
+relationship cd711eaa-1cef-2d72-893d-c0caf69a8399
+	fromColumn: comcatv2risksdim.snapshot_date
+	toColumn: calendar.Date
+
+relationship 21fb9721-376d-4879-e8ad-7fc799983ead
+	fromColumn: comCatOnly.snapshot_date
+	toColumn: calendar.Date
+
+relationship c32765dd-5dd4-ceaa-7dc9-6b25665235ef
+	fromColumn: comCatOnly.apdexCategory
+	toColumn: cardinaluserexperience.ExperienceScore
+

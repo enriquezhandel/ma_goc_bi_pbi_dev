@@ -1,0 +1,121 @@
+table aqmalertdim
+	lineageTag: 14abde18-4da2-47aa-9a32-c05ccc6d04e9
+	sourceLineageTag: [dbo].[aqmalertdim]
+
+	column source
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8a29e499-069f-409e-b023-35c289d13115
+		sourceLineageTag: source
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 7907eff8-84a4-48fa-8c04-84776e857720
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column provider
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a29249d3-f1ba-4a1b-a9e2-68c2bdebc9ee
+		sourceLineageTag: provider
+		summarizeBy: none
+		sourceColumn: provider
+
+		annotation SummarizationSetBy = Automatic
+
+	column service
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a3ca4d03-b7fe-40e2-b7bf-1559787db8ec
+		sourceLineageTag: service
+		summarizeBy: none
+		sourceColumn: service
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c1039d0e-497f-49c5-9363-85be56bfe85a
+		sourceLineageTag: day_name
+		summarizeBy: none
+		sourceColumn: day_name
+		sortByColumn: date
+
+		changedProperty = SortByColumn
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+	column instance_per_day
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 7b815cce-4fc0-4e36-a0f2-c37189834501
+		sourceLineageTag: instance_per_day
+		summarizeBy: sum
+		sourceColumn: instance_per_day
+
+		annotation SummarizationSetBy = Automatic
+
+	column previous_instance_per_day
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 22271970-6c4a-46ad-93da-6eb911088648
+		sourceLineageTag: previous_instance_per_day
+		summarizeBy: sum
+		sourceColumn: previous_instance_per_day
+
+		annotation SummarizationSetBy = Automatic
+
+	column percentage_difference
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1e5ea1da-009c-45c4-8ca3-6557a9c936fd
+		sourceLineageTag: percentage_difference
+		summarizeBy: sum
+		sourceColumn: percentage_difference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column outageMechanism
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b3e8d0a9-6037-4415-9a3b-cdd73c8aa946
+		sourceLineageTag: outageMechanism
+		summarizeBy: none
+		sourceColumn: outageMechanism
+
+		annotation SummarizationSetBy = Automatic
+
+	partition aqmalertdim = entity
+		mode: directLake
+		source
+			entityName: aqmalertdim
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,12 @@
+relationship 96911742-ecd3-46a4-4030-57aeebd460af
+	fromColumn: curated_user_actions_orbisaws.snapshot_date
+	toColumn: calendardim.date
+
+relationship 5d59a2db-b4db-de9c-51a3-45e05e727330
+	fromColumn: raw_orbisaws_moduletracking.snapshot_date
+	toColumn: calendardim.date
+
+relationship 3a11c8ea-9798-d9e7-a1dc-ee44bf748a83
+	fromColumn: curated_user_actions_orbisaws.apdexCategory
+	toColumn: experience_score.ExperienceScore
+

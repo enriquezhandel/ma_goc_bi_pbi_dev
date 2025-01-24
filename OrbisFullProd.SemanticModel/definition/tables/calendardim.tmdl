@@ -1,0 +1,88 @@
+table calendardim
+	lineageTag: 516f3f46-18fd-4e37-91a7-39a9543dc73c
+
+	column date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 2128e6e3-16f8-40c6-a2a5-5a4d09a9a1a8
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 7f102d1b-2639-4a6a-bd83-a1e8594a4acb
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 9f703dc7-67a9-412a-89f0-fbfdfa354961
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column day
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 7ee9dbd9-1a91-493b-b54b-e87f39adcab1
+		summarizeBy: sum
+		sourceColumn: day
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_of_week
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e907aca4-d019-48a9-aac7-cfa01587a5b1
+		summarizeBy: sum
+		sourceColumn: day_of_week
+
+		annotation SummarizationSetBy = Automatic
+
+	column week_of_year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 640f2558-3eb7-48f4-aef6-8cbddfac3cde
+		summarizeBy: sum
+		sourceColumn: week_of_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: dca25946-bb98-4e1e-be97-846747c27afa
+		summarizeBy: sum
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	partition calendardim = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_dim_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_dim_dev",Kind="Schema"]}[Data],
+				    calendardim_Table = ds_goc_dim_dev_Schema{[Name="calendardim",Kind="Table"]}[Data]
+				in
+				    calendardim_Table
+
+	annotation PBI_ResultType = Table
+

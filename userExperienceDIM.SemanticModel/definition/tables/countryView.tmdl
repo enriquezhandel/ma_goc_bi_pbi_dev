@@ -1,0 +1,23 @@
+table countryView
+	lineageTag: 0c711b10-2718-4ec5-a616-ecb85158820b
+	sourceLineageTag: [dbo].[countryView]
+
+	column country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1c410799-a596-4cd0-905b-50adb9c15620
+		sourceLineageTag: country
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition countryView = entity
+		mode: directLake
+		source
+			entityName: countryView
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,47 @@
+table cardinaluserexperience
+	lineageTag: bfe01af1-d47f-4bae-b4f6-b91a195bb971
+	sourceLineageTag: [dbo].[cardinaluserexperience]
+
+	column ExperienceScore
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 52f957f9-14db-4301-828c-808bcc62f207
+		sourceLineageTag: ExperienceScore
+		summarizeBy: none
+		sourceColumn: ExperienceScore
+		sortByColumn: Order
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 00effc7b-fbe5-4cbf-8c89-5ee8320adc08
+		sourceLineageTag: Order
+		summarizeBy: sum
+		sourceColumn: Order
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActionExperienceScore
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d0a2c875-90fd-4480-a10c-f22c5ca9919a
+		sourceLineageTag: ActionExperienceScore
+		summarizeBy: none
+		sourceColumn: ActionExperienceScore
+
+		annotation SummarizationSetBy = Automatic
+
+	partition cardinaluserexperience = entity
+		mode: directLake
+		source
+			entityName: cardinaluserexperience
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.138.7476.2 (Main)
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
+
+ref table calendar
+ref table dimAlertsComCatV2
+ref table comcatv2risksdim
+ref table comCatOnly
+ref table cardinaluserexperience
+
+ref cultureInfo en-US
+

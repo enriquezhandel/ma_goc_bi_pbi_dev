@@ -1,0 +1,169 @@
+table raw_comcatv2_moduletracking
+	lineageTag: 528c095b-bf63-46a9-82f7-6b9c910ebf02
+
+	column TrackId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 6a0117e7-e062-4f13-94b3-ccaa3f0afcb5
+		summarizeBy: none
+		sourceColumn: TrackId
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreationDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: e48bb31e-9fa9-4288-a9d6-39dd7d1cf2a4
+		summarizeBy: none
+		sourceColumn: CreationDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column StartDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 34a53025-67e0-4212-8a9a-e07b423126eb
+		summarizeBy: none
+		sourceColumn: StartDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column EndDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: b23f330d-b895-4af7-abb7-e2cdb5229d09
+		summarizeBy: none
+		sourceColumn: EndDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: dbfef737-ea91-41b1-8f45-a6cd78f7e94a
+		summarizeBy: count
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModuleId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: ddd0651a-756f-478f-8287-15cdad1be899
+		summarizeBy: none
+		sourceColumn: ModuleId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductId
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 8a8e60e2-a010-47d9-b41e-1640d16f0bdc
+		summarizeBy: none
+		sourceColumn: ProductId
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 027cffec-7e48-428c-af46-70bd8e8e06b5
+		summarizeBy: none
+		sourceColumn: UserName
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserClientName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 303f7e9e-5d1c-44f9-9806-c75cc97a7469
+		summarizeBy: none
+		sourceColumn: UserClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	column WaitTime
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 6c130731-3cd2-464e-a29c-b62e7e94fca3
+		summarizeBy: sum
+		sourceColumn: WaitTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column ExecutionTime
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: bd35ff4c-ea59-4e65-b346-92a0d36996b5
+		summarizeBy: sum
+		sourceColumn: ExecutionTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 64b46625-dd25-41ee-b0c5-42ea3e1848e6
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column eom_snapshot_date
+		dataType: dateTime
+		isNullable: false
+		formatString: yyyy-mmmm
+		sourceProviderType: date
+		lineageTag: c5bf757a-094e-4c63-902a-6cccde001948
+		summarizeBy: none
+		sourceColumn: eom_snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	column Duration
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 349497fc-90c8-4ed6-a9c7-7cf688fe3283
+		summarizeBy: sum
+		sourceColumn: Duration
+
+		annotation SummarizationSetBy = Automatic
+
+	partition raw_comcatv2_moduletracking = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_bronze_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_bronze_dev",Kind="Schema"]}[Data],
+				    raw_comcatv2_moduletracking_View = ds_goc_bronze_dev_Schema{[Name="raw_comcatv2_moduletracking",Kind="View"]}[Data],
+				    #"Duplicated Column" = Table.DuplicateColumn(raw_comcatv2_moduletracking_View, "EndDate", "EndDate - Copy"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Duplicated Column",{{"EndDate - Copy", "snapshot_date"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"snapshot_date", type date}}),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Changed Type", "snapshot_date", "snapshot_date - Copy"),
+				    #"Calculated End of Month" = Table.TransformColumns(#"Duplicated Column1",{{"snapshot_date - Copy", Date.EndOfMonth, type date}}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Calculated End of Month",{{"snapshot_date - Copy", "eom_snapshot_date"}}),
+				    #"Added Custom" = Table.AddColumn(#"Renamed Columns1", "Duration", each [WaitTime]+[ExecutionTime]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"Duration", Int64.Type}}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Changed Type1",{"TrackId", "CreationDate", "StartDate", "EndDate", "UserId", "ModuleId", "ProductId", "UserName", "UserClientName", "WaitTime", "ExecutionTime", "Duration", "snapshot_date", "eom_snapshot_date"})
+				in
+				    #"Reordered Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

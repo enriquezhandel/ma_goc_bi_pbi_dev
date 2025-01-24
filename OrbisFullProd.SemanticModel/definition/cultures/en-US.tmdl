@@ -1,0 +1,241 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "curated_user_actions_comcatv2.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_comcatv2",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "curated_user_actions_orbisaws.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_orbisaws",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_comcatv2.end_of_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_comcatv2",
+			          "ConceptualProperty": "end_of_month"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "calendardim.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calendardim",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "curated_user_actions_orbisaws.accountname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_orbisaws",
+			          "ConceptualProperty": "accountname"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Account Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_orbisaws.userid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_orbisaws",
+			          "ConceptualProperty": "userId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "User": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_orbisaws.end_of_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_orbisaws",
+			          "ConceptualProperty": "end_of_month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "experience_score.experiencescore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "experience_score",
+			          "ConceptualProperty": "ExperienceScore"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Experience Score": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_user_actions_comcatv2.userid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_user_actions_comcatv2",
+			          "ConceptualProperty": "userId"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "raw_comcatv2_moduletracking.eom_snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_comcatv2_moduletracking",
+			          "ConceptualProperty": "eom_snapshot_date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "raw_comcatv2_moduletracking.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_comcatv2_moduletracking",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "raw_comcatv2_moduletracking.userclientname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_comcatv2_moduletracking",
+			          "ConceptualProperty": "UserClientName"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "raw_orbisaws_moduletracking.eom_snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_orbisaws_moduletracking",
+			          "ConceptualProperty": "eom_snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "raw_orbisaws_moduletracking.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "raw_orbisaws_moduletracking",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

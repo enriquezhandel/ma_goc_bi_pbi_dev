@@ -1,0 +1,38 @@
+table experience_score
+	lineageTag: 062db7c5-c3e6-4489-a0ae-b60c8f97a463
+
+	column ExperienceScore
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 791f295f-762c-4df2-bb61-fdc62ac12d08
+		summarizeBy: none
+		sourceColumn: ExperienceScore
+		sortByColumn: Order
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 43c515b1-a773-4586-98f6-a58b11628e0e
+		summarizeBy: none
+		sourceColumn: Order
+
+		annotation SummarizationSetBy = Automatic
+
+	partition experience_score = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_dim_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_dim_dev",Kind="Schema"]}[Data],
+				    experience_score_Table = ds_goc_dim_dev_Schema{[Name="experience_score",Kind="Table"]}[Data]
+				in
+				    experience_score_Table
+
+	annotation PBI_ResultType = Table
+

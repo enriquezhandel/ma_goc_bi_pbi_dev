@@ -1,0 +1,66 @@
+table ext_ComplianceCatalystV1
+	lineageTag: 6a9f14a4-34d8-4650-b403-0207fff8a9eb
+	sourceLineageTag: [dbo].[ext_ComplianceCatalystV1]
+
+	column MonitoringType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ae3b6a79-53e2-4216-ae3b-063a3ee6c387
+		sourceLineageTag: MonitoringType
+		summarizeBy: none
+		sourceColumn: MonitoringType
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonitoringNature
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2b9286a4-bb00-45cd-b5fa-1943ed271679
+		sourceLineageTag: MonitoringNature
+		summarizeBy: none
+		sourceColumn: MonitoringNature
+
+		annotation SummarizationSetBy = Automatic
+
+	column PreviousCheckDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 96dfcea4-5f73-4c04-b7cc-b89135435fff
+		sourceLineageTag: PreviousCheckDate
+		summarizeBy: none
+		sourceColumn: PreviousCheckDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column LatestKnownChanges
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 6516e932-dcd7-4bfc-aa2d-a0bf1de23149
+		sourceLineageTag: LatestKnownChanges
+		summarizeBy: none
+		sourceColumn: LatestKnownChanges
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshotdate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 1ee1adf5-459b-4c38-a455-37cae82c55cc
+		sourceLineageTag: snapshotdate
+		summarizeBy: none
+		sourceColumn: snapshotdate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ext_ComplianceCatalystV1 = entity
+		mode: directLake
+		source
+			entityName: ext_ComplianceCatalystV1
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,108 @@
+table actionsdim
+	lineageTag: acbc1e59-b483-4b6a-84b8-674fc35af431
+	sourceLineageTag: [dbo].[actionsdim]
+
+	column userSessionIdTotal
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4fb539be-653a-4cbc-96e4-5077e8223793
+		sourceLineageTag: userSessionIdTotal
+		summarizeBy: sum
+		sourceColumn: userSessionIdTotal
+
+		annotation SummarizationSetBy = Automatic
+
+	column startTime_utc_hour
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 18e55bba-521c-45a0-a64a-d3cfc8d7a5cd
+		sourceLineageTag: startTime_utc_hour
+		summarizeBy: sum
+		sourceColumn: startTime_utc_hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column apdexCategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dff881e5-9fa1-4eb5-a514-bbdbb25531de
+		sourceLineageTag: apdexCategory
+		summarizeBy: none
+		sourceColumn: apdexCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column application
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e855e7d9-1363-4fbc-bff2-2bee4b2c346d
+		sourceLineageTag: application
+		summarizeBy: none
+		sourceColumn: application
+
+		annotation SummarizationSetBy = Automatic
+
+	column duration_seconds
+		dataType: double
+		sourceProviderType: real
+		lineageTag: e0059f45-8a92-4199-a4af-455cd9588f04
+		sourceLineageTag: duration_seconds
+		summarizeBy: sum
+		sourceColumn: duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column threadname
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ed43d345-34be-47c1-ad30-660ad5eb25eb
+		sourceLineageTag: threadname
+		summarizeBy: none
+		sourceColumn: threadname
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountname
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 070e6f14-3dd5-4d73-94e1-b98ce0a9f17c
+		sourceLineageTag: accountname
+		summarizeBy: none
+		sourceColumn: accountname
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 46c9104e-995f-4c09-ae6b-f8777c99a71a
+		sourceLineageTag: country
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 6be3bdc8-9e8c-4d12-8563-54e174832130
+		sourceLineageTag: snapshot_date
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition actionsdim = entity
+		mode: directLake
+		source
+			entityName: actionsdim
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
