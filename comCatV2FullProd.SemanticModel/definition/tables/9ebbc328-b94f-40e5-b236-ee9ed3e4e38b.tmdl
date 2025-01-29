@@ -1,0 +1,36 @@
+table 9ebbc328-b94f-40e5-b236-ee9ed3e4e38b
+	isHidden
+	systemManaged
+
+	column curated_user_actions_comcatv2_userSessionId
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.userSessionId
+
+	column 1
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: curated_user_actions_comcatv2
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 13
+
+	annotation activeQueries = 1
+
+	annotation relativeGain(%) = 44.442782581301344
+
+	annotation relativeLift(%) = 4.5002656311704463
+
+	annotation relativeSize(%) = 10.125976299836516
+
+	annotation estimatedCardinality(Krows) = 261.958
+
+	annotation avoidQueryHints = false
+

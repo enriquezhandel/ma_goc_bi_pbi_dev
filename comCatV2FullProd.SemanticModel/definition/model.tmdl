@@ -19,6 +19,17 @@ ref table raw_comcatv2_moduletracking
 ref table structured_comcatv2_alerts
 ref table structured_comcatv2_riskassesmentcompanylvl
 ref table structured_comcatv2_riskassesmentkpis
+ref table 96cdc3f2-1464-4eea-9884-ba2cbf2dd894
+ref table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
+ref table 33fe00f1-8bc6-4357-828f-99a0eb8dd4fe
+ref table ee7a1730-2170-4297-9603-6ab4cdbc8be3
+ref table 70551b97-f5cd-450e-af38-0fd4645b34db
+ref table 9ebbc328-b94f-40e5-b236-ee9ed3e4e38b
+ref table ecaea0bb-1c3c-4ae3-a54a-1dd918e51d25
+ref table 8af67e9f-f7f5-4722-bb77-20442564a0cd
+ref table 058043ca-a57f-4629-af2d-6d70ee3adca9
+ref table 7968ad80-eadb-48e1-8ac7-94a76a7393cd
+ref table f57bc5ad-d5d6-4ec0-a73d-0b920d3ba726
 
 ref cultureInfo en-US
 

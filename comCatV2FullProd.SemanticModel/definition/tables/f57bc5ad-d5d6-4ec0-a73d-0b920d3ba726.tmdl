@@ -1,0 +1,51 @@
+table f57bc5ad-d5d6-4ec0-a73d-0b920d3ba726
+	isHidden
+	systemManaged
+
+	column curated_user_actions_comcatv2_elastic_id
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.elastic_id
+
+	column curated_user_actions_comcatv2_accountname
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.accountname
+
+	column 2
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: curated_user_actions_comcatv2
+
+	column 3
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: min
+			baseColumn: curated_user_actions_comcatv2.apdexCategory
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 12
+
+	annotation activeQueries = 2
+
+	annotation relativeGain(%) = 39.538811672138415
+
+	annotation relativeLift(%) = 4.1499247314365375
+
+	annotation relativeSize(%) = 10.49582563544984
+
+	annotation estimatedCardinality(Krows) = 271.747
+
+	annotation avoidQueryHints = false
+

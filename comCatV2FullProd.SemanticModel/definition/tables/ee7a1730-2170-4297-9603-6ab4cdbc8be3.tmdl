@@ -1,0 +1,44 @@
+table ee7a1730-2170-4297-9603-6ab4cdbc8be3
+	isHidden
+	systemManaged
+
+	column structured_comcatv2_alerts_AccountName
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: structured_comcatv2_alerts.AccountName
+
+	column 1
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: structured_comcatv2_alerts
+
+	column 2
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: structured_comcatv2_alerts.Count
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 27
+
+	annotation activeQueries = 2
+
+	annotation relativeGain(%) = 189.92088760462659
+
+	annotation relativeLift(%) = 3.3479578378408474
+
+	annotation relativeSize(%) = 1.7628170761346467
+
+	annotation estimatedCardinality(Krows) = 0.568
+
+	annotation avoidQueryHints = false
+
