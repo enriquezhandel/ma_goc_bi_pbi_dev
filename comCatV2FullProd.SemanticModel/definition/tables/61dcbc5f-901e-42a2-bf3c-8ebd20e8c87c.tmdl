@@ -1,4 +1,4 @@
-table 70551b97-f5cd-450e-af38-0fd4645b34db
+table 61dcbc5f-901e-42a2-bf3c-8ebd20e8c87c
 	isHidden
 	systemManaged
 
@@ -16,6 +16,13 @@ table 70551b97-f5cd-450e-af38-0fd4645b34db
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.accountname
 
+	column curated_user_actions_comcatv2_snapshot_date
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.snapshot_date
+
 	column experience_score_ExperienceScore
 		dataType: string
 		isAvailableInMdx: false
@@ -30,7 +37,7 @@ table 70551b97-f5cd-450e-af38-0fd4645b34db
 		alternateOf
 			baseColumn: experience_score.Order
 
-	column 4
+	column 5
 		dataType: double
 		isAvailableInMdx: false
 
@@ -38,7 +45,7 @@ table 70551b97-f5cd-450e-af38-0fd4645b34db
 			summarization: sum
 			baseColumn: curated_user_actions_comcatv2.duration_seconds
 
-	column 5
+	column 6
 		dataType: string
 		isAvailableInMdx: false
 
@@ -46,7 +53,7 @@ table 70551b97-f5cd-450e-af38-0fd4645b34db
 			summarization: min
 			baseColumn: curated_user_actions_comcatv2.apdexCategory
 
-	column 6
+	column 7
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -54,7 +61,7 @@ table 70551b97-f5cd-450e-af38-0fd4645b34db
 			summarization: count
 			baseColumn: curated_user_actions_comcatv2.elastic_id
 
-	column 7
+	column 8
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -65,17 +72,17 @@ table 70551b97-f5cd-450e-af38-0fd4645b34db
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 14
+	annotation activeFrequency = 9
 
 	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 91.042554268584524
+	annotation relativeGain(%) = 25.758543035010547
 
-	annotation relativeLift(%) = 4.9087046087750785
+	annotation relativeLift(%) = 1.481175393025717
 
-	annotation relativeSize(%) = 5.3916595906282616
+	annotation relativeSize(%) = 5.7502297044228392
 
-	annotation estimatedCardinality(Krows) = 131.614
+	annotation estimatedCardinality(Krows) = 1350.218
 
 	annotation avoidQueryHints = false
 

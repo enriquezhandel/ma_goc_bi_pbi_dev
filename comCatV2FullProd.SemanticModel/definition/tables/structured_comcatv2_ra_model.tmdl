@@ -1,0 +1,210 @@
+table structured_comcatv2_ra_model
+	lineageTag: 097421a4-8b68-46b9-ab27-f66ea209fde9
+
+	measure Average_Waiting_Time = AVERAGE(structured_comcatv2_ra_model[waiting_seconds])
+		formatString: 0.00
+		lineageTag: 9e4b6b69-3df8-422b-b872-db8b0f1e5eab
+
+	measure Median_Waiting_Time = MEDIAN(structured_comcatv2_ra_model[waiting_seconds])
+		formatString: 0.00
+		lineageTag: 456fca32-4b3a-42cb-b662-48bd339108a2
+
+	measure P90_Waiting_Time = PERCENTILE.INC(structured_comcatv2_ra_model[waiting_seconds], 0.90)
+		formatString: 0.00
+		lineageTag: ad443e8f-51a0-41da-af99-a148b8215fcd
+
+	measure P95_Waiting_Time = PERCENTILE.INC(structured_comcatv2_ra_model[waiting_seconds], 0.95)
+		formatString: 0.00
+		lineageTag: 27be5d60-4c9c-4a3c-b61a-9e2287c5abfd
+
+	measure Average_Execution_Time = AVERAGE(structured_comcatv2_ra_model[execution_seconds])
+		formatString: 0.00
+		lineageTag: 9ca763b6-6275-4466-862f-26b8664627cc
+
+	measure Median_Execution_Time = MEDIAN(structured_comcatv2_ra_model[execution_seconds])
+		formatString: 0.00
+		lineageTag: eaef8a02-85ba-41eb-ab4e-e1a32b6d4282
+
+	measure P90_Execution_Time = PERCENTILE.INC(structured_comcatv2_ra_model[execution_seconds], 0.90)
+		formatString: 0.00
+		lineageTag: cace2cb6-41fe-446f-94e9-2df09245bd06
+
+	measure P95_Execution_Time = ```
+			PERCENTILE.INC(structured_comcatv2_ra_model[execution_seconds], 0.95)
+			
+			```
+		formatString: 0.00
+		lineageTag: b6eb9c64-67d5-46e5-bb27-78aabdd02476
+
+	column RAid
+		dataType: string
+		lineageTag: ccffcb40-d4c1-45d7-a480-7cd1402d9397
+		summarizeBy: none
+		sourceColumn: RAid
+
+		annotation SummarizationSetBy = Automatic
+
+	column RequestedOn
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ed97dc3b-5449-4544-b2c5-0fdcb64c0e8e
+		summarizeBy: none
+		sourceColumn: RequestedOn
+
+		variation Variation
+			isDefault
+			relationship: 3c651595-1b5d-4c34-8499-c9613318a446
+			defaultHierarchy: LocalDateTable_11c9977d-517c-4437-b4fc-1e611900338c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserName
+		dataType: string
+		lineageTag: f047033f-7e61-4133-8ca2-f110a89ac7b0
+		summarizeBy: none
+		sourceColumn: UserName
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountName
+		dataType: string
+		lineageTag: 0135b350-71c3-434c-9037-ca184ee05721
+		summarizeBy: none
+		sourceColumn: AccountName
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserId
+		dataType: int64
+		formatString: 0
+		lineageTag: 9219b759-59a5-4c1c-becc-6e888fdfd496
+		summarizeBy: count
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = Automatic
+
+	column SharingId
+		dataType: int64
+		formatString: 0
+		lineageTag: b914aae2-55c6-4d1b-98b8-30fecc3b2afb
+		summarizeBy: count
+		sourceColumn: SharingId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductId
+		dataType: int64
+		formatString: 0
+		lineageTag: b90ef569-c6c7-4787-9cd1-967662ddcb47
+		summarizeBy: count
+		sourceColumn: ProductId
+
+		annotation SummarizationSetBy = Automatic
+
+	column TaskType
+		dataType: string
+		lineageTag: bad5f229-bdc9-4a0a-a147-c3a89a7fde9b
+		summarizeBy: none
+		sourceColumn: TaskType
+
+		annotation SummarizationSetBy = Automatic
+
+	column QueueDurationInMS
+		dataType: int64
+		formatString: 0
+		lineageTag: e2366d28-58fc-4960-bd39-0ed04234302d
+		summarizeBy: sum
+		sourceColumn: QueueDurationInMS
+
+		annotation SummarizationSetBy = Automatic
+
+	column ComputeDurationInMS
+		dataType: int64
+		formatString: 0
+		lineageTag: 2af7050d-e20b-4615-83a7-9aef9f00327a
+		summarizeBy: sum
+		sourceColumn: ComputeDurationInMS
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalDurationInMS
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a718b82-7cea-43cd-9a5c-193bc6994285
+		summarizeBy: sum
+		sourceColumn: TotalDurationInMS
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelID
+		dataType: string
+		lineageTag: 057ce68e-0d55-4e10-914a-b5023467ffdb
+		summarizeBy: none
+		sourceColumn: modelID
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 29a620f7-640f-4027-857c-dedc0f95e375
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ProductName
+		dataType: string
+		lineageTag: edc9ed6c-4f06-4471-a177-cb9d1ced53ee
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column waiting_seconds
+		dataType: double
+		lineageTag: 0524d5b9-56f3-4922-b83c-6bcf79406990
+		summarizeBy: sum
+		sourceColumn: waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column execution_seconds
+		dataType: double
+		lineageTag: b0bc27be-007d-4a5f-9d50-2426b10bc51c
+		summarizeBy: sum
+		sourceColumn: execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column duration_seconds
+		dataType: double
+		lineageTag: a8056bff-399d-492f-8233-702dd05e2fe7
+		summarizeBy: sum
+		sourceColumn: duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition structured_comcatv2_ra_model = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog=null, Database=null, EnableAutomaticProxyDiscovery=null]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_silver_dev",Kind="Schema"]}[Data],
+				    structured_comcatv2_ra_model_View = ds_goc_silver_dev_Schema{[Name="structured_comcatv2_ra_model",Kind="View"]}[Data]
+				in
+				    structured_comcatv2_ra_model_View
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

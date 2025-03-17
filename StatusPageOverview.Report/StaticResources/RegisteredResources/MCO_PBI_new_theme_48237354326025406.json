@@ -1,0 +1,5023 @@
+{
+  "name": "MCO PBI new theme ",
+  "dataColors": [
+    "#005EFF",
+    "#5EB6BC",
+    "#AD9422",
+    "#5C068C",
+    "#D25F76",
+    "#C64809",
+    "#0A1264",
+    "#D7D8D7",
+    "#3599B8",
+    "#DFBFBF",
+    "#4AC5BB",
+    "#5F6B6D",
+    "#FB8281",
+    "#F4D25A",
+    "#7F898A",
+    "#A4DDEE",
+    "#FDAB89",
+    "#B687AC",
+    "#28738A",
+    "#A78F8F",
+    "#168980",
+    "#293537",
+    "#BB4A4A",
+    "#B59525",
+    "#475052",
+    "#6A9FB0",
+    "#BD7150",
+    "#7B4F71",
+    "#1B4D5C",
+    "#706060",
+    "#0F5C55",
+    "#1C2325",
+    "#7D3231",
+    "#796419",
+    "#303637",
+    "#476A75",
+    "#7E4B36",
+    "#52354C",
+    "#0D262E",
+    "#544848",
+    "#016AB8",
+    "#373D49",
+    "#FDB15D",
+    "#AAF20F",
+    "#5F646D",
+    "#8AA3EB",
+    "#FEE266",
+    "#A6687A",
+    "#3557B8",
+    "#DFCFBF",
+    "#4A91C5",
+    "#5F646D",
+    "#FBBF81",
+    "#C9F459",
+    "#7F838A",
+    "#A4B8EE",
+    "#FDE489",
+    "#B68794",
+    "#28428A",
+    "#A79B8F",
+    "#165889",
+    "#292E37",
+    "#BB824A",
+    "#8DB525",
+    "#474A52",
+    "#6A7CB0",
+    "#BDA750",
+    "#7B4F5A",
+    "#1B2C5C",
+    "#706860",
+    "#0F3C5C",
+    "#1C1E25",
+    "#7D5731",
+    "#5D7918",
+    "#303237",
+    "#475375",
+    "#7E6F36",
+    "#52343D",
+    "#0D152E",
+    "#544E48",
+    "#010EB8",
+    "#393749",
+    "#F9FD5D",
+    "#38F20F",
+    "#615F6D",
+    "#A08AEB",
+    "#CEFE66",
+    "#A67668",
+    "#5435B8",
+    "#DFDFBF",
+    "#4A53C5",
+    "#615F6D",
+    "#FAFB81",
+    "#7CF459",
+    "#807F8A",
+    "#B5A4EE",
+    "#DBFD89",
+    "#B69087",
+    "#3F288A",
+    "#A7A78F",
+    "#161F89",
+    "#2A2937",
+    "#BBBB4A",
+    "#45B525",
+    "#494752",
+    "#7A6AB0",
+    "#9CBD50",
+    "#7B594F",
+    "#291B5C",
+    "#707060",
+    "#0F155C",
+    "#1E1C25",
+    "#7C7D31",
+    "#2D7918",
+    "#303037",
+    "#514775",
+    "#697E36",
+    "#523B34",
+    "#140D2E",
+    "#545448",
+    "#4E01B8",
+    "#423749",
+    "#A9FD5D",
+    "#0FF256",
+    "#675F6D",
+    "#D18AEB",
+    "#82FE66",
+    "#A69468",
+    "#9535B8",
+    "#CFDFBF",
+    "#7D4AC5",
+    "#675F6D",
+    "#BCFB81",
+    "#59F484",
+    "#857F8A",
+    "#DAA4EE",
+    "#A1FD89",
+    "#B6A887",
+    "#6F288A",
+    "#9BA78F",
+    "#461689",
+    "#322937",
+    "#82BB4A",
+    "#25B54C",
+    "#4E4752",
+    "#9E6AB0",
+    "#65BD50",
+    "#7B6E4F",
+    "#4A1B5C",
+    "#687060",
+    "#2E0F5C",
+    "#221C25",
+    "#567D31",
+    "#187934",
+    "#343037",
+    "#684775",
+    "#457E36",
+    "#524934",
+    "#250D2E",
+    "#4E5448",
+    "#AA01B8",
+    "#493746",
+    "#5DFD62",
+    "#0FF2C7",
+    "#6D5F6B",
+    "#EB8AD3",
+    "#66FE96",
+    "#99A668",
+    "#B83598",
+    "#BFDFBF",
+    "#BA4AC5",
+    "#6D5F6B",
+    "#81FB82",
+    "#59F4D1",
+    "#8A7F89",
+    "#EEA4DD",
+    "#89FDAA",
+    "#ACB687",
+    "#8A2873",
+    "#8FA78F",
+    "#801689",
+    "#372934",
+    "#4ABB4A",
+    "#25B594",
+    "#524750",
+    "#B06A9F",
+    "#50BD70",
+    "#717B4F",
+    "#5C1B4D",
+    "#607060",
+    "#540F5C",
+    "#251C22",
+    "#317D32",
+    "#187964",
+    "#373036",
+    "#75476A",
+    "#367E4A",
+    "#4C5234",
+    "#2E0D26",
+    "#485448",
+    "#B8016A",
+    "#49373D",
+    "#5DFDB1",
+    "#0FAAF2",
+    "#6D5F64",
+    "#EB8AA3",
+    "#66FEE2",
+    "#7AA668",
+    "#B83557",
+    "#BFDFCF",
+    "#C54A91",
+    "#6D5F64",
+    "#81FBBF",
+    "#59C9F4",
+    "#8A7F83",
+    "#EEA4B8",
+    "#89FDE5",
+    "#94B687",
+    "#8A2842",
+    "#8FA79B",
+    "#891658",
+    "#37292E",
+    "#4ABB82",
+    "#258DB5",
+    "#52474A",
+    "#B06A7C",
+    "#50BDA7",
+    "#5B7B4F",
+    "#5C1B2C",
+    "#607068",
+    "#5C0F3C",
+    "#251C1E",
+    "#317D58",
+    "#185D79",
+    "#373032",
+    "#754752",
+    "#367E6F",
+    "#3D5234",
+    "#2E0D15",
+    "#48544E",
+    "#B8010E",
+    "#493937",
+    "#5DF9FD",
+    "#0F38F2",
+    "#6D615F",
+    "#EBA08A",
+    "#66CEFE",
+    "#68A676",
+    "#B85435",
+    "#BFDFDF",
+    "#C54A53",
+    "#6D615F",
+    "#81FAFB",
+    "#597CF4",
+    "#8A807F",
+    "#EEB5A4",
+    "#89DBFD",
+    "#87B691",
+    "#8A3F28",
+    "#8FA7A7",
+    "#89161E",
+    "#372A29",
+    "#4ABBBB",
+    "#2545B5",
+    "#524947",
+    "#B07A6A",
+    "#509CBD",
+    "#4F7B58",
+    "#5C291B",
+    "#607070",
+    "#5C0F15",
+    "#251E1C",
+    "#317C7D",
+    "#182D79",
+    "#373030",
+    "#755147",
+    "#36687E",
+    "#34523B",
+    "#2E140D",
+    "#485454",
+    "#B84E01",
+    "#494337",
+    "#5DA9FD",
+    "#560FF2",
+    "#6D685F",
+    "#EBD18A",
+    "#6681FE",
+    "#68A694",
+    "#B89535",
+    "#BFCFDF",
+    "#C57D4A",
+    "#6D685F",
+    "#81BCFB",
+    "#8459F4",
+    "#8A857F",
+    "#EEDAA4",
+    "#89A1FD",
+    "#87B6A8",
+    "#8A7028",
+    "#8F9BA7",
+    "#894616",
+    "#373229",
+    "#4A82BB",
+    "#4D25B5",
+    "#524E47",
+    "#B09E6A",
+    "#5065BD",
+    "#4F7B6F",
+    "#5C4A1B",
+    "#606870",
+    "#5C2E0F",
+    "#25221C",
+    "#31567D",
+    "#341879",
+    "#373430",
+    "#756947",
+    "#36447E",
+    "#345249",
+    "#2E250D",
+    "#484E54",
+    "#B8A901",
+    "#464937",
+    "#615DFD",
+    "#C70FF2",
+    "#6B6D5F",
+    "#D4EB8A",
+    "#9666FE",
+    "#6898A6",
+    "#99B835",
+    "#BFBFDF",
+    "#C5BA4A",
+    "#6B6D5F",
+    "#8181FB",
+    "#D159F4",
+    "#898A7F",
+    "#DDEEA4",
+    "#AA89FD",
+    "#87ACB6",
+    "#738A28",
+    "#8F8FA7",
+    "#897F16",
+    "#353729",
+    "#4A4ABB",
+    "#9425B5",
+    "#505247",
+    "#9FB06A",
+    "#7050BD",
+    "#4F717B",
+    "#4D5C1B",
+    "#606070",
+    "#5C540F",
+    "#23251C",
+    "#31317D",
+    "#641879",
+    "#363730",
+    "#6A7547",
+    "#4B367E",
+    "#344C52",
+    "#262E0D",
+    "#484854",
+    "#6AB801",
+    "#3D4937",
+    "#B15DFD",
+    "#F20FAA",
+    "#646D5F",
+    "#A3EB8A",
+    "#E266FE",
+    "#687AA6",
+    "#57B835",
+    "#CFBFDF",
+    "#91C54A",
+    "#646D5F",
+    "#BF81FB",
+    "#F459C9",
+    "#838A7F",
+    "#B7EEA4",
+    "#E589FD",
+    "#8794B6",
+    "#428A28",
+    "#9B8FA7",
+    "#588916",
+    "#2E3729",
+    "#824ABB",
+    "#B5258D",
+    "#4A5247",
+    "#7CB06A",
+    "#A750BD",
+    "#4F5B7B",
+    "#2C5C1B",
+    "#686070",
+    "#3C5C0F",
+    "#1E251C",
+    "#57317D",
+    "#79185D",
+    "#323730",
+    "#537547",
+    "#6F367E",
+    "#343D52",
+    "#152E0D",
+    "#4E4854",
+    "#0FB801",
+    "#37493A",
+    "#FD5DF9",
+    "#F20F39",
+    "#5F6D61",
+    "#8AEBA1",
+    "#FE66CE",
+    "#7568A6",
+    "#35B854",
+    "#DFBFDF",
+    "#54C54A",
+    "#5F6D61",
+    "#FB81FA",
+    "#F4597C",
+    "#7F8A80",
+    "#A4EEB5",
+    "#FD89DB",
+    "#9187B6",
+    "#288A3F",
+    "#A78FA7",
+    "#1F8916",
+    "#29372B",
+    "#BB4ABB",
+    "#B52544",
+    "#475249",
+    "#6AB07B",
+    "#BD509B",
+    "#594F7B",
+    "#1B5C2A",
+    "#706070",
+    "#155C0F",
+    "#1C251E",
+    "#7D317B",
+    "#79182D",
+    "#303731",
+    "#477552",
+    "#7E3668",
+    "#3B3452",
+    "#0D2E14",
+    "#544854",
+    "#01B84E",
+    "#374942",
+    "#FD5DA9",
+    "#F2560F",
+    "#5F6D67",
+    "#8AEBD1",
+    "#FE6682",
+    "#9468A6",
+    "#35B895",
+    "#DFBFCF",
+    "#4AC57D",
+    "#5F6D67",
+    "#FB81BD",
+    "#F48459",
+    "#7F8A85",
+    "#A4EEDA",
+    "#FD89A1",
+    "#A887B6",
+    "#288A6F",
+    "#A78F9B",
+    "#168946",
+    "#293732",
+    "#BB4A82",
+    "#B54C25",
+    "#47524E",
+    "#6AB09D",
+    "#BD5065",
+    "#6E4F7B",
+    "#1B5C4A",
+    "#706068",
+    "#0F5C2E",
+    "#1C2522",
+    "#7D3156",
+    "#793418",
+    "#303734",
+    "#477568",
+    "#7E3644",
+    "#493452",
+    "#0D2E25",
+    "#54484E"
+  ],
+  "good": "#00656C",
+  "neutral": "#D7D8D7",
+  "bad": "#BA0C2F",
+  "background": "#FFFFFF",
+  "foreground": "#000000",
+  "tableAccent": "#3257A8",
+  "textClasses": {
+    "callout": {
+      "fontFace": "GT America",
+      "fontSize": 8
+    },
+    "title": {
+      "fontFace": "Financier Display",
+      "fontSize": 12,
+      "color": "#FFFFFF"
+    },
+    "header": {
+      "fontFace": "Financier Display",
+      "fontSize": 12
+    },
+    "label": {
+      "fontFace": "GT America",
+      "fontSize": 8
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "pageSize": [
+          {
+            "pageSizeTypes": "Widescreen"
+          }
+        ],
+        "*": [
+          {
+            "backgroundColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "transparency": 0,
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "pageNavigator": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": false
+          }
+        ],
+        "general": [
+          {
+            "height": 25,
+            "width": 1021,
+            "x": 0,
+            "y": 71
+          }
+        ],
+        "*": [
+          {
+            "alignment": "center"
+          }
+        ],
+        "layout": [
+          {
+            "orientation": 0,
+            "columnCount": 7,
+            "rowCount": 1,
+            "cellPadding": 0
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ],
+        "outline": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "hover",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "press",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "selected",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "disabled",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 1
+          }
+        ],
+        "fill": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "transparency": 1,
+            "fillColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "transparency": 1,
+            "fillColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            }
+          },
+          {
+            "$id": "press",
+            "transparency": 1,
+            "fillColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "transparency": 1,
+            "fillColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            }
+          },
+          {
+            "$id": "disabled",
+            "transparency": 1,
+            "fillColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "text": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "fontFamily": "GT America",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          },
+          {
+            "$id": "hover",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontFamily": "GT America"
+          },
+          {
+            "$id": "press",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontFamily": "GT America"
+          },
+          {
+            "bold": false,
+            "$id": "selected",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontFamily": "GT America"
+          },
+          {
+            "$id": "disabled",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#005EFF"
+              }
+            },
+            "fontFamily": "GT America"
+          }
+        ],
+        "pages": [
+          {
+            "showHiddenPages": false,
+            "showTooltipPages": false
+          }
+        ]
+      }
+    },
+    "bookmarkNavigator": {
+      "*": {
+        "size": [
+          {
+            "x": 0,
+            "y": 71
+          }
+        ],
+        "position": [
+          {
+            "height": 25,
+            "width": 1021
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": false,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "GT America",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "*": [
+          {
+            "alignment": "center"
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ],
+        "outline": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "hover",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "press",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "selected",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 2
+          },
+          {
+            "$id": "disabled",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "weight": 1
+          }
+        ],
+        "fill": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "$id": "press",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "$id": "disabled",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "text": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          },
+          {
+            "$id": "hover",
+            "fontSize": 8,
+            "fontColor": {
+              "solid": {
+                "color": "#005EFF"
+              }
+            },
+            "fontFamily": "GT America"
+          },
+          {
+            "$id": "press",
+            "fontSize": 8,
+            "fontColor": {
+              "solid": {
+                "color": "#005EFF"
+              }
+            },
+            "fontFamily": "GT America"
+          },
+          {
+            "bold": false,
+            "$id": "selected",
+            "fontSize": 8,
+            "fontColor": {
+              "solid": {
+                "color": "#005EFF"
+              }
+            },
+            "fontFamily": "GT America"
+          },
+          {
+            "$id": "disabled",
+            "fontSize": 8,
+            "fontColor": {
+              "solid": {
+                "color": "#005EFF"
+              }
+            },
+            "fontFamily": "GT America"
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "layout": [
+          {
+            "orientation": 2,
+            "cellPadding": 5
+          }
+        ]
+      }
+    },
+    "textbox": {
+      "*": {
+        "text": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": false,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ]
+      }
+    },
+    "textFilter25A4896A83E0487089E2B90C9AE57C8A": {
+      "*": {
+        "text": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "textBox": [
+          {
+            "borderColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "showBorder": true,
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ]
+      }
+    },
+    "actionButton": {
+      "*": {
+        "fill": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "disabled",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": "#efefef"
+              }
+            }
+          }
+        ],
+        "icon": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "text": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "bold": true,
+            "bottomMargin": 4,
+            "leftMargin": 4,
+            "rightMargin": 4,
+            "topMargin": 4,
+            "fontSize": 8,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "bold": true,
+            "bottomMargin": 4,
+            "leftMargin": 4,
+            "rightMargin": 4,
+            "topMargin": 4,
+            "fontSize": 8,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "bold": true,
+            "bottomMargin": 4,
+            "leftMargin": 4,
+            "rightMargin": 4,
+            "topMargin": 4,
+            "fontSize": 8,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "disabled",
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "bold": true,
+            "bottomMargin": 4,
+            "leftMargin": 4,
+            "rightMargin": 4,
+            "topMargin": 4,
+            "fontSize": 8,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "shape": [
+          {
+            "$id": "default",
+            "rectangleRoundedCurve": 50,
+            "tileShape": "rectangleRounded"
+          }
+        ],
+        "outline": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "categoryLabels": [
+          {
+            "fontSize": 10,
+            "fontFamily": "GT America",
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "fontSize": 20,
+            "fontFamily": "GT America",
+            "bold": true,
+            "labelDisplayUnits": 1,
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "title": [
+          {
+            "show": false,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "cardVisual": {
+      "*": {
+        "value": [
+          {
+            "fontFamily": "GT America",
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "showBlankAs": "--",
+            "bold": true,
+            "fontSize": 24,
+            "textWrap": true,
+            "horizontalAlignment": "left",
+            "show": true,
+            "labelDisplayUnits": 1,
+            "$id": "default"
+          }
+        ],
+        "accentBar": [
+          {
+            "$id": "default",
+            "transparency": 0,
+            "width": 2,
+            "position": "Bottom",
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            }
+          }
+        ],
+        "shapeCustomRectangle": [
+          {
+            "tileShape": "rectangleRounded",
+            "rectangleRoundedCurve": 0,
+            "$id": "default"
+          }
+        ],
+        "padding": [
+          {
+            "bottomMargin": 20,
+            "leftMargin": 4,
+            "rightMargin": 4,
+            "topMargin": 5,
+            "paddingSelection": "Custom",
+            "$id": "default"
+          }
+        ],
+        "border": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            },
+            "$id": "default"
+          }
+        ],
+        "background": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "$id": "default"
+          }
+        ],
+        "outline": [
+          {
+            "$id": "default",
+            "show": false,
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "fillCustom": [
+          {
+            "show": false
+          }
+        ],
+        "label": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "fontFamily": "GT America",
+            "transparency": 0,
+            "bold": true,
+            "horizontalAlignment": "center",
+            "position": "aboveValue",
+            "show": true,
+            "fontSize": 12,
+            "textWrap": true,
+            "$id": "default"
+          }
+        ],
+        "title": [
+          {
+            "show": false,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "layout": [
+          {
+            "columnCount": 1,
+            "customizePadding": true,
+            "columnPadding": 8,
+            "rowPadding": 0,
+            "cellPadding": 0,
+            "orientation": 0,
+            "rowCount": 5
+          }
+        ]
+      }
+    },
+    "multiRowCard": {
+      "*": {
+        "categoryLabels": [
+          {
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "dataLabels": [
+          {
+            "fontSize": 18,
+            "fontFamily": "GT America",
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "labelDisplayUnits": 1
+          }
+        ],
+        "title": [
+          {
+            "show": false,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "kpi": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "indicator": [
+          {
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "fontSize": 12,
+            "verticalAlignment": "middle"
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ]
+      }
+    },
+    "slicer": {
+      "*": {
+        "data": [
+          {
+            "mode": "Dropdown"
+          }
+        ],
+        "selection": [
+          {
+            "singleSelect": false,
+            "selectAllCheckboxEnabled": true,
+            "strictSingleSelect": false
+          }
+        ],
+        "header": [
+          {
+            "textSize": 8,
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America"
+          }
+        ],
+        "items": [
+          {
+            "textSize": 8,
+            "fontFamily": "GT America",
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "title": [
+          {
+            "show": false,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "advancedSlicerVisual": {
+      "*": {
+        "fillCustom": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "press",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "outline": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "press",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "shapeCustomRectangle": [
+          {
+            "$id": "default",
+            "rectangleRoundedCurve": 50,
+            "tileShape": "rectangleRounded"
+          }
+        ],
+        "label": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "bold": true,
+            "textWrap": true,
+            "transparency": 0
+          },
+          {
+            "$id": "hover",
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "bold": true,
+            "textWrap": true,
+            "transparency": 0
+          },
+          {
+            "$id": "selected",
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "bold": true,
+            "textWrap": true,
+            "transparency": 0
+          },
+          {
+            "$id": "press",
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "bold": true,
+            "textWrap": true,
+            "transparency": 0
+          }
+        ],
+        "value": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "bold": false,
+            "labelDisplayUnits": 1,
+            "showBlankAs": "--",
+            "textWrap": true,
+            "transparency": 0
+          },
+          {
+            "$id": "hover",
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "bold": false,
+            "underline": false,
+            "labelDisplayUnits": 1,
+            "italic": false,
+            "showBlankAs": "--",
+            "textWrap": true,
+            "transparency": 0
+          },
+          {
+            "$id": "selected",
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "bold": false,
+            "underline": false,
+            "labelDisplayUnits": 1,
+            "italic": false,
+            "showBlankAs": "--",
+            "textWrap": true,
+            "transparency": 0
+          },
+          {
+            "$id": "press",
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "horizontalAlignment": "center",
+            "bold": false,
+            "labelDisplayUnits": 1,
+            "showBlankAs": "--",
+            "textWrap": true,
+            "transparency": 0
+          }
+        ],
+        "header": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "GT America"
+          }
+        ],
+        "selection": [
+          {
+            "strictSingleSelect": true,
+            "selectAllCheckboxEnabled": true,
+            "singleSelect": true
+          }
+        ],
+        "title": [
+          {
+            "show": false,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": false,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "grid": [
+          {
+            "gridHorizontal": false,
+            "gridVertical": false,
+            "textSize": 8,
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "columnHeaders": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "values": [
+          {
+            "fontSize": 8,
+            "fontFamily": "GT America"
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "grid": [
+          {
+            "gridHorizontal": false,
+            "gridVertical": false,
+            "textSize": 8,
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "columnHeaders": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "values": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "barChart": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "valueAxis": [
+          {
+            "showAxisTitle": false,
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "show": false
+          }
+        ],
+        "categoryAxis": [
+          {
+            "fontSize": 8,
+            "showAxisTitle": false,
+            "gridlineStyle": "solid",
+            "titleFontFamily": "GT America",
+            "fontFamily": "GT America",
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "show": true
+          }
+        ],
+        "legend": [
+          {
+            "fontSize": 8,
+            "position": "BottomCenter",
+            "showTitle": false,
+            "fontFamily": "GT America",
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelPosition": "Auto",
+            "fontSize": 8,
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "columnChart": {
+      "*": {
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "categoryAxis": [
+          {
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "showAxisTitle": false,
+            "show": true
+          }
+        ],
+        "valueAxis": [
+          {
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "showAxisTitle": false,
+            "show": false
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelPosition": "Auto",
+            "fontSize": 8,
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "clusteredBarChart": {
+      "*": {
+        "valueAxis": [
+          {
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "show": false,
+            "fontSize": 8,
+            "showAxisTitle": false
+          }
+        ],
+        "categoryAxis": [
+          {
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "show": true,
+            "fontSize": 8,
+            "showAxisTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelPosition": "Auto",
+            "fontSize": 8,
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "clusteredColumnChart": {
+      "*": {
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "categoryAxis": [
+          {
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "show": true,
+            "showAxisTitle": false
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "show": false,
+            "fontSize": 8,
+            "showAxisTitle": false
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelPosition": "Auto",
+            "fontSize": 8,
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "lineChart": {
+      "*": {
+        "smallMultiplesLayout": [
+          {
+            "gridLineStyle": "solid"
+          }
+        ],
+        "legend": [
+          {
+            "fontFamily": "GT America",
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "matchLineColor": true,
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "show": true,
+            "showAxisTitle": false
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "gridlineShow": false,
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "show": false,
+            "showAxisTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelPosition": "Auto",
+            "fontSize": 8,
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "areaChart": {
+      "*": {
+        "legend": [
+          {
+            "fontSize": 8,
+            "fontFamily": "GT America",
+            "position": "BottomCenter"
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "stackedAreaChart": {
+      "*": {
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "position": "BottomCenter",
+            "showTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "lineStackedColumnComboChart": {
+      "*": {
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": 8,
+            "position": "BottomCenter",
+            "fontFamily": "GT America",
+            "showTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "showAxisTitle": false,
+            "show": true
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "secLabelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "showAxisTitle": false,
+            "secShowAxisTitle": false,
+            "secFontSize": 10,
+            "titleFontFamily": "GT America",
+            "secFontFamily": "GT America",
+            "secTitleFontFamily": "GT America",
+            "show": false
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelPosition": "Auto",
+            "fontSize": 8,
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "lineClusteredColumnComboChart": {
+      "*": {
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "fontSize": 8,
+            "showAxisTitle": false,
+            "show": true
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "secLabelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "titleFontFamily": "GT America",
+            "secFontFamily": "GT America",
+            "secTitleFontFamily": "GT America",
+            "fontSize": 8,
+            "secFontSize": 10,
+            "showAxisTitle": false,
+            "secShowAxisTitle": false,
+            "show": false
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelPosition": "Auto",
+            "fontSize": 8,
+            "show": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "hundredPercentStackedBarChart": {
+      "*": {
+        "valueAxis": [
+          {
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "show": false,
+            "fontSize": 8,
+            "showAxisTitle": false
+          }
+        ],
+        "categoryAxis": [
+          {
+            "gridlineShow": false,
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineStyle": "solid",
+            "show": true,
+            "fontSize": 8,
+            "showAxisTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "legend": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "showTitle": false,
+            "position": "BottomCenter"
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "show": true,
+            "labelPosition": "Auto"
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "hundredPercentStackedColumnChart": {
+      "*": {
+        "legend": [
+          {
+            "fontFamily": "GT America",
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "valueAxis": [
+          {
+            "fontSize": 8,
+            "showAxisTitle": false,
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "gridlineShow": false,
+            "gridlineStyle": "solid",
+            "show": false
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelDisplayUnits": 1,
+            "gridlineShow": false,
+            "fontFamily": "GT America",
+            "titleFontFamily": "GT America",
+            "show": true,
+            "fontSize": 8,
+            "showAxisTitle": false
+          }
+        ],
+        "labels": [
+          {
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "show": true,
+            "labelPosition": "Auto"
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "ribbonChart": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "showTitle": false,
+            "position": "RightCenter"
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            },
+            "labelDisplayUnits": 1,
+            "fontSize": 8,
+            "fontFamily": "GT America"
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "waterfallChart": {
+      "*": {
+        "legend": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "position": "BottomCenter"
+          }
+        ],
+        "sentimentColors": [
+          {
+            "totalFill": {
+              "solid": {
+                "color": "#D7D8D7"
+              }
+            },
+            "increaseFill": {
+              "solid": {
+                "color": "#00656C"
+              }
+            },
+            "decreaseFill": {
+              "solid": {
+                "color": "#BA0C2F"
+              }
+            }
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "funnel": {
+      "*": {
+        "labels": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "categoryAxis": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "scatterChart": {
+      "*": {
+        "bubbles": [
+          {
+            "markerShape": "circle",
+            "bubbleSize": 5
+          }
+        ],
+        "categoryAxis": [
+          {
+            "fontFamily": "GT America",
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": 8
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "donutChart": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "position": "RightCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelStyle": "Percent of total",
+            "fontSize": 8
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "pieChart": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "position": "RightCenter",
+            "fontSize": 8,
+            "showTitle": false
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "labelDisplayUnits": 1,
+            "fontFamily": "GT America",
+            "labelStyle": "Percent of total",
+            "fontSize": 8
+          }
+        ],
+        "*": [
+          {
+            "titleFontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "visualHeader": [
+          {
+            "foreground": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          }
+        ],
+        "visualTooltip": [
+          {
+            "background": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          }
+        ],
+        "outspacePane": [
+          {
+            "titleSize": 10,
+            "headerSize": 10
+          }
+        ],
+        "filterCard": [
+          {
+            "$id": "Applied",
+            "backgroundColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "foregroundColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "transparency": 0
+          },
+          {
+            "$id": "Available",
+            "foregroundColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "textSize": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "treemap": {
+      "*": {
+        "legend": [
+          {
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "fontFamily": "GT America"
+          }
+        ],
+        "labels": [
+          {
+            "fontFamily": "GT America",
+            "show": true,
+            "fontSize": 8
+          }
+        ],
+        "categoryLabels": [
+          {
+            "fontFamily": "GT America",
+            "show": false,
+            "fontSize": 8
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ]
+      }
+    },
+    "map": {
+      "*": {
+        "legend": [
+          {
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "fontFamily": "GT America"
+          }
+        ],
+        "mapControls": [
+          {
+            "autoZoom": true,
+            "showZoomButtons": true
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "gauge": {
+      "*": {
+        "labels": [
+          {
+            "fontFamily": "GT America",
+            "fontSize": 8
+          }
+        ],
+        "calloutValue": [
+          {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": "GT America",
+            "show": true,
+            "dynamicLabelValue": 0
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "filledMap": {
+      "*": {
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            },
+            "position": "BottomCenter",
+            "fontSize": 8,
+            "showTitle": false,
+            "fontFamily": "GT America"
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "categoryLabels": [
+          {
+            "show": true
+          }
+        ],
+        "mapControls": [
+          {
+            "autoZoom": true,
+            "showZoomButtons": true
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "titleWrap": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0A1264"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Financier Display Semibold",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false,
+            "fontFamily": "GT America",
+            "fontSize": 8,
+            "bold": false,
+            "italic": true,
+            "underline": false,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "divider": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E6E6E6"
+              }
+            },
+            "style": "solid",
+            "width": 2,
+            "ignorePadding": false
+          }
+        ],
+        "spacing": [
+          {
+            "customizeSpacing": true,
+            "spaceBelowTitle": 5,
+            "spaceBelowTitleArea": 10
+          }
+        ]
+      }
+    }
+  },
+  "foregroundNeutralSecondary": "#000000"
+}

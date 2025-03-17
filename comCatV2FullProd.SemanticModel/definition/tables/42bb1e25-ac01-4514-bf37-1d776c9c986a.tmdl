@@ -1,4 +1,4 @@
-table 8af67e9f-f7f5-4722-bb77-20442564a0cd
+table 42bb1e25-ac01-4514-bf37-1d776c9c986a
 	isHidden
 	systemManaged
 
@@ -9,12 +9,12 @@ table 8af67e9f-f7f5-4722-bb77-20442564a0cd
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.duration_seconds
 
-	column curated_user_actions_comcatv2_reportbooksection
+	column curated_user_actions_comcatv2_threadname
 		dataType: string
 		isAvailableInMdx: false
 
 		alternateOf
-			baseColumn: curated_user_actions_comcatv2.reportbooksection
+			baseColumn: curated_user_actions_comcatv2.threadname
 
 	column 2
 		dataType: double
@@ -30,7 +30,7 @@ table 8af67e9f-f7f5-4722-bb77-20442564a0cd
 
 		alternateOf
 			summarization: min
-			baseColumn: curated_user_actions_comcatv2.reportbooksection
+			baseColumn: curated_user_actions_comcatv2.threadname
 
 	column 4
 		dataType: int64
@@ -43,17 +43,17 @@ table 8af67e9f-f7f5-4722-bb77-20442564a0cd
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 20
+	annotation activeFrequency = 12
 
 	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 35.111523205903275
+	annotation relativeGain(%) = 29.5133073544303
 
-	annotation relativeLift(%) = 6.7525659568255474
+	annotation relativeLift(%) = 1.6885590128811017
 
-	annotation relativeSize(%) = 19.231765928315642
+	annotation relativeSize(%) = 5.7213479756874106
 
-	annotation estimatedCardinality(Krows) = 500.011
+	annotation estimatedCardinality(Krows) = 1343.435
 
 	annotation avoidQueryHints = false
 

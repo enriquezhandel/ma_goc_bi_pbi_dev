@@ -1,0 +1,65 @@
+table 9b43ec70-cf90-49c1-a310-e573fa83b0d5
+	isHidden
+	systemManaged
+
+	column curated_user_actions_comcatv2_elastic_id
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.elastic_id
+
+	column curated_user_actions_comcatv2_accountname
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.accountname
+
+	column experience_score_ExperienceScore
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: experience_score.ExperienceScore
+
+	column experience_score_Order
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: experience_score.Order
+
+	column 4
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: curated_user_actions_comcatv2
+
+	column 5
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: min
+			baseColumn: curated_user_actions_comcatv2.apdexCategory
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 14
+
+	annotation activeQueries = 2
+
+	annotation relativeGain(%) = 106.23707067739699
+
+	annotation relativeLift(%) = 4.8288965192275812
+
+	annotation relativeSize(%) = 4.5453969018885774
+
+	annotation estimatedCardinality(Krows) = 1067.251
+
+	annotation avoidQueryHints = false
+

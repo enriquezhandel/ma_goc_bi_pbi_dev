@@ -1,4 +1,4 @@
-table ee7a1730-2170-4297-9603-6ab4cdbc8be3
+table e0bf903e-bc8a-4d4c-91d1-d7549d0eee65
 	isHidden
 	systemManaged
 
@@ -28,17 +28,17 @@ table ee7a1730-2170-4297-9603-6ab4cdbc8be3
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 27
+	annotation activeFrequency = 8
 
 	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 189.92088760462659
+	annotation relativeGain(%) = 434.66514516770627
 
-	annotation relativeLift(%) = 3.3479578378408474
+	annotation relativeLift(%) = 0.85236938766594073
 
-	annotation relativeSize(%) = 1.7628170761346467
+	annotation relativeSize(%) = 0.19609793818114221
 
-	annotation estimatedCardinality(Krows) = 0.568
+	annotation estimatedCardinality(Krows) = 0.618
 
 	annotation avoidQueryHints = false
 

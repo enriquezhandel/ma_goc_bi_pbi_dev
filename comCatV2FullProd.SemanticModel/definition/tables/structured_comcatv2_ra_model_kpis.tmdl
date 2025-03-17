@@ -1,0 +1,181 @@
+table structured_comcatv2_ra_model_kpis
+	lineageTag: 0c9d3b13-4b06-44e5-9711-ab17a9df5fdd
+
+	column AccountName
+		dataType: string
+		lineageTag: 4afa7c52-9223-43b3-b3ac-e7ded879af04
+		summarizeBy: none
+		sourceColumn: AccountName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SharingId
+		dataType: int64
+		formatString: 0
+		lineageTag: 51939e72-c375-4f6c-ac28-8e4571d11d66
+		summarizeBy: count
+		sourceColumn: SharingId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductId
+		dataType: int64
+		formatString: 0
+		lineageTag: ea88a7c0-a187-487e-b3c1-84c032d42bff
+		summarizeBy: count
+		sourceColumn: ProductId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductName
+		dataType: string
+		lineageTag: 269f7aae-19fe-4b7a-8cd0-31bac9de0272
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 71220349-8556-4a69-a89f-d3903b8abc70
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column avg_waiting_seconds
+		dataType: double
+		lineageTag: a1d648b8-6b34-409d-b333-7d9bfcddeaba
+		summarizeBy: sum
+		sourceColumn: avg_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column median_waiting_seconds
+		dataType: double
+		lineageTag: d1c1bc9c-930e-4411-8c64-6c44e64f6588
+		summarizeBy: sum
+		sourceColumn: median_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p90_waiting_seconds
+		dataType: double
+		formatString: 0.00
+		lineageTag: 383a0079-c7d3-4962-8e6b-d7bf2c5d8cac
+		summarizeBy: sum
+		sourceColumn: p90_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column p95_waiting_seconds
+		dataType: double
+		formatString: 0.00
+		lineageTag: de5a52ba-2046-4b2e-be68-776226713afb
+		summarizeBy: sum
+		sourceColumn: p95_waiting_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_execution_seconds
+		dataType: double
+		lineageTag: 75558509-d894-45f0-867b-540ba96e6f46
+		summarizeBy: sum
+		sourceColumn: avg_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column median_execution_seconds
+		dataType: double
+		lineageTag: e2c4151a-7f9e-4e18-b9c4-e31cdd4b3437
+		summarizeBy: sum
+		sourceColumn: median_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p90_execution_seconds
+		dataType: double
+		lineageTag: 6747620a-7eca-47e6-9ebb-110f81f98aa1
+		summarizeBy: sum
+		sourceColumn: p90_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p95_execution_seconds
+		dataType: double
+		lineageTag: f7cd0f2a-5fde-4be9-80c6-64920e0a230f
+		summarizeBy: sum
+		sourceColumn: p95_execution_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_duration_seconds
+		dataType: double
+		lineageTag: 646a13e0-1a2f-4fb7-b002-666e0bfbe952
+		summarizeBy: sum
+		sourceColumn: avg_duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column median_duration_seconds
+		dataType: double
+		lineageTag: 58a72f1d-f5a3-4d35-9849-bd89702ef091
+		summarizeBy: sum
+		sourceColumn: median_duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p90_duration_seconds
+		dataType: double
+		lineageTag: 434074c1-3cba-4091-b833-69a01446f4a4
+		summarizeBy: sum
+		sourceColumn: p90_duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column p95_duration_seconds
+		dataType: double
+		lineageTag: d601cfe2-263e-439e-a72f-f122aa2888cf
+		summarizeBy: sum
+		sourceColumn: p95_duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition structured_comcatv2_ra_model_kpis = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog=null, Database=null, EnableAutomaticProxyDiscovery=null]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_silver_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_silver_dev",Kind="Schema"]}[Data],
+				    structured_comcatv2_ra_model_kpis_View = ds_goc_silver_dev_Schema{[Name="structured_comcatv2_ra_model_kpis",Kind="View"]}[Data]
+				in
+				    structured_comcatv2_ra_model_kpis_View
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

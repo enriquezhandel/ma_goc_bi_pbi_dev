@@ -432,6 +432,225 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "structured_comcatv2_ra_model_kpis.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model_kpis",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "structured_comcatv2_ra_model.average_waiting_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "Average_Waiting_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Avg Waiting Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.average_execution_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "Average_Execution_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Avg Execution Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.median_waiting_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "Median_Waiting_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Median Waiting Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.median_execution_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "Median_Execution_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Median Execution Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.p90_execution_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "P90_Execution_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P90 Execution Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.p90_waiting_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "P90_Waiting_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P90 Waiting Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.p95_execution_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "P95_Execution_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P95 Execution Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.p95_waiting_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "P95_Waiting_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P95 Waiting Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.productname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "ProductName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Product Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "structured_comcatv2_ra_model.snapshot_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "structured_comcatv2_ra_model",
+			          "ConceptualProperty": "snapshot_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Timeframe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  }
 			}

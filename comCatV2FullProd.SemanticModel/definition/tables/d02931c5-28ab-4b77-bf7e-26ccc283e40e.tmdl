@@ -1,4 +1,4 @@
-table 33fe00f1-8bc6-4357-828f-99a0eb8dd4fe
+table d02931c5-28ab-4b77-bf7e-26ccc283e40e
 	isHidden
 	systemManaged
 
@@ -9,12 +9,19 @@ table 33fe00f1-8bc6-4357-828f-99a0eb8dd4fe
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.accountname
 
-	column curated_user_actions_comcatv2_end_of_month
+	column curated_user_actions_comcatv2_snapshot_date
 		dataType: dateTime
 		isAvailableInMdx: false
 
 		alternateOf
-			baseColumn: curated_user_actions_comcatv2.end_of_month
+			baseColumn: curated_user_actions_comcatv2.snapshot_date
+
+	column calendardim_date
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: calendardim.date
 
 	column experience_score_ExperienceScore
 		dataType: string
@@ -30,7 +37,7 @@ table 33fe00f1-8bc6-4357-828f-99a0eb8dd4fe
 		alternateOf
 			baseColumn: experience_score.Order
 
-	column 4
+	column 5
 		dataType: double
 		isAvailableInMdx: false
 
@@ -38,31 +45,7 @@ table 33fe00f1-8bc6-4357-828f-99a0eb8dd4fe
 			summarization: sum
 			baseColumn: curated_user_actions_comcatv2.duration_seconds
 
-	column 5
-		dataType: dateTime
-		isAvailableInMdx: false
-
-		alternateOf
-			summarization: min
-			baseColumn: curated_user_actions_comcatv2.snapshot_date
-
 	column 6
-		dataType: dateTime
-		isAvailableInMdx: false
-
-		alternateOf
-			summarization: max
-			baseColumn: curated_user_actions_comcatv2.snapshot_date
-
-	column 7
-		dataType: int64
-		isAvailableInMdx: false
-
-		alternateOf
-			summarization: count
-			baseColumn: curated_user_actions_comcatv2.userSessionId
-
-	column 8
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -73,17 +56,17 @@ table 33fe00f1-8bc6-4357-828f-99a0eb8dd4fe
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 63
+	annotation activeFrequency = 5
 
-	annotation activeQueries = 4
+	annotation activeQueries = 1
 
-	annotation relativeGain(%) = 425.02342212052162
+	annotation relativeGain(%) = 388.025070731723
 
-	annotation relativeLift(%) = 8.1432676233591632
+	annotation relativeLift(%) = 1.8205647423112976
 
-	annotation relativeSize(%) = 1.915957380120576
+	annotation relativeSize(%) = 0.46918740041156248
 
-	annotation estimatedCardinality(Krows) = 6.66
+	annotation estimatedCardinality(Krows) = 94.797
 
 	annotation avoidQueryHints = false
 

@@ -1,0 +1,51 @@
+table bbd678a5-9041-432c-86a5-12dffb7cd38c
+	isHidden
+	systemManaged
+
+	column raw_comcatv2_moduletracking_UserName
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: raw_comcatv2_moduletracking.UserName
+
+	column raw_comcatv2_moduletracking_UserClientName
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: raw_comcatv2_moduletracking.UserClientName
+
+	column 2
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: raw_comcatv2_moduletracking
+
+	column 3
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseColumn: raw_comcatv2_moduletracking.UserId
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 4
+
+	annotation activeQueries = 2
+
+	annotation relativeGain(%) = 38.481272542137113
+
+	annotation relativeLift(%) = 0.083532964440286933
+
+	annotation relativeSize(%) = 0.21707432972446034
+
+	annotation estimatedCardinality(Krows) = 10.644
+
+	annotation avoidQueryHints = false
+

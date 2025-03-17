@@ -1,4 +1,4 @@
-table 96cdc3f2-1464-4eea-9884-ba2cbf2dd894
+table 1a99ff47-5d4d-4499-97b2-2aa297f64174
 	isHidden
 	systemManaged
 
@@ -16,7 +16,14 @@ table 96cdc3f2-1464-4eea-9884-ba2cbf2dd894
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.userId
 
-	column 2
+	column curated_user_actions_comcatv2_snapshot_date
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.snapshot_date
+
+	column 3
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -27,17 +34,17 @@ table 96cdc3f2-1464-4eea-9884-ba2cbf2dd894
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 52
+	annotation activeFrequency = 18
 
-	annotation activeQueries = 2
+	annotation activeQueries = 1
 
-	annotation relativeGain(%) = 917.24052574682753
+	annotation relativeGain(%) = 22.481880512573905
 
-	annotation relativeLift(%) = 18.398620326239261
+	annotation relativeLift(%) = 0.13543044490276379
 
-	annotation relativeSize(%) = 2.0058664886463551
+	annotation relativeSize(%) = 0.60239820608876038
 
-	annotation estimatedCardinality(Krows) = 11.124
+	annotation estimatedCardinality(Krows) = 132.075
 
 	annotation avoidQueryHints = false
 

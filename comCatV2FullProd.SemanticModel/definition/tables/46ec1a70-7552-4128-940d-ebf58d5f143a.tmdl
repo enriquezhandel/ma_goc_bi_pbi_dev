@@ -1,13 +1,6 @@
-table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
+table 46ec1a70-7552-4128-940d-ebf58d5f143a
 	isHidden
 	systemManaged
-
-	column curated_user_actions_comcatv2_threadname
-		dataType: string
-		isAvailableInMdx: false
-
-		alternateOf
-			baseColumn: curated_user_actions_comcatv2.threadname
 
 	column curated_user_actions_comcatv2_reportbooksection
 		dataType: string
@@ -15,6 +8,27 @@ table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
 
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.reportbooksection
+
+	column curated_user_actions_comcatv2_accountname
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.accountname
+
+	column curated_user_actions_comcatv2_userId
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.userId
+
+	column curated_user_actions_comcatv2_snapshot_date
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.snapshot_date
 
 	column experience_score_ExperienceScore
 		dataType: string
@@ -30,7 +44,7 @@ table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
 		alternateOf
 			baseColumn: experience_score.Order
 
-	column 4
+	column 6
 		dataType: double
 		isAvailableInMdx: false
 
@@ -38,7 +52,7 @@ table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
 			summarization: sum
 			baseColumn: curated_user_actions_comcatv2.duration_seconds
 
-	column 5
+	column 7
 		dataType: string
 		isAvailableInMdx: false
 
@@ -46,7 +60,7 @@ table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
 			summarization: min
 			baseColumn: curated_user_actions_comcatv2.apdexCategory
 
-	column 6
+	column 8
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -54,7 +68,7 @@ table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
 			summarization: count
 			baseColumn: curated_user_actions_comcatv2.elastic_id
 
-	column 7
+	column 9
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -65,17 +79,17 @@ table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 55
+	annotation activeFrequency = 11
 
-	annotation activeQueries = 4
+	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 136.41800672917881
+	annotation relativeGain(%) = 73.730587089738066
 
-	annotation relativeLift(%) = 3.7723314358524656
+	annotation relativeLift(%) = 3.7651070845154289
 
-	annotation relativeSize(%) = 2.7652738273338158
+	annotation relativeSize(%) = 5.1065741276858247
 
-	annotation estimatedCardinality(Krows) = 44.276
+	annotation estimatedCardinality(Krows) = 1199.051
 
 	annotation avoidQueryHints = false
 

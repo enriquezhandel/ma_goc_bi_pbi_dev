@@ -6,11 +6,11 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["curated_user_actions_comcatv2","calendardim","experience_score","raw_comcatv2_moduletracking","structured_comcatv2_alerts","structured_comcatv2_riskassesmentcompanylvl","structured_comcatv2_riskassesmentkpis"]
+annotation PBI_QueryOrder = ["curated_user_actions_comcatv2","calendardim","experience_score","raw_comcatv2_moduletracking","structured_comcatv2_alerts","structured_comcatv2_riskassesmentcompanylvl","structured_comcatv2_riskassesmentkpis","structured_comcatv2_ra_model_kpis","structured_comcatv2_ra_model"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.139.1678.0 (24.12)+2a034ab280bddf891eb7bb9ebfe6996f9c3a3196
+annotation PBIDesktopVersion = 2.140.1476.0 (25.02)+e8c6a85d1d09735c5c055c3244a60ff4076cd2cf
 
 ref table curated_user_actions_comcatv2
 ref table calendardim
@@ -19,17 +19,32 @@ ref table raw_comcatv2_moduletracking
 ref table structured_comcatv2_alerts
 ref table structured_comcatv2_riskassesmentcompanylvl
 ref table structured_comcatv2_riskassesmentkpis
-ref table 96cdc3f2-1464-4eea-9884-ba2cbf2dd894
-ref table 3ca48d48-707b-45ff-8334-5fc24fbdef8e
-ref table 33fe00f1-8bc6-4357-828f-99a0eb8dd4fe
-ref table ee7a1730-2170-4297-9603-6ab4cdbc8be3
-ref table 70551b97-f5cd-450e-af38-0fd4645b34db
-ref table 9ebbc328-b94f-40e5-b236-ee9ed3e4e38b
-ref table ecaea0bb-1c3c-4ae3-a54a-1dd918e51d25
-ref table 8af67e9f-f7f5-4722-bb77-20442564a0cd
-ref table 058043ca-a57f-4629-af2d-6d70ee3adca9
-ref table 7968ad80-eadb-48e1-8ac7-94a76a7393cd
-ref table f57bc5ad-d5d6-4ec0-a73d-0b920d3ba726
+ref table structured_comcatv2_ra_model_kpis
+ref table DateTableTemplate_27c35260-56a3-489e-86fd-d5f9621774ee
+ref table structured_comcatv2_ra_model
+ref table LocalDateTable_11c9977d-517c-4437-b4fc-1e611900338c
+ref table 10fcf026-4285-4a25-a350-0b279010fa74
+ref table e3241309-78db-4c56-b8e7-1ae3f0d201f2
+ref table 1a99ff47-5d4d-4499-97b2-2aa297f64174
+ref table e0bf903e-bc8a-4d4c-91d1-d7549d0eee65
+ref table e84b3ffe-bf23-4977-ba9a-af616ffbb391
+ref table 9b43ec70-cf90-49c1-a310-e573fa83b0d5
+ref table 46ec1a70-7552-4128-940d-ebf58d5f143a
+ref table a58cc387-3cbb-4ba8-8425-7b9ca32476f4
+ref table ee56a9b9-eb7b-4a35-ac40-3d966c697562
+ref table 42bb1e25-ac01-4514-bf37-1d776c9c986a
+ref table 61dcbc5f-901e-42a2-bf3c-8ebd20e8c87c
+ref table 65c87f04-68e1-4629-a533-3b79aa3ae829
+ref table 074f11b1-6743-4c4b-bbe6-b208314e8d42
+ref table e1d2ab26-3c7c-47ca-a6df-997c5da260cd
+ref table d02931c5-28ab-4b77-bf7e-26ccc283e40e
+ref table fca98867-5a84-41b0-8773-1b62c6680339
+ref table 0104a25b-4fde-4d96-86bb-70ac2a3fc2ab
+ref table bbd678a5-9041-432c-86a5-12dffb7cd38c
+ref table 26014f55-c4bd-4bc7-a59a-5e3caaed1a00
+ref table e1e2ee22-501f-4749-a7a5-b69d26a6b633
+ref table b9413a90-968b-4d06-91b6-daaebb8bab20
+ref table c0047019-9bc8-4fc4-ae38-26679d048a38
 
 ref cultureInfo en-US
 

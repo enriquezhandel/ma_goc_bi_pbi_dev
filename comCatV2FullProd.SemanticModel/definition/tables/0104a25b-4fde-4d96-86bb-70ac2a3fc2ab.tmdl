@@ -1,0 +1,36 @@
+table 0104a25b-4fde-4d96-86bb-70ac2a3fc2ab
+	isHidden
+	systemManaged
+
+	column structured_comcatv2_alerts_eom_snapshotdate
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: structured_comcatv2_alerts.eom_snapshotdate
+
+	column 1
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: structured_comcatv2_alerts.Count
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 2
+
+	annotation activeQueries = 1
+
+	annotation relativeGain(%) = 109.39740121784091
+
+	annotation relativeLift(%) = 0.21310464862987535
+
+	annotation relativeSize(%) = 0.19479863895991845
+
+	annotation estimatedCardinality(Krows) = 0.005
+
+	annotation avoidQueryHints = false
+

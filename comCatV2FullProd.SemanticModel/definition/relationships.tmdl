@@ -24,3 +24,16 @@ relationship 5651c63e-f23b-8d13-c69f-060f027a7875
 	fromColumn: structured_comcatv2_riskassesmentkpis.snapshot_date
 	toColumn: calendardim.date
 
+relationship 3c651595-1b5d-4c34-8499-c9613318a446
+	joinOnDateBehavior: datePartOnly
+	fromColumn: structured_comcatv2_ra_model.RequestedOn
+	toColumn: LocalDateTable_11c9977d-517c-4437-b4fc-1e611900338c.Date
+
+relationship f120d650-62ed-2c04-3bd1-198b3359b2a9
+	fromColumn: structured_comcatv2_ra_model.snapshot_date
+	toColumn: calendardim.date
+
+relationship f2a1f1fa-2210-616f-84fb-bba305ac0aef
+	fromColumn: structured_comcatv2_ra_model_kpis.snapshot_date
+	toColumn: calendardim.date
+

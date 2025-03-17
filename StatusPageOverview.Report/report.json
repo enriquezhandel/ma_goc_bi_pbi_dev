@@ -1,0 +1,115 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2},\"customTheme\":{\"name\":\"MCO_PBI_new_theme_48237354326025406.json\",\"version\":\"5.61\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "SmartFilterBySQLBI1458262140625",
+    "SmartFilterProByOKViz00000000000000000000000000000000",
+    "textFilter25A4896A83E0487089E2B90C9AE57C8A"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "MCO_PBI_new_theme_48237354326025406.json",
+            "path": "MCO_PBI_new_theme_48237354326025406.json",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "314ec2e5973e070f82b2",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1547128fcedf0e1db944\",\"layouts\":[{\"id\":0,\"position\":{\"x\":810.4618347900949,\"y\":0,\"z\":3000,\"width\":199.62703010316497,\"height\":169.7427441595774,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"curated_statuspage.ChurnRate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ChurnRate\"},\"Name\":\"curated_statuspage.ChurnRate\",\"NativeReferenceName\":\"Attrition Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ChurnRate\"}}}]},\"columnProperties\":{\"curated_statuspage.ChurnRate\":{\"displayName\":\"Attrition Rate\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 169.74,
+          "width": 199.63,
+          "x": 810.46,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"230411ca65b8b9d3fa5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":361.0021741985379,\"y\":341.87623119464183,\"z\":6000,\"width\":278.5215449942362,\"height\":83.6760006420452,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"SmartFilterBySQLBI1458262140625\",\"projections\":{\"Values\":[{\"queryRef\":\"curated_statuspage.CompanyNameSource\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CompanyNameSource\"},\"Name\":\"curated_statuspage.CompanyNameSource\",\"NativeReferenceName\":\"Account Name\"}]},\"columnProperties\":{\"curated_statuspage.CompanyNameSource\":{\"displayName\":\"Account Name\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"internalSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'{}'\"}}}}}],\"labels\":[{\"properties\":{\"label\":{\"expr\":{\"Literal\":{\"Value\":\"'Account Name'\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"curated_statuspage\"}},\"Property\":\"CompanyNameSource\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 83.68,
+          "width": 278.52,
+          "x": 361.00,
+          "y": 341.88,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"28de859927f4e697e0df\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":425.55223183668704,\"z\":4000,\"width\":1280.2428098232915,\"height\":294.0613736849017,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"curated_statuspage.CompanyNameSource\"},{\"queryRef\":\"curated_statuspage.Email\"},{\"queryRef\":\"curated_statuspage.FirstName\"},{\"queryRef\":\"curated_statuspage.LastName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"},\"Name\":\"curated_statuspage.Email\",\"NativeReferenceName\":\"Email\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"FirstName\"},\"Name\":\"curated_statuspage.FirstName\",\"NativeReferenceName\":\"FirstName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LastName\"},\"Name\":\"curated_statuspage.LastName\",\"NativeReferenceName\":\"LastName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CompanyNameSource\"},\"Name\":\"curated_statuspage.CompanyNameSource\",\"NativeReferenceName\":\"Account Name\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"}}}]},\"columnProperties\":{\"curated_statuspage.CompanyNameSource\":{\"displayName\":\"Account Name\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"295.9617985098599D\"}}}},\"selector\":{\"metadata\":\"curated_statuspage.CompanyNameSource\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"282.4472586299222D\"}}}},\"selector\":{\"metadata\":\"curated_statuspage.Email\"}}]}}}",
+          "filters": "[]",
+          "height": 294.06,
+          "width": 1280.24,
+          "x": 0.00,
+          "y": 425.55,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8056bcf1562bd0685f7c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":259.39560199034014,\"y\":0,\"z\":0,\"width\":199.62703010316497,\"height\":169.7427441595774,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(curated_statuspage.Email)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"}},\"Function\":2},\"Name\":\"Min(curated_statuspage.Email)\",\"NativeReferenceName\":\"Total Active Subscribers\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(curated_statuspage.Email)\":{\"displayName\":\"Total Active Subscribers\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"3ca3a736a85965af8b50\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"curated_statuspage\"}},\"Property\":\"subscription_status\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"subscription_status\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Active'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 169.74,
+          "width": 199.63,
+          "x": 259.40,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9e450fd22ab97bd8d21d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":341.87623119464183,\"z\":5000,\"width\":311.99194525105423,\"height\":83.6760006420452,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"SmartFilterBySQLBI1458262140625\",\"projections\":{\"Values\":[{\"queryRef\":\"curated_statuspage.Email\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"},\"Name\":\"curated_statuspage.Email\",\"NativeReferenceName\":\"Email\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 83.68,
+          "width": 311.99,
+          "x": 0.00,
+          "y": 341.88,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"cce14486e8816d517c0e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":169.7427441595774,\"z\":2000,\"width\":1280.2428098232915,\"height\":157.7890297821424,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(curated_statuspage.Email)\"}],\"Category\":[{\"queryRef\":\"curated_statuspage.iso_week_num\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"}},\"Function\":5},\"Name\":\"CountNonNull(curated_statuspage.Email)\",\"NativeReferenceName\":\"# Emails\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"iso_week_num\"},\"Name\":\"curated_statuspage.iso_week_num\",\"NativeReferenceName\":\"Week\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"}},\"Function\":5}}}]},\"columnProperties\":{\"curated_statuspage.iso_week_num\":{\"displayName\":\"Week\"},\"CountNonNull(curated_statuspage.Email)\":{\"displayName\":\"# Emails\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'# Active Subscribers by Week'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.79,
+          "width": 1280.24,
+          "x": 0.00,
+          "y": 169.74,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d669f98bc8d3c8eb571e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":541.5032612978068,\"y\":0,\"z\":1000,\"width\":199.62703010316497,\"height\":169.7427441595774,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(curated_statuspage.Email)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"}},\"Function\":2},\"Name\":\"Min(curated_statuspage.Email)\",\"NativeReferenceName\":\"Total Changes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Email\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(curated_statuspage.Email)\":{\"displayName\":\"Total Changes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"0bf2ea019c429e37d611\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"curated_statuspage\"}},\"Property\":\"change_type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"curated_statuspage\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"change_type\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 169.74,
+          "width": 199.63,
+          "x": 541.50,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "MCO_PBI_new_theme_48237354326025406.json"
+}

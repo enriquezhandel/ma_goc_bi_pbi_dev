@@ -1,0 +1,141 @@
+table curated_statuspage
+	lineageTag: 1d5374b4-76cf-4d6a-8b5d-387b0d963a09
+
+	measure ChurnRate = ```
+			
+			VAR TotalUsers = DISTINCTCOUNT( 'curated_statuspage'[Email] )
+			VAR ChurnedUsers = CALCULATE( 
+			    DISTINCTCOUNT( 'curated_statuspage'[Email] ), 
+			    'curated_statuspage'[subscription_status] = "Removed"
+			)
+			RETURN 
+			DIVIDE( ChurnedUsers, TotalUsers, 0 )
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 02812b1c-88c3-4e2f-91c3-5d125e3fb5ea
+
+	column Email
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: dbfcf764-80db-429e-8775-b6d120ada764
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 7c6f4273-3001-4370-987d-2f772d16931b
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 8b3fb90d-8fd1-4aae-bb38-d00ec925f72d
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notification
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 937ff667-b74c-4de5-91e3-f7f833ce7e96
+		summarizeBy: sum
+		sourceColumn: Notification
+
+		annotation SummarizationSetBy = Automatic
+
+	column productName
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 4e935399-d1b7-4f63-82ed-8b5924b30ef6
+		summarizeBy: none
+		sourceColumn: productName
+
+		annotation SummarizationSetBy = Automatic
+
+	column controlProduct
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 68006ffb-a38b-43ea-8587-67613d808ff9
+		summarizeBy: sum
+		sourceColumn: controlProduct
+
+		annotation SummarizationSetBy = Automatic
+
+	column CompanyNameSource
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 111477a5-ba56-481b-9aef-917159655388
+		summarizeBy: none
+		sourceColumn: CompanyNameSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso_week_num
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f0b30556-0430-4ec8-90e3-60ff0fdecade
+		summarizeBy: sum
+		sourceColumn: iso_week_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column client_status
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: ed209cf1-b5b5-4784-bc06-67f574bcf490
+		summarizeBy: none
+		sourceColumn: client_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column subscription_status
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: 700c3bf9-6230-492b-a063-1c89b545a3d9
+		summarizeBy: none
+		sourceColumn: subscription_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_seen_week
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c2b58f88-5e88-476e-8c82-0c1b0f06df0b
+		summarizeBy: sum
+		sourceColumn: last_seen_week
+
+		annotation SummarizationSetBy = Automatic
+
+	column change_type
+		dataType: string
+		sourceProviderType: nvarchar(65535)
+		lineageTag: a2ae1f50-2d20-4a3b-b1a1-d2158ebc1d88
+		summarizeBy: none
+		sourceColumn: change_type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition curated_statuspage = m
+		mode: directQuery
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-25db401b-39a2.cloud.databricks.com", "/sql/1.0/warehouses/2d81cde05e292363", [Catalog = "", Database = ""]),
+				    ds_goc_bronze_dev_Database = Source{[Name="ds_goc_bronze_dev",Kind="Database"]}[Data],
+				    ds_goc_gold_dev_Schema = ds_goc_bronze_dev_Database{[Name="ds_goc_gold_dev",Kind="Schema"]}[Data],
+				    curated_statuspage_View = ds_goc_gold_dev_Schema{[Name="curated_statuspage",Kind="View"]}[Data]
+				in
+				    curated_statuspage_View
+
+	annotation PBI_ResultType = Table
+
