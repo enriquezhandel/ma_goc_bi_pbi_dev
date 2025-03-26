@@ -87,6 +87,8 @@ table curated_statuspage
 		summarizeBy: sum
 		sourceColumn: iso_week_num
 
+		changedProperty = DataType
+
 		annotation SummarizationSetBy = Automatic
 
 	column client_status

@@ -1,4 +1,4 @@
-table e0bf903e-bc8a-4d4c-91d1-d7549d0eee65
+table cc529f8e-390b-442f-8f56-79985f0fdab0
 	isHidden
 	systemManaged
 
@@ -32,13 +32,13 @@ table e0bf903e-bc8a-4d4c-91d1-d7549d0eee65
 
 	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 434.66514516770627
+	annotation relativeGain(%) = 537.81465749296876
 
-	annotation relativeLift(%) = 0.85236938766594073
+	annotation relativeLift(%) = 0.84010966639626838
 
-	annotation relativeSize(%) = 0.19609793818114221
+	annotation relativeSize(%) = 0.15620802718774016
 
-	annotation estimatedCardinality(Krows) = 0.618
+	annotation estimatedCardinality(Krows) = 0.635
 
 	annotation avoidQueryHints = false
 

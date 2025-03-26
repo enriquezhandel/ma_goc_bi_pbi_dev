@@ -1,4 +1,4 @@
-table bbd678a5-9041-432c-86a5-12dffb7cd38c
+table 36bdf132-2c97-4bfd-be42-6b51c06ba500
 	isHidden
 	systemManaged
 
@@ -16,13 +16,12 @@ table bbd678a5-9041-432c-86a5-12dffb7cd38c
 		alternateOf
 			baseColumn: raw_comcatv2_moduletracking.UserClientName
 
-	column 2
-		dataType: int64
+	column raw_comcatv2_moduletracking_snapshot_date
+		dataType: dateTime
 		isAvailableInMdx: false
 
 		alternateOf
-			summarization: count
-			baseTable: raw_comcatv2_moduletracking
+			baseColumn: raw_comcatv2_moduletracking.snapshot_date
 
 	column 3
 		dataType: int64
@@ -30,7 +29,15 @@ table bbd678a5-9041-432c-86a5-12dffb7cd38c
 
 		alternateOf
 			summarization: count
-			baseColumn: raw_comcatv2_moduletracking.UserId
+			baseTable: raw_comcatv2_moduletracking
+
+	column 4
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseColumn: raw_comcatv2_moduletracking.TrackId
 
 	partition Partition = inferred
 		mode: import
@@ -39,13 +46,13 @@ table bbd678a5-9041-432c-86a5-12dffb7cd38c
 
 	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 38.481272542137113
+	annotation relativeGain(%) = 18.666778185999085
 
-	annotation relativeLift(%) = 0.083532964440286933
+	annotation relativeLift(%) = 0.082298045063686667
 
-	annotation relativeSize(%) = 0.21707432972446034
+	annotation relativeSize(%) = 0.44087975034392296
 
-	annotation estimatedCardinality(Krows) = 10.644
+	annotation estimatedCardinality(Krows) = 120.353
 
 	annotation avoidQueryHints = false
 

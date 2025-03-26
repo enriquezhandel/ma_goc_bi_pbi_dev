@@ -1,0 +1,52 @@
+table ee1fb5e2-44db-4314-ba5c-8ab522e1e122
+	isHidden
+	systemManaged
+
+	column curated_user_actions_comcatv2_end_of_month
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.end_of_month
+
+	column 1
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: min
+			baseColumn: curated_user_actions_comcatv2.snapshot_date
+
+	column 2
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: max
+			baseColumn: curated_user_actions_comcatv2.snapshot_date
+
+	column 3
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseColumn: curated_user_actions_comcatv2.userSessionId
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 17
+
+	annotation activeQueries = 3
+
+	annotation relativeGain(%) = 894.86707049634413
+
+	annotation relativeLift(%) = 1.5013768260513976
+
+	annotation relativeSize(%) = 0.16777651961409737
+
+	annotation estimatedCardinality(Krows) = 0.005
+
+	annotation avoidQueryHints = false
+

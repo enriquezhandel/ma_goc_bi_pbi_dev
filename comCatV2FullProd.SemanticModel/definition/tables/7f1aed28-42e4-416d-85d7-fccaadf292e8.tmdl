@@ -1,13 +1,13 @@
-table e1e2ee22-501f-4749-a7a5-b69d26a6b633
+table 7f1aed28-42e4-416d-85d7-fccaadf292e8
 	isHidden
 	systemManaged
 
-	column curated_user_actions_comcatv2_threadname
+	column curated_user_actions_comcatv2_reportbooksection
 		dataType: string
 		isAvailableInMdx: false
 
 		alternateOf
-			baseColumn: curated_user_actions_comcatv2.threadname
+			baseColumn: curated_user_actions_comcatv2.reportbooksection
 
 	column curated_user_actions_comcatv2_accountname
 		dataType: string
@@ -36,22 +36,30 @@ table e1e2ee22-501f-4749-a7a5-b69d26a6b633
 
 		alternateOf
 			summarization: count
+			baseTable: curated_user_actions_comcatv2
+
+	column 5
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
 			baseColumn: curated_user_actions_comcatv2.elastic_id
 
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 7
+	annotation activeFrequency = 49
 
-	annotation activeQueries = 1
+	annotation activeQueries = 3
 
-	annotation relativeGain(%) = 19.952078062078357
+	annotation relativeGain(%) = 31.8234111340753
 
-	annotation relativeLift(%) = 2.2009801136211453
+	annotation relativeLift(%) = 0.66364703763392552
 
-	annotation relativeSize(%) = 11.031332710172221
+	annotation relativeSize(%) = 2.0854050963861548
 
-	annotation estimatedCardinality(Krows) = 2590.453
+	annotation estimatedCardinality(Krows) = 614.834
 
 	annotation avoidQueryHints = false
 

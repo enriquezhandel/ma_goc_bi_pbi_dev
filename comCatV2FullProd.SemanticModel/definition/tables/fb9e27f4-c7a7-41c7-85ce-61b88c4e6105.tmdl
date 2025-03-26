@@ -1,4 +1,4 @@
-table 9b43ec70-cf90-49c1-a310-e573fa83b0d5
+table fb9e27f4-c7a7-41c7-85ce-61b88c4e6105
 	isHidden
 	systemManaged
 
@@ -38,28 +38,20 @@ table 9b43ec70-cf90-49c1-a310-e573fa83b0d5
 			summarization: count
 			baseTable: curated_user_actions_comcatv2
 
-	column 5
-		dataType: string
-		isAvailableInMdx: false
-
-		alternateOf
-			summarization: min
-			baseColumn: curated_user_actions_comcatv2.apdexCategory
-
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 14
+	annotation activeFrequency = 10
 
-	annotation activeQueries = 2
+	annotation activeQueries = 1
 
-	annotation relativeGain(%) = 106.23707067739699
+	annotation relativeGain(%) = 84.653194961618922
 
-	annotation relativeLift(%) = 4.8288965192275812
+	annotation relativeLift(%) = 3.5228210085773655
 
-	annotation relativeSize(%) = 4.5453969018885774
+	annotation relativeSize(%) = 4.1614743662948381
 
-	annotation estimatedCardinality(Krows) = 1067.251
+	annotation estimatedCardinality(Krows) = 1227.395
 
 	annotation avoidQueryHints = false
 

@@ -1,0 +1,60 @@
+table 4d44e6f9-67ee-418d-b493-c0f96e624bb3
+	isHidden
+	systemManaged
+
+	column structured_comcatv2_alerts_eom_snapshotdate
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: structured_comcatv2_alerts.eom_snapshotdate
+
+	column 1
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: structured_comcatv2_alerts.Count
+
+	column 2
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: min
+			baseColumn: structured_comcatv2_alerts.AccountName
+
+	column 3
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: min
+			baseColumn: structured_comcatv2_alerts.snapshot_date
+
+	column 4
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: max
+			baseColumn: structured_comcatv2_alerts.snapshot_date
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 8
+
+	annotation activeQueries = 4
+
+	annotation relativeGain(%) = 135.40576669874389
+
+	annotation relativeLift(%) = 0.21007576159203706
+
+	annotation relativeSize(%) = 0.1551453580698833
+
+	annotation estimatedCardinality(Krows) = 0.005
+
+	annotation avoidQueryHints = false
+

@@ -1,6 +1,13 @@
-table 1a99ff47-5d4d-4499-97b2-2aa297f64174
+table ee73e526-7bc2-48b6-a3b7-147f09487cd5
 	isHidden
 	systemManaged
+
+	column curated_user_actions_comcatv2_threadname
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.threadname
 
 	column curated_user_actions_comcatv2_accountname
 		dataType: string
@@ -23,7 +30,7 @@ table 1a99ff47-5d4d-4499-97b2-2aa297f64174
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.snapshot_date
 
-	column 3
+	column 4
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -31,20 +38,28 @@ table 1a99ff47-5d4d-4499-97b2-2aa297f64174
 			summarization: count
 			baseTable: curated_user_actions_comcatv2
 
+	column 5
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseColumn: curated_user_actions_comcatv2.elastic_id
+
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 43
+	annotation activeFrequency = 22
 
 	annotation activeQueries = 3
 
-	annotation relativeGain(%) = 57.3987329944832
+	annotation relativeGain(%) = 29.799890950194641
 
-	annotation relativeLift(%) = 0.35619808180785867
+	annotation relativeLift(%) = 2.6170388973840284
 
-	annotation relativeSize(%) = 0.620567847450734
+	annotation relativeSize(%) = 8.7820418596764522
 
-	annotation estimatedCardinality(Krows) = 177.789
+	annotation estimatedCardinality(Krows) = 2590.453
 
 	annotation avoidQueryHints = false
 
