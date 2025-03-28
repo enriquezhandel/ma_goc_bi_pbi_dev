@@ -1,4 +1,4 @@
-table ee73e526-7bc2-48b6-a3b7-147f09487cd5
+table 2c1b9fb7-b6c3-44d7-988a-d493b655a5a8
 	isHidden
 	systemManaged
 
@@ -53,11 +53,11 @@ table ee73e526-7bc2-48b6-a3b7-147f09487cd5
 
 	annotation activeQueries = 3
 
-	annotation relativeGain(%) = 29.799890950194641
+	annotation relativeGain(%) = 29.325876229893463
 
-	annotation relativeLift(%) = 2.6170388973840284
+	annotation relativeLift(%) = 2.5405970748313593
 
-	annotation relativeSize(%) = 8.7820418596764522
+	annotation relativeSize(%) = 8.6633287780216115
 
 	annotation estimatedCardinality(Krows) = 2590.453
 

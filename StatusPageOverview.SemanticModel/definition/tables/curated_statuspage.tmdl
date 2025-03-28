@@ -14,6 +14,30 @@ table curated_statuspage
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 02812b1c-88c3-4e2f-91c3-5d125e3fb5ea
 
+	measure Email_Count_Delta =
+			
+			VAR CurrentWeek = MAX(curated_statuspage[iso_week_num])
+			VAR PreviousWeek = CurrentWeek - 1
+			
+			VAR CurrentWeekCount =
+			    CALCULATE(
+			        COUNTROWS(curated_statuspage),
+			        curated_statuspage[iso_week_num] = CurrentWeek,
+			        curated_statuspage[subscription_status] = "Active"
+			    )
+			
+			VAR PreviousWeekCount =
+			    CALCULATE(
+			        COUNTROWS(curated_statuspage),
+			        curated_statuspage[iso_week_num] = PreviousWeek,
+			        curated_statuspage[subscription_status] = "Active"
+			    )
+			
+			RETURN
+			    (CurrentWeekCount - PreviousWeekCount) * -1
+		formatString: 0
+		lineageTag: ba94a405-7a0b-4631-bfa9-96083df751f6
+
 	column Email
 		dataType: string
 		sourceProviderType: nvarchar(65535)

@@ -1,4 +1,4 @@
-table dbf31ab5-05ae-40ab-9a66-65072699ed20
+table 614f1294-04ad-4fef-8f38-95b6eb14fe45
 	isHidden
 	systemManaged
 
@@ -17,26 +17,18 @@ table dbf31ab5-05ae-40ab-9a66-65072699ed20
 			summarization: count
 			baseTable: curated_user_actions_comcatv2
 
-	column 2
-		dataType: int64
-		isAvailableInMdx: false
-
-		alternateOf
-			summarization: count
-			baseColumn: curated_user_actions_comcatv2.elastic_id
-
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 11
+	annotation activeFrequency = 10
 
-	annotation activeQueries = 2
+	annotation activeQueries = 1
 
-	annotation relativeGain(%) = 62.265119915846377
+	annotation relativeGain(%) = 54.000808024312533
 
-	annotation relativeLift(%) = 0.1183757780757184
+	annotation relativeLift(%) = 0.10162606597457409
 
-	annotation relativeSize(%) = 0.19011571524427748
+	annotation relativeSize(%) = 0.18819360245279934
 
 	annotation estimatedCardinality(Krows) = 13.513
 

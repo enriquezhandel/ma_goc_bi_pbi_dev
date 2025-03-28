@@ -1,6 +1,13 @@
-table 2241a59e-4dfc-4d16-8322-d49ee7679f30
+table 0b6a1a15-5f3f-45d9-b45b-59f4f39db513
 	isHidden
 	systemManaged
+
+	column raw_comcatv2_moduletracking_UserName
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: raw_comcatv2_moduletracking.UserName
 
 	column raw_comcatv2_moduletracking_snapshot_date
 		dataType: dateTime
@@ -16,21 +23,13 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 		alternateOf
 			baseColumn: raw_comcatv2_moduletracking.eom_snapshot_date
 
-	column 2
-		dataType: int64
-		isAvailableInMdx: false
-
-		alternateOf
-			summarization: sum
-			baseColumn: raw_comcatv2_moduletracking.WaitTime
-
 	column 3
 		dataType: int64
 		isAvailableInMdx: false
 
 		alternateOf
 			summarization: sum
-			baseColumn: raw_comcatv2_moduletracking.ExecutionTime
+			baseColumn: raw_comcatv2_moduletracking.WaitTime
 
 	column 4
 		dataType: int64
@@ -38,9 +37,17 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 
 		alternateOf
 			summarization: sum
-			baseColumn: raw_comcatv2_moduletracking.Duration
+			baseColumn: raw_comcatv2_moduletracking.ExecutionTime
 
 	column 5
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: raw_comcatv2_moduletracking.Duration
+
+	column 6
 		dataType: dateTime
 		isAvailableInMdx: false
 
@@ -48,7 +55,7 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 			summarization: min
 			baseColumn: raw_comcatv2_moduletracking.snapshot_date
 
-	column 6
+	column 7
 		dataType: dateTime
 		isAvailableInMdx: false
 
@@ -56,7 +63,7 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 			summarization: max
 			baseColumn: raw_comcatv2_moduletracking.snapshot_date
 
-	column 7
+	column 8
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -64,7 +71,7 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 			summarization: count
 			baseColumn: raw_comcatv2_moduletracking.UserId
 
-	column 8
+	column 9
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -72,7 +79,7 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 			summarization: count
 			baseColumn: raw_comcatv2_moduletracking.WaitTime
 
-	column 9
+	column 10
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -80,7 +87,7 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 			summarization: count
 			baseColumn: raw_comcatv2_moduletracking.ExecutionTime
 
-	column 10
+	column 11
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -93,15 +100,15 @@ table 2241a59e-4dfc-4d16-8322-d49ee7679f30
 
 	annotation activeFrequency = 11
 
-	annotation activeQueries = 4
+	annotation activeQueries = 6
 
-	annotation relativeGain(%) = 8.3649182059405973
+	annotation relativeGain(%) = 41.957170194811162
 
-	annotation relativeLift(%) = 0.012899880029994312
+	annotation relativeLift(%) = 0.17909205198128797
 
-	annotation relativeSize(%) = 0.1542140605849926
+	annotation relativeSize(%) = 0.42684492578919503
 
-	annotation estimatedCardinality(Krows) = 0.095
+	annotation estimatedCardinality(Krows) = 117.545
 
 	annotation avoidQueryHints = false
 

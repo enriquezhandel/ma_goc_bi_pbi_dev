@@ -1,4 +1,4 @@
-table cc529f8e-390b-442f-8f56-79985f0fdab0
+table 4b1a6920-914b-4b11-a940-c0fa9f6e7a18
 	isHidden
 	systemManaged
 
@@ -28,15 +28,15 @@ table cc529f8e-390b-442f-8f56-79985f0fdab0
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 8
+	annotation activeFrequency = 12
 
 	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 537.81465749296876
+	annotation relativeGain(%) = 779.35787108098828
 
-	annotation relativeLift(%) = 0.84010966639626838
+	annotation relativeLift(%) = 1.2011214981104086
 
-	annotation relativeSize(%) = 0.15620802718774016
+	annotation relativeSize(%) = 0.1541168111184178
 
 	annotation estimatedCardinality(Krows) = 0.635
 

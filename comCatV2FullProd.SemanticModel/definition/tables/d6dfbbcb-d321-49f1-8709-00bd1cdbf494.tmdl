@@ -1,4 +1,4 @@
-table 50084949-915f-4fe5-a45a-9f7f7f69f768
+table d6dfbbcb-d321-49f1-8709-00bd1cdbf494
 	isHidden
 	systemManaged
 
@@ -60,11 +60,11 @@ table 50084949-915f-4fe5-a45a-9f7f7f69f768
 
 	annotation activeQueries = 1
 
-	annotation relativeGain(%) = 13.429331929978755
+	annotation relativeGain(%) = 12.855369738925345
 
-	annotation relativeLift(%) = 0.2459524066246967
+	annotation relativeLift(%) = 0.23226620766018985
 
-	annotation relativeSize(%) = 1.8314567538214519
+	annotation relativeSize(%) = 1.8067641178526408
 
 	annotation estimatedCardinality(Krows) = 539.869
 

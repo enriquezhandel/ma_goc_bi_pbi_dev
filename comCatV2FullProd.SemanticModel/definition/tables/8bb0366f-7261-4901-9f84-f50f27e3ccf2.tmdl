@@ -1,6 +1,13 @@
-table 9137cdd9-0f23-427c-8156-1be8619b5a5b
+table 8bb0366f-7261-4901-9f84-f50f27e3ccf2
 	isHidden
 	systemManaged
+
+	column curated_user_actions_comcatv2_reportbooksection
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.reportbooksection
 
 	column curated_user_actions_comcatv2_accountname
 		dataType: string
@@ -9,19 +16,19 @@ table 9137cdd9-0f23-427c-8156-1be8619b5a5b
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.accountname
 
+	column curated_user_actions_comcatv2_userId
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: curated_user_actions_comcatv2.userId
+
 	column curated_user_actions_comcatv2_snapshot_date
 		dataType: dateTime
 		isAvailableInMdx: false
 
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.snapshot_date
-
-	column calendardim_date
-		dataType: dateTime
-		isAvailableInMdx: false
-
-		alternateOf
-			baseColumn: calendardim.date
 
 	column experience_score_ExperienceScore
 		dataType: string
@@ -37,7 +44,15 @@ table 9137cdd9-0f23-427c-8156-1be8619b5a5b
 		alternateOf
 			baseColumn: experience_score.Order
 
-	column 5
+	column 6
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: curated_user_actions_comcatv2
+
+	column 7
 		dataType: double
 		isAvailableInMdx: false
 
@@ -45,7 +60,7 @@ table 9137cdd9-0f23-427c-8156-1be8619b5a5b
 			summarization: sum
 			baseColumn: curated_user_actions_comcatv2.duration_seconds
 
-	column 6
+	column 8
 		dataType: string
 		isAvailableInMdx: false
 
@@ -53,7 +68,15 @@ table 9137cdd9-0f23-427c-8156-1be8619b5a5b
 			summarization: min
 			baseColumn: curated_user_actions_comcatv2.apdexCategory
 
-	column 7
+	column 9
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseColumn: curated_user_actions_comcatv2.elastic_id
+
+	column 10
 		dataType: int64
 		isAvailableInMdx: false
 
@@ -64,17 +87,17 @@ table 9137cdd9-0f23-427c-8156-1be8619b5a5b
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 19
+	annotation activeFrequency = 30
 
-	annotation activeQueries = 3
+	annotation activeQueries = 4
 
-	annotation relativeGain(%) = 1039.9378323448916
+	annotation relativeGain(%) = 231.16530970246711
 
-	annotation relativeLift(%) = 4.2388042893674829
+	annotation relativeLift(%) = 10.225297842567144
 
-	annotation relativeSize(%) = 0.4076017005564328
+	annotation relativeSize(%) = 4.4233703818830463
 
-	annotation estimatedCardinality(Krows) = 106.908
+	annotation estimatedCardinality(Krows) = 1322.534
 
 	annotation avoidQueryHints = false
 

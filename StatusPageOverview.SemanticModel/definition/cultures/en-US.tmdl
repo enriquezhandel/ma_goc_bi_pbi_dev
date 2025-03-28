@@ -23,16 +23,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Week #": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -68,6 +58,90 @@ cultureInfo en-US
 			      "Terms": [
 			        {
 			          "Attrition Rate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_statuspage.email_count_delta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_statuspage",
+			          "ConceptualProperty": "Email_Count_Delta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Email Count Delta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_statuspage.firstname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_statuspage",
+			          "ConceptualProperty": "FirstName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "First Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_statuspage.lastname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_statuspage",
+			          "ConceptualProperty": "LastName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Last Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "curated_statuspage.productname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "curated_statuspage",
+			          "ConceptualProperty": "productName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Product Name": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

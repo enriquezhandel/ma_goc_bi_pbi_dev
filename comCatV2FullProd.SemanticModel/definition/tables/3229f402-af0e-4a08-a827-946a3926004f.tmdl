@@ -1,13 +1,13 @@
-table cb643c95-f5b9-4423-9ead-9fe472b94f26
+table 3229f402-af0e-4a08-a827-946a3926004f
 	isHidden
 	systemManaged
 
-	column curated_user_actions_comcatv2_threadname
+	column curated_user_actions_comcatv2_accountname
 		dataType: string
 		isAvailableInMdx: false
 
 		alternateOf
-			baseColumn: curated_user_actions_comcatv2.threadname
+			baseColumn: curated_user_actions_comcatv2.accountname
 
 	column curated_user_actions_comcatv2_snapshot_date
 		dataType: dateTime
@@ -15,6 +15,13 @@ table cb643c95-f5b9-4423-9ead-9fe472b94f26
 
 		alternateOf
 			baseColumn: curated_user_actions_comcatv2.snapshot_date
+
+	column calendardim_date
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: calendardim.date
 
 	column experience_score_ExperienceScore
 		dataType: string
@@ -30,7 +37,7 @@ table cb643c95-f5b9-4423-9ead-9fe472b94f26
 		alternateOf
 			baseColumn: experience_score.Order
 
-	column 4
+	column 5
 		dataType: double
 		isAvailableInMdx: false
 
@@ -38,21 +45,13 @@ table cb643c95-f5b9-4423-9ead-9fe472b94f26
 			summarization: sum
 			baseColumn: curated_user_actions_comcatv2.duration_seconds
 
-	column 5
+	column 6
 		dataType: string
 		isAvailableInMdx: false
 
 		alternateOf
 			summarization: min
 			baseColumn: curated_user_actions_comcatv2.apdexCategory
-
-	column 6
-		dataType: int64
-		isAvailableInMdx: false
-
-		alternateOf
-			summarization: count
-			baseColumn: curated_user_actions_comcatv2.elastic_id
 
 	column 7
 		dataType: int64
@@ -65,17 +64,17 @@ table cb643c95-f5b9-4423-9ead-9fe472b94f26
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 5
+	annotation activeFrequency = 18
 
-	annotation activeQueries = 2
+	annotation activeQueries = 3
 
-	annotation relativeGain(%) = 32.552168064038582
+	annotation relativeGain(%) = 115.33302214417211
 
-	annotation relativeLift(%) = 0.16862066407297863
+	annotation relativeLift(%) = 0.4640930634571141
 
-	annotation relativeSize(%) = 0.51800133171240048
+	annotation relativeSize(%) = 0.40239391531505547
 
-	annotation estimatedCardinality(Krows) = 144.698
+	annotation estimatedCardinality(Krows) = 106.908
 
 	annotation avoidQueryHints = false
 

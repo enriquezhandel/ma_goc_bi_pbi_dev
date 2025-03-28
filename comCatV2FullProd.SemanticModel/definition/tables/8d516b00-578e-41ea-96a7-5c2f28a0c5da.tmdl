@@ -1,4 +1,4 @@
-table 36bdf132-2c97-4bfd-be42-6b51c06ba500
+table 8d516b00-578e-41ea-96a7-5c2f28a0c5da
 	isHidden
 	systemManaged
 
@@ -39,18 +39,26 @@ table 36bdf132-2c97-4bfd-be42-6b51c06ba500
 			summarization: count
 			baseColumn: raw_comcatv2_moduletracking.TrackId
 
+	column 5
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseColumn: raw_comcatv2_moduletracking.UserId
+
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 4
+	annotation activeFrequency = 10
 
-	annotation activeQueries = 2
+	annotation activeQueries = 5
 
-	annotation relativeGain(%) = 18.666778185999085
+	annotation relativeGain(%) = 45.630858371016487
 
-	annotation relativeLift(%) = 0.082298045063686667
+	annotation relativeLift(%) = 0.19845776627475695
 
-	annotation relativeSize(%) = 0.44087975034392296
+	annotation relativeSize(%) = 0.4349200811896452
 
 	annotation estimatedCardinality(Krows) = 120.353
 
